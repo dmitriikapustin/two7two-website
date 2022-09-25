@@ -1,0 +1,586 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    background: #60136D  !important;
+    max-width: 100vw !important;
+    // background: radial-gradient(#9333a7, #590266);
+    z-index: -2;
+}
+
+body {
+    margin: 0 !important;
+
+
+    // overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border-style: none !important;
+    box-shadow: none !important;
+}
+
+.row {
+    padding: 13px 40px;
+    width: 100%;
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+
+section {
+    overflow: hidden !important;
+}
+
+
+.a-hidden {
+    opacity: 0;
+}
+
+.a-visible {
+    opacity: 1;
+}
+
+.display-none {
+    display: none !important;
+}
+
+@font-face {
+    font-family: RELL; /* Имя шрифта */
+    src: url(fonts/Ubuntu-L.woff); /* Путь к файлу со шрифтом */
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: RELL; /* Имя шрифта */
+    src: url(fonts/Ubuntu-R.woff); /* Путь к файлу со шрифтом */
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: RELL; /* Имя шрифта */
+    src: url(fonts/Ubuntu-M.woff); /* Путь к файлу со шрифтом */
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: RELL-SECOND; /* Имя шрифта */
+    src: url(fonts/Spaceland-Ten.woff); /* Путь к файлу со шрифтом */
+    font-weight: 200;
+}
+
+@keyframes levitation-1 {
+    0% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(180deg) 
+    }
+
+
+    12% {
+        transform: scale(1.005) translateX(-1.5vw) translateY(0.6vw) rotate(190deg) 
+    }
+
+    25% {
+        transform: scale(1.01) translateX(-2.95vw) translateY(0.9vw) rotate(198deg) 
+    }
+
+    37% {
+        transform: scale(1.01) translateX(-3.3vw) translateY(2.2vw) rotate(206deg) 
+    }
+
+    50% {
+        transform: scale(1.005) translateX(-2.95vw) translateY(3.4vw) rotate(202deg) 
+    }
+    62% {
+        transform: scale(1.005) translateX(-1.4vw) translateY(3vw) rotate(197deg) 
+    }
+    75% {
+        transform: scale(1.005) translateX(-0vw) translateY(2.7vw) rotate(193.5deg) 
+    }
+
+    88% {
+        transform: scale(1.005) translateX(0vw) translateY(1.35vw) rotate(186deg) 
+    }
+
+
+    100% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(180deg) 
+    }
+}
+
+@keyframes levitation-1-mob {
+    0% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(180deg) 
+    }
+
+
+    12% {
+        transform: scale(1.005) translateX(-2.5vw) translateY(1.1vw) rotate(190deg) 
+    }
+
+    25% {
+        transform: scale(1.01) translateX(-4.85vw) translateY(1.65vw) rotate(198deg) 
+    }
+
+    37% {
+        transform: scale(1.01) translateX(-5.4vw) translateY(3.5vw) rotate(206deg) 
+    }
+
+    50% {
+        transform: scale(1.005) translateX(-5vw) translateY(4.9vw) rotate(202deg) 
+    }
+    62% {
+        transform: scale(1.005) translateX(-2.65vw) translateY(4.55vw) rotate(197deg) 
+    }
+    75% {
+        transform: scale(1.005) translateX(-0vw) translateY(4.15vw) rotate(193.5deg) 
+    }
+
+    88% {
+        transform: scale(1.005) translateX(0vw) translateY(2vw) rotate(186deg) 
+    }
+
+
+    100% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(180deg) 
+    }
+}
+
+@keyframes levitation-1-p-mob {
+    0% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(0deg) 
+    }
+
+
+    12% {
+        transform: scale(1.005) translateX(-2.5vw) translateY(1.1vw) rotate(-10deg) 
+    }
+
+    25% {
+        transform: scale(1.01) translateX(-4.85vw) translateY(1.65vw) rotate(-18deg) 
+    }
+
+    37% {
+        transform: scale(1.01) translateX(-5.4vw) translateY(3.5vw) rotate(-26deg) 
+    }
+
+    50% {
+        transform: scale(1.005) translateX(-5vw) translateY(4.9vw) rotate(-22deg) 
+    }
+    62% {
+        transform: scale(1.005) translateX(-2.65vw) translateY(4.55vw) rotate(-17deg) 
+    }
+    75% {
+        transform: scale(1.005) translateX(-0vw) translateY(4.15vw) rotate(-13.5deg) 
+    }
+
+    88% {
+        transform: scale(1.005) translateX(0vw) translateY(2vw) rotate(-6deg) 
+    }
+
+
+    100% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(0deg) 
+    }
+}
+
+@keyframes levitation-3 {
+    0% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(180deg) 
+    }
+
+
+    12% {
+        transform: scale(1.005) translateX(-0.5vw) translateY(-0.8vw) rotate(177deg) 
+    }
+
+    25% {
+        transform: scale(1.01) translateX(-1vw) translateY(-1.6vw) rotate(173deg) 
+    }
+
+    37% {
+        transform: scale(1.01) translateX(-1.3vw) translateY(-2.25vw) rotate(169deg) 
+    }
+
+    50% {
+        transform: scale(1.005) translateX(-1.9vw) translateY(-2.05vw) rotate(166deg) 
+    }
+    62% {
+        transform: scale(1.005) translateX(-2.7vw) translateY(-1.7vw) rotate(169.5deg) 
+    }
+    75% {
+        transform: scale(1.005) translateX(-2vw) translateY(-1.25vw) rotate(171.5deg) 
+    }
+
+    88% {
+        transform: scale(1.005) translateX(-1.25vw) translateY(-0.65vw) rotate(175.5deg) 
+    }
+
+
+    100% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(180deg) 
+    }
+}
+
+@keyframes levitation-3-mob {
+    0% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(0deg) 
+    }
+    // 5% {
+    //     transform: scale(1.0) translateX(-0.35vw) translateY(0.35vw) rotate(-1.5deg) 
+    // }
+
+    10% {
+        transform: scale(1.01) translateX(-1vw) translateY(-0.71vw) rotate(-5deg)
+    }
+    20% {
+        transform: scale(1.01) translateX(-1.9vw) translateY(-1.48vw) rotate(-7.5deg)
+    }
+    30% {
+        transform: scale(1.01) translateX(-2.8vw) translateY(-2.13vw) rotate(-9.2deg)
+    }
+    40% {
+        transform: scale(1.02) translateX(-2.1vw) translateY(-3.4vw) rotate(-11.4deg)
+    }
+    50% {
+        transform: scale(1.02) translateX(-1.2vw) translateY(-4.25vw) rotate(-10deg)
+    }
+    60% {
+        transform: scale(1.02) translateX(-0.59vw) translateY(-3.15vw) rotate(-8.2deg)
+    }
+    70% {
+        transform: scale(1.01) translateX(0.55vw) translateY(-2.15vw) rotate(-6.1deg)
+    }
+    80% {
+        transform: scale(1.01) translateX(1.2vw) translateY(-1.35vw) rotate(-3.85deg)
+    }
+    90% {
+        transform: scale(1.01) translateX(0.64vw) translateY(-0.6vw) rotate(-1.4deg)
+    }
+
+    100% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(0deg) 
+    }
+}
+
+
+
+@keyframes levitation-2 {
+    0% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(0deg) 
+    }
+    10% {
+        transform: scale(1.01) translateX(-0.6vw) translateY(0.5vw) rotate(-5deg)
+    }
+    20% {
+        transform: scale(1.01) translateX(-0.6vw) translateY(1vw) rotate(-7.5deg)
+    }
+    30% {
+        transform: scale(1.01) translateX(-0.96vw) translateY(1.45vw) rotate(-9.2deg)
+    }
+    40% {
+        transform: scale(1.02) translateX(-1.45vw) translateY(1.99vw) rotate(-11.4deg)
+    }
+    50% {
+        transform: scale(1.02) translateX(-2vw) translateY(2.45vw) rotate(-10deg)
+    }
+    60% {
+        transform: scale(1.02) translateX(-1.5vw) translateY(2.18vw) rotate(-8.2deg)
+    }
+    70% {
+        transform: scale(1.01) translateX(-1.33vw) translateY(1.84vw) rotate(-6.1deg)
+    }
+    80% {
+        transform: scale(1.01) translateX(-0.9vw) translateY(1.43vw) rotate(-3.85deg)
+    }
+    90% {
+        transform: scale(1.01) translateX(-0.4vw) translateY(0.65vw) rotate(-1.4deg)
+    }
+
+    100% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(0deg) 
+    }
+}
+
+@keyframes levitation-2-mob {
+    0% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(0deg) 
+    }
+    // 5% {
+    //     transform: scale(1.0) translateX(-0.35vw) translateY(0.35vw) rotate(-1.5deg) 
+    // }
+
+    10% {
+        transform: scale(1.01) translateX(-0.75vw) translateY(0.71vw) rotate(-5deg)
+    }
+    20% {
+        transform: scale(1.01) translateX(-1.65vw) translateY(1.48vw) rotate(-7.5deg)
+    }
+    30% {
+        transform: scale(1.01) translateX(-2.4vw) translateY(2.13vw) rotate(-9.2deg)
+    }
+    40% {
+        transform: scale(1.02) translateX(-1.7vw) translateY(3vw) rotate(-11.4deg)
+    }
+    50% {
+        transform: scale(1.02) translateX(-0.96vw) translateY(3.7vw) rotate(-10deg)
+    }
+    60% {
+        transform: scale(1.02) translateX(-0.29vw) translateY(2.9vw) rotate(-8.2deg)
+    }
+    70% {
+        transform: scale(1.01) translateX(0.55vw) translateY(2.11vw) rotate(-6.1deg)
+    }
+    80% {
+        transform: scale(1.01) translateX(0.77vw) translateY(1.4vw) rotate(-3.85deg)
+    }
+    90% {
+        transform: scale(1.01) translateX(0.24vw) translateY(0.6vw) rotate(-1.4deg)
+    }
+
+    100% {
+        transform: scale(1.0) translateX(0.0vw) translateY(0.0vw) rotate(0deg) 
+    }
+}
+
+@keyframes levitation-4 {
+    0% {
+        transform: translateX(0.0vw) translateY(0.0vw) rotate(0deg)
+    }
+    20% {
+        transform:  translateX(0.9vw) translateY(-0.85vw) rotate(-5deg)
+    }
+    40% {
+        transform:  translateX(1.75vw) translateY(-1.54vw) rotate(-10deg)
+    }
+    60% {
+        transform:  translateX(1.19vw) translateY(-0.8vw) rotate(-7.5deg)
+    }
+    80% {
+        transform:  translateX(0.76vw) translateY(-0.35vw) rotate(-4deg)
+    }
+    100% {
+        transform: translateX(0.0vw) translateY(0.0vw) rotate(0deg)
+    }
+}
+
+@keyframes levitation-5 {
+    0% {
+        transform: translateX(0.0vw) translateY(0.0vw) 
+    }
+    20% {
+        transform:  translateX(-0.6vw) translateY(0.8vw) 
+    }
+    40% {
+        transform:  translateX(-1.2vw) translateY(1.6vw) 
+    }
+    60% {
+        transform:  translateX(-0.9vw) translateY(1.3vw) 
+    }
+    80% {
+        transform:  translateX(-0.45vw) translateY(0.65vw) 
+    }
+    100% {
+        transform: translateX(0.0vw) translateY(0.0vw) 
+    }
+}
+
+@keyframes levitation-5-mob {
+    0% {
+        transform: translateX(0.0vw) translateY(0.0vw) 
+    }
+    20% {
+        transform:  translateX(-1.8vw) translateY(2vw) 
+    }
+    40% {
+        transform:  translateX(-3.6vw) translateY(3.5vw) 
+    }
+    60% {
+        transform:  translateX(-2.7vw) translateY(2.75vw) 
+    }
+    80% {
+        transform:  translateX(-1.35vw) translateY(1.4vw) 
+    }
+    100% {
+        transform: translateX(0.0vw) translateY(0.0vw) 
+    }
+}
+
+
+
+@keyframes levitation-7 {
+    0% {
+        transform: translateX(0.0vw) translateY(0.0vw) 
+    }
+    20% {
+        transform:  translateX(1.1vw) translateY(-0.75vw) 
+    }
+    40% {
+        transform:  translateX(2.3vw) translateY(-1.45vw) 
+    }
+    60% {
+        transform:  translateX(1.6vw) translateY(-0.6vw) 
+    }
+    80% {
+        transform:  translateX(0.8vw) translateY(-0.25vw) 
+    }
+    100% {
+        transform: translateX(0.0vw) translateY(0.0vw) 
+    }
+}
+
+@keyframes levitation-7-mob {
+    0% {
+        transform: translateX(0.0vw) translateY(0.0vw) 
+    }
+    20% {
+        transform:  translateX(3.3vw) translateY(-2vw) 
+    }
+    40% {
+        transform:  translateX(6.9vw) translateY(-3.3vw) 
+    }
+    60% {
+        transform:  translateX(4.8vw) translateY(-1.55vw) 
+    }
+    80% {
+        transform:  translateX(2.4vw) translateY(-0.55vw) 
+    }
+    100% {
+        transform: translateX(0.0vw) translateY(0.0vw) 
+    }
+}
+
+
+@keyframes levitation-6 {
+    0% {
+        transform: translateX(0.0vw) translateY(0.0vw) rotate(.96turn) 
+    }
+    20% {
+        transform:  translateX(0.7vw) translateY(0.6vw) rotate(.94turn) 
+    }
+    40% {
+        transform:  translateX(1.3vw) translateY(1.2vw) rotate(.92turn) 
+    }
+    60% {
+        transform:  translateX(0.9vw) translateY(0.7vw) rotate(.91turn) 
+    }
+    80% {
+        transform:  translateX(0.4vw) translateY(0.35vw) rotate(.93turn) 
+    }
+    100% {
+        transform: translateX(0.0vw) translateY(0.0vw) rotate(.96turn) 
+    }
+}
+
+@keyframes levitation-6-mob {
+    0% {
+        transform: translateX(0.0vw) translateY(0.0vw) rotate(.96turn) 
+    }
+    20% {
+        transform:  translateX(2.1vw) translateY(2.4vw) rotate(.94turn) 
+    }
+    40% {
+        transform:  translateX(3.9vw) translateY(4.4vw) rotate(.92turn) 
+    }
+    60% {
+        transform:  translateX(2.7vw) translateY(2.6vw) rotate(.91turn) 
+    }
+    80% {
+        transform:  translateX(1.2vw) translateY(1.4vw) rotate(.93turn) 
+    }
+    100% {
+        transform: translateX(0.0vw) translateY(0.0vw) rotate(.96turn) 
+    }
+}
+
+@keyframes levitation-8 {
+    0% {
+        transform: translateX(0.0vw) translateY(0.0vw) scale(0.8, 0.45)
+    }
+    20% {
+        transform:  translateX(0.7vw) translateY(-0.6vw) scale(0.8, 0.45)
+    }
+    40% {
+        transform:  translateX(1.4vw) translateY(-1.2vw) scale(0.8, 0.45)
+    }
+    60% {
+        transform:  translateX(1.2vw) translateY(-0.6vw) scale(0.8, 0.45)
+    }
+    80% {
+        transform:  translateX(0.7vw) translateY(-0.25vw) scale(0.8, 0.45)
+    }
+    100% {
+        transform: translateX(0.0vw) translateY(0.0vw) scale(0.8, 0.45)
+    }
+}
+
+@keyframes levitation-8-mob {
+    0% {
+        transform: translateX(0.0vw) translateY(0.0vw) scale(0.8, 0.45)
+    }
+    20% {
+        transform:  translateX(2.1vw) translateY(-1.8vw) scale(0.8, 0.45)
+    }
+    40% {
+        transform:  translateX(4.2vw) translateY(-3.6vw) scale(0.8, 0.45)
+    }
+    60% {
+        transform:  translateX(3.6vw) translateY(-1.8vw) scale(0.8, 0.45)
+    }
+    80% {
+        transform:  translateX(2.1vw) translateY(-0.73vw) scale(0.8, 0.45)
+    }
+    100% {
+        transform: translateX(0.0vw) translateY(0.0vw) scale(0.8, 0.45)
+    }
+}
+
+@keyframes levitation-9 {
+    0% {
+        transform: translateX(0.0vw) translateY(0.0vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+    20% {
+        transform:  translateX(0.7vw) translateY(-0.6vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+    40% {
+        transform:  translateX(1.4vw) translateY(-1.2vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+    60% {
+        transform:  translateX(1.2vw) translateY(-0.6vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+    80% {
+        transform:  translateX(0.7vw) translateY(-0.25vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+    100% {
+        transform: translateX(0.0vw) translateY(0.0vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+}
+
+@keyframes levitation-9-mob {
+    0% {
+        transform: translateX(0.0vw) translateY(0.0vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+    20% {
+        transform:  translateX(2.1vw) translateY(-1.8vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+    40% {
+        transform:  translateX(4.2vw) translateY(-3.6vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+    60% {
+        transform:  translateX(3.6vw) translateY(-1.8vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+    80% {
+        transform:  translateX(2.1vw) translateY(-0.7vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+    100% {
+        transform: translateX(0.0vw) translateY(0.0vw) scale(0.55, 0.5) rotate(0.87turn)
+    }
+}
+
