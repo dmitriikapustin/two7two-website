@@ -1,0 +1,483 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1664359863713,
+    "data": [
+        {
+            "type": "file",
+            "name": "anime.js",
+            "size": 8758,
+            "hash": "92acc066a2533e6ec3bc76d33e2db9435ef3efd9e4d441e51820b1e11e90090d"
+        },
+        {
+            "type": "folder",
+            "name": "fonts"
+        },
+        {
+            "type": "folder",
+            "name": "images"
+        },
+        {
+            "type": "file",
+            "name": "index.php",
+            "size": 12616,
+            "hash": "da024d764fa991e97e4d6870c0de32d0218e2422d1b2226966b99eb4ddea24d2"
+        },
+        {
+            "type": "file",
+            "name": "logicfor3.js",
+            "size": 16853,
+            "hash": "aa39a21aa54b33c282b51b5c07a6bb469ab32063b6c68f13b328d98216b1a4a1"
+        },
+        {
+            "type": "file",
+            "name": "navtabs.js",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "parallax.js",
+            "size": 739,
+            "hash": "331c04871ad6eed6cad9c3553e4936b86d8d888334191c57a0b5518f7b30a9b1"
+        },
+        {
+            "type": "file",
+            "name": "scrollmagic.js",
+            "size": 21572,
+            "hash": "c076f843ac5e4b913e373b00e3c0bb254c1f6e3bd53cda4ed24db13e6e47a9d2"
+        },
+        {
+            "type": "file",
+            "name": "style.css",
+            "size": 66895,
+            "hash": "e5a6b82dec7cfdce8392a3115b6f40a1340dbd7d98e6a71db2699f83e6e3da3e"
+        },
+        {
+            "type": "file",
+            "name": "swiper.js",
+            "size": 21676,
+            "hash": "cdaae890f8ec6875e5bb9778c89a4bc0ed73ddc18e24edf08e24ed312e528101"
+        },
+        {
+            "type": "file",
+            "name": "fonts/Ubuntu-L.woff",
+            "size": 156440,
+            "hash": "addf2cecb6253715e9df86ecd77d5e82596b625f21d8937f09458f2f6f264d25"
+        },
+        {
+            "type": "file",
+            "name": "fonts/Spaceland-Ten.woff",
+            "size": 69920,
+            "hash": "e9016814726cda26f2306ec89751aa67f6e2e057bf58cbf7574341b53b5ff407"
+        },
+        {
+            "type": "file",
+            "name": "fonts/Ubuntu-R.woff",
+            "size": 130664,
+            "hash": "fe314eb343fc117b255d337c80107d92a72480533688321fc83d97bf2ce2e3eb"
+        },
+        {
+            "type": "file",
+            "name": "fonts/Ubuntu-M.woff",
+            "size": 120268,
+            "hash": "80a89fcfa2fb888accae1a5daa8417d4139f57b84b9f83d9e0b096e0c8243753"
+        },
+        {
+            "type": "file",
+            "name": "images/Ellipse 1.svg",
+            "size": 300,
+            "hash": "4fe456762a10469f3aaa069643a34fd0cc5aa3c118dee4b9fa4e1613faea6129"
+        },
+        {
+            "type": "file",
+            "name": "images/Rounded.svg",
+            "size": 294,
+            "hash": "5719bb30f900cd0c2add90e6307763e4c63ee9d348ff4083217d91c45d3b3c19"
+        },
+        {
+            "type": "file",
+            "name": "images/banana-1-block.png",
+            "size": 61900,
+            "hash": "ccee5522d616aba269a7749a8e913ba2aab7dbb2ab6670bf2fc43e9385ad6a5f"
+        },
+        {
+            "type": "file",
+            "name": "images/banana-1-block.webp",
+            "size": 17776,
+            "hash": "7d84391d4cd9b9478bbe53b5c0448c638b434fc7f978e743c3b824244af95125"
+        },
+        {
+            "type": "file",
+            "name": "images/banana.jpg",
+            "size": 86477,
+            "hash": "8fd23b7afa4eaa92d2c35a05af28588caa3e4b6f779aae75ad8b9214c2d263ea"
+        },
+        {
+            "type": "file",
+            "name": "images/banana.webp",
+            "size": 45556,
+            "hash": "0e69a195b256334ef8b12a8358da414b13f398972ac5227c66348f3850d5e115"
+        },
+        {
+            "type": "file",
+            "name": "images/blob-1.svg",
+            "size": 3792,
+            "hash": "3a1a1ccb54fee598c46e8ca1f844307c26997dc8cc615a281ac3325e6e0d69fc"
+        },
+        {
+            "type": "file",
+            "name": "images/blob-2.svg",
+            "size": 3178,
+            "hash": "ae06d7741c7e257e8c5e981485b4db770e3f6c02fd7bc75780f1f36d38d92d4b"
+        },
+        {
+            "type": "file",
+            "name": "images/blob-3.svg",
+            "size": 3309,
+            "hash": "bdfb69cad85e0e77c5aa67987d95bff244fd35f1faf2bc43cdf2978877fca6b0"
+        },
+        {
+            "type": "file",
+            "name": "images/cherry-2.png",
+            "size": 59857,
+            "hash": "9ee0cac81340f0638c39c9c883b12c53d1a0ef3b28ca41f231a1e8fa14ffe36a"
+        },
+        {
+            "type": "file",
+            "name": "images/cherry-2.webp",
+            "size": 26132,
+            "hash": "74ec9fa11046051fdc6450ef184312acad4212eb122a5d3c6603c79f4fdd4e1c"
+        },
+        {
+            "type": "file",
+            "name": "images/cherry-ice.jpg",
+            "size": 94843,
+            "hash": "9d22c1ec5ea8bbd5f0a675f103fb846fe6dd1a9a11193033527da5865968746a"
+        },
+        {
+            "type": "file",
+            "name": "images/cherry-ice.webp",
+            "size": 54750,
+            "hash": "f1e156805dfd79c652109a5ae56d37bd4a1d7af1b682d44c703594f8519af70e"
+        },
+        {
+            "type": "file",
+            "name": "images/cherry.jpg",
+            "size": 87486,
+            "hash": "4a5552549ba7989718f28d04fd115bdc34387adb7886f034ece73d55f44fbc0a"
+        },
+        {
+            "type": "file",
+            "name": "images/cherry.webp",
+            "size": 50088,
+            "hash": "8acd96faf67c254ef1f6851ffab01c99cb3d2082b231310ae92ebdc69b53d589"
+        },
+        {
+            "type": "file",
+            "name": "images/down-arrow-svgrepo-com.svg",
+            "size": 991,
+            "hash": "796843e9fc7fb8b3e8e2dd7e07104756dd75b29aa4ad309e5cbfecf910920d6d"
+        },
+        {
+            "type": "file",
+            "name": "images/grape-2.png",
+            "size": 228839,
+            "hash": "c57b2b669fb70f9142ab37d368d6d7b9ee33e9166ec2f7be076cacf3ff3083f0"
+        },
+        {
+            "type": "file",
+            "name": "images/grape 4 (1).webp",
+            "size": 27562,
+            "hash": "8766965d22f7559d9ee71a37592f821435201e82f624a7a52ff31252c7804903"
+        },
+        {
+            "type": "file",
+            "name": "images/grape 4 (1).png",
+            "size": 62242,
+            "hash": "c123edcc5a21956fa7fdae18e7717db6f11df8f21ae75271c0e7938672277f11"
+        },
+        {
+            "type": "file",
+            "name": "images/grape-2.webp",
+            "size": 75594,
+            "hash": "ae49958be58d0c04577621c308e6f13ce9d9151cd9832bdc0ab16c290f5fb835"
+        },
+        {
+            "type": "file",
+            "name": "images/grape.jpg",
+            "size": 86054,
+            "hash": "d79ea79c196ea975bb97ba5eb6fec5bddf0a0e105a27713125ebb1bbf6e13900"
+        },
+        {
+            "type": "file",
+            "name": "images/grape.webp",
+            "size": 47534,
+            "hash": "cde47dc0f3d2924df3883cb9b69ed776de566c07a5d0925bcabe5373c3ed8ec7"
+        },
+        {
+            "type": "file",
+            "name": "images/green-apple.jpg",
+            "size": 71967,
+            "hash": "18d224c0a2bd0583061e03dc41fab2bf0fe43969c64f3fe2d31a64fe58f614bb"
+        },
+        {
+            "type": "file",
+            "name": "images/green-apple.webp",
+            "size": 40086,
+            "hash": "ba9badb6fae502f9d0baf904a1a78a1528efbb17eb0cb5f7e86822f2c6338758"
+        },
+        {
+            "type": "file",
+            "name": "images/last-image-mobile.png",
+            "size": 929709,
+            "hash": "72bc0190c2af5cd6f6ea81b43b6338049edbaeb40eac7521e35738082d457d2b"
+        },
+        {
+            "type": "file",
+            "name": "images/last-image-mobile.webp",
+            "size": 213500,
+            "hash": "5887b30a0d8108b5e2d11caf272b601719a6cc85b93b394d57db9618f41deadc"
+        },
+        {
+            "type": "file",
+            "name": "images/last-image.png",
+            "size": 367857,
+            "hash": "bf842099e85503382ed9814e49c59bdbbdbc03c6dc9395519616552c225483e9"
+        },
+        {
+            "type": "file",
+            "name": "images/last-image.webp",
+            "size": 108192,
+            "hash": "53c148789034c0655a059dc3b66c6f5bee892d86c6dd6506102b04749b014bc5"
+        },
+        {
+            "type": "file",
+            "name": "images/lemon.jpg",
+            "size": 77971,
+            "hash": "784b5757d116ea2dca16e5df0345886b8b1d0dfbe3919d0ee028abd4c05d1296"
+        },
+        {
+            "type": "file",
+            "name": "images/lemon.webp",
+            "size": 45174,
+            "hash": "8456adac2e458ac7d8e75a9615cc7a55eb276e85c7c30c218c66b6b151cf7e5d"
+        },
+        {
+            "type": "file",
+            "name": "images/logo_rell.png",
+            "size": 1694,
+            "hash": "35c412a9a6e86b85b8a799ad2b2faf307b4c5bf356110dfd092999d68184f883"
+        },
+        {
+            "type": "file",
+            "name": "images/logo_rell.webp",
+            "size": 2250,
+            "hash": "cc80694d3992d4eba63670e649aada67c3a44e87493b6948e3e5a7e26ffd784a"
+        },
+        {
+            "type": "file",
+            "name": "images/main-image.png",
+            "size": 178093,
+            "hash": "1bbd8fe74620f7cc86b1f48f5a471cc0e31d5ed73b1e799a92ac5e6d2a1d587e"
+        },
+        {
+            "type": "file",
+            "name": "images/main-image.webp",
+            "size": 38336,
+            "hash": "d103b3f7fba62370d018358e1e4b5cdb2cf3647594210a3c468b935d84ccf18e"
+        },
+        {
+            "type": "file",
+            "name": "images/mango.png",
+            "size": 12754,
+            "hash": "bbe62d55cbe10faf5d96464bebecc538dd1a63994934b76c24b7ab5fdd92e71b"
+        },
+        {
+            "type": "file",
+            "name": "images/mango.webp",
+            "size": 3466,
+            "hash": "b121e2cd2efb2798c8523b8f97e2c2fd311112610cbe209455f63604c4ef004c"
+        },
+        {
+            "type": "file",
+            "name": "images/next-btn.png",
+            "size": 583,
+            "hash": "a691ebd200690ae1dbd92a9cad5cd735fe0a0eea01efc0b74d10c49a216fc54c"
+        },
+        {
+            "type": "file",
+            "name": "images/next-btn.webp",
+            "size": 928,
+            "hash": "c64ed0b48d58aefcbf82e2e347eb0d000c5e20118dd18c73be6f8276cd9bf64f"
+        },
+        {
+            "type": "file",
+            "name": "images/papaya.png",
+            "size": 292656,
+            "hash": "e83b47d96bddd3c0e2107abc0a10b5b914bff72281fb3b8309e8a243cb49c98d"
+        },
+        {
+            "type": "file",
+            "name": "images/papaya.webp",
+            "size": 70610,
+            "hash": "4113d6895fb4b3187a687163d0fa46757ce52383254e95c9dee7dde35e943932"
+        },
+        {
+            "type": "file",
+            "name": "images/passion-fruit-2.png",
+            "size": 55362,
+            "hash": "9ef5af30834a300cb21359b52116c07e1e19abac694ff9020d96389a4a5d610b"
+        },
+        {
+            "type": "file",
+            "name": "images/passion-fruit-2.webp",
+            "size": 18106,
+            "hash": "3860129155c42781f8b4c3920bbe4397da5fcfcdc76317a2615db58c5c52a112"
+        },
+        {
+            "type": "file",
+            "name": "images/passion-fruit.jpg",
+            "size": 92797,
+            "hash": "b4fef63ca992786f60d1931cf11ba3296b8ad700bc8586df4ef1188c1360348b"
+        },
+        {
+            "type": "file",
+            "name": "images/passion-fruit.webp",
+            "size": 52926,
+            "hash": "da26a7031939fe1f21d63fbbba94bb4e9c4795f619a34bf936cbc9a966cc44ed"
+        },
+        {
+            "type": "file",
+            "name": "images/pineapple-1-block.png",
+            "size": 290898,
+            "hash": "1f5ecffdbe1f1c74f29f73024bd422f276d102bf5420f1bffd6041f58e8c2546"
+        },
+        {
+            "type": "file",
+            "name": "images/pineapple-1-block.webp",
+            "size": 98604,
+            "hash": "9f76d92758be038d49a71e3ca41994ac9a8e7ba0b310c8a91821de173a8f822a"
+        },
+        {
+            "type": "file",
+            "name": "images/pineapple.jpg",
+            "size": 89883,
+            "hash": "aa92f8f7550b4b8d44b728ced7c5803d5a131ab22c4cce09946815c3b49811ff"
+        },
+        {
+            "type": "file",
+            "name": "images/pineapple.webp",
+            "size": 50296,
+            "hash": "f73b9c12a2621cba0347b4ad054fcb37248ac85dae5b1a9cbd4df7938cc1efdd"
+        },
+        {
+            "type": "file",
+            "name": "images/prev-btn.png",
+            "size": 536,
+            "hash": "19c9b51abb57be16ff2f9f6fa557e497316d959ead49df67da160124184ab971"
+        },
+        {
+            "type": "file",
+            "name": "images/prev-btn.webp",
+            "size": 872,
+            "hash": "399d9065f01f7bc9fcd0bda72dce2b1727d8e71597df91c788801c0cfdf835a1"
+        },
+        {
+            "type": "file",
+            "name": "images/rell-group.png",
+            "size": 138910,
+            "hash": "38d7070b5b207b971e86fb72a9960fe191e80d3f7fe20d629ef73ac9586e965d"
+        },
+        {
+            "type": "file",
+            "name": "images/rell-group.webp",
+            "size": 42020,
+            "hash": "65e31ba089eff34568d0fc421dd02360b83179367525605f7624bb1cb295bf1f"
+        },
+        {
+            "type": "file",
+            "name": "images/rell_violent_1.png",
+            "size": 59127,
+            "hash": "1e3ae07dd560f9495891e3094f4fb4323d6cee466afa94ba847b0f4ecae928ca"
+        },
+        {
+            "type": "file",
+            "name": "images/rell_violent_1.webp",
+            "size": 19284,
+            "hash": "4ab8ec6ef5f6af1a08760e32c3c05352c01b3c8c5d09f13ce2cb19f994d393eb"
+        },
+        {
+            "type": "file",
+            "name": "images/rell_violent_2.png",
+            "size": 59109,
+            "hash": "1c592a15ea56d189a5eb94d35d51a505158e11072169bc94c440333798070803"
+        },
+        {
+            "type": "file",
+            "name": "images/rell_violent_2.webp",
+            "size": 21518,
+            "hash": "0ea9af98502dfb4855ff6ac3da38c1e4cef16e036b242d66706166d6bd262e15"
+        },
+        {
+            "type": "file",
+            "name": "images/smoke_2.png",
+            "size": 180366,
+            "hash": "491918c0bc71fd027140ddbd6cdfbf85a36952af18b4511fc8c1c0f7f3ec0830"
+        },
+        {
+            "type": "file",
+            "name": "images/smoke_2.webp",
+            "size": 199212,
+            "hash": "e0ccb32c9251627945925b78d3b2b463814539b2f7c9c405f099f42b4d9bd05e"
+        },
+        {
+            "type": "file",
+            "name": "images/strawberry-1.webp",
+            "size": 127668,
+            "hash": "244e44987711f54f5441b5dd2c7079d7b2b7f91702d15e39eecfa3709a3b7c10"
+        },
+        {
+            "type": "file",
+            "name": "images/strawberry-1.png",
+            "size": 489600,
+            "hash": "f7b0d132897e3084e7438ff3642af06f656990fc27b6739bd7ec17003f96b632"
+        },
+        {
+            "type": "file",
+            "name": "images/strawberry-2.png",
+            "size": 69514,
+            "hash": "3ba08742d50db7339624b36434bad5da6b8b45d08352035e9be01265332a993f"
+        },
+        {
+            "type": "file",
+            "name": "images/strawberry-2.webp",
+            "size": 30364,
+            "hash": "2f1645cd8352ddd61f25653809d4ffb97ef9a9d0cedfe9ca41fcb4a195929844"
+        },
+        {
+            "type": "file",
+            "name": "images/strawberry.jpg",
+            "size": 83288,
+            "hash": "fdf4faa11063c0d21bde6250518232ce3405e332223015a27b7f83684aad02b3"
+        },
+        {
+            "type": "file",
+            "name": "images/strawberry.webp",
+            "size": 47922,
+            "hash": "14b06bf001ab9c0cc2e0bc5f9eb1a08cd317df7bfb1ada0a38ed336d6c7af894"
+        },
+        {
+            "type": "file",
+            "name": "images/watermelon.jpg",
+            "size": 81665,
+            "hash": "b8fe8d22f310efcea66d2a8993ee7494f8e0102598cc06ea111f193b826e460a"
+        },
+        {
+            "type": "file",
+            "name": "images/watermelon.webp",
+            "size": 46312,
+            "hash": "f24961045863c965607633898eb775f76f139b443562d5296812615beaaa62dd"
+        }
+    ]
+}

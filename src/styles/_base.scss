@@ -447,8 +447,16 @@ $path-length: 157px;
 }
 
 
+.orange__span {
+    background-color: #f05b01;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+
+}
+
 .span__4 p {
     font-family: RELL !important;
+    // color: #f05b01;
     font-weight: 300 !important;
     opacity: 0;
     font-size: 2.2vw;
@@ -1331,7 +1339,6 @@ $path-length: 157px;
     .span__4 p {
         margin-top: 10px !important;
         font-size: 7.2vw !important;
-
     }
 
     .span__4 {
