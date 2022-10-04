@@ -10,22 +10,69 @@ $(document).ready(function() {
           $(this).append($("<span /> ").addClass("myclass_" + index).addClass("anim-h").text(words[index]));
           }
         })
-        // var mouseCursor = document.querySelector('.cursor')
+    // var mouseCursor = document.querySelector('.cursor')
         var spans = document.querySelectorAll('.words-wrapped span')
         
-        console.log(spans)
-        
-        const parent = $('.parent');
+        console.log(spans);
 
-        // import LocomotiveScroll from 'locomotive-scroll';
 
         // const lscroll = new LocomotiveScroll({
-        //   el: parent, 
+        //   el: document.querySelector('#js-scroll'),
+        //   // smooth: true,
+        //   // lerp: 0.06,
         //   smooth: true,
-        //   lerp: 0.06
+        //   getSpeed: true,
+        //   getDirection: true
         // })
 
-        // export {lscroll}
+        // function wheelDistance(e) {
+        //   if (!e) {
+        //       e = window.event;
+        //   }
+        //     let w = e.wheelDelta,
+        //       d = e.detail;
+        //     if (d) {
+        //       return -d / 3; // Firefox;
+        //     }
+          
+        //     // IE, Safari, Chrome & other browsers
+        //     return w / 120;
+        //   }
+          
+        //   // Adding event listeners for some element in DOM
+        //   body.addEventListener("mousewheel", wheelDistance);
+        //   body.addEventListener("DOMMouseScroll", wheelDistance);
+
+
+
+
+        // if (body.addEventListener) {
+        //   if ('onwheel' in document) {
+        //     // IE9+, FF17+, Ch31+
+        //     body.addEventListener("wheel", onWheel);
+        //   } else if ('onmousewheel' in document) {
+        //     // устаревший вариант события
+        //     body.addEventListener("mousewheel", onWheel);
+        //   } else {
+        //     // Firefox < 17
+        //     body.addEventListener("MozMousePixelScroll", onWheel);
+        //   }
+        // } else { // IE8-
+        //   body.attachEvent("onmousewheel", onWheel);
+        // }
+        
+        // function onWheel(e) {
+        //   e = e || window.event;
+        
+        //   // wheelDelta не даёт возможность узнать количество пикселей
+        //   var delta = e.deltaY || e.detail || e.wheelDelta;
+        
+        
+        //   e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+        // }
+ 
+        
+
         
         // function cursor (e) {
         //   mouseCursor.style.top = e.pageY + 'px';
@@ -50,7 +97,7 @@ $(document).ready(function() {
         $(window).on("mousemove",function(e){
           x = e.pageX;
           y = e.pageY;
-          console.log(x,y);
+          // console.log(x,y);
           $c.css("top", y);
           $c.css("left", x);
         });
