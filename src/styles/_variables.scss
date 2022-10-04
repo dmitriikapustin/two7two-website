@@ -7,7 +7,9 @@ body, html {
     font-family: 'Montserrat', sans-serif !important;
     margin: 0;
     padding: 0;
-    cursor: none !important;
+    //cursor: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
     // overscroll-behavior: none !important;
     // scrollbar-width: none !important;
 }

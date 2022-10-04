@@ -19,13 +19,13 @@ $(document).ready(function() {
 
         // import LocomotiveScroll from 'locomotive-scroll';
 
-        const lscroll = new LocomotiveScroll({
-          el: parent, 
-          smooth: true,
-          lerp: 0.06
-        })
+        // const lscroll = new LocomotiveScroll({
+        //   el: parent, 
+        //   smooth: true,
+        //   lerp: 0.06
+        // })
 
-        export {lscroll}
+        // export {lscroll}
         
         // function cursor (e) {
         //   mouseCursor.style.top = e.pageY + 'px';
