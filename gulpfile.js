@@ -12,7 +12,7 @@ const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 const babel = require('gulp-babel');
 const pngquant = require('imagemin-pngquant');
-// const jsmin = require('gulp-jsmin');
+const jsmin = require('gulp-jsmin');
 
 
 function html() {
@@ -88,7 +88,15 @@ function html() {
 
   function scripts() {
     return src('src/scripts/**.js')
+      .pipe(concat('scripts.js'))
+      .pipe(jsmin())
+      .pipe(rename({suffix: '.min'}))
       .pipe(dest('dist'))
+  }
+
+  function libs() {
+    return src('src/libs/**.js')
+      .pipe(dest('dist/libs'))
   }
 
   function php() {
@@ -109,6 +117,6 @@ function html() {
     watch('src/videos', series(videos)).on('change', sync.reload)
   }
   
-  exports.build = series(clear, scss, htmlprod, img, imgwebp, favicons, videos, php, scripts, fonts)
-  exports.serve = series(clear, scss, html, img, imgwebp, favicons, videos, php, fonts, scripts, serve)
+  exports.build = series(clear, scss, htmlprod, img, imgwebp, favicons, videos, php, scripts, libs, fonts)
+  exports.serve = series(clear, scss, html, img, imgwebp, favicons, videos, php, fonts, scripts, libs, serve)
   exports.clear = clear
