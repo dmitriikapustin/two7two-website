@@ -22,24 +22,7 @@ jQuery(document).ready(function () {
 
 
     /////////////////// FLOATING TEXT num 2 ///////////////////////
-    var controller_anim_h = new ScrollMagic.Controller();
 
-
-    $('.anim-h').each(function(index) {
-        var tl = new TimelineMax();
-        tl.to(this, 100000 , {y: 0});
-
-        var scene = new ScrollMagic.Scene({
-            offset: 1000 + 30 * index,
-            triggerElement: ".block__1",
-            triggerHook: 0.5,
-            duration: 100,
-            reverse: true
-        })
-            .setTween(tl)
-            // .addIndicators()
-            .addTo(controller_anim_h);
-    });
 
     /////////////////// PARALLAX ///////////////////////
 
