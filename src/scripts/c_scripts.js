@@ -15,6 +15,8 @@ $(document).ready(function () {
   console.log(spans);
 
 
+  // locomotive scroll tests ////////////////////////////////////////////////////////////////
+
   (function () {
     var scroll = new LocomotiveScroll({
       el: document.querySelector('#js-scroll'),
@@ -31,52 +33,6 @@ $(document).ready(function () {
   //   getSpeed: true,
   //   getDirection: true
   // })
-
-  // function wheelDistance(e) {
-  //   if (!e) {
-  //       e = window.event;
-  //   }
-  //     let w = e.wheelDelta,
-  //       d = e.detail;
-  //     if (d) {
-  //       return -d / 3; // Firefox;
-  //     }
-
-  //     // IE, Safari, Chrome & other browsers
-  //     return w / 120;
-  //   }
-
-  //   // Adding event listeners for some element in DOM
-  //   body.addEventListener("mousewheel", wheelDistance);
-  //   body.addEventListener("DOMMouseScroll", wheelDistance);
-
-
-
-
-  // if (body.addEventListener) {
-  //   if ('onwheel' in document) {
-  //     // IE9+, FF17+, Ch31+
-  //     body.addEventListener("wheel", onWheel);
-  //   } else if ('onmousewheel' in document) {
-  //     // устаревший вариант события
-  //     body.addEventListener("mousewheel", onWheel);
-  //   } else {
-  //     // Firefox < 17
-  //     body.addEventListener("MozMousePixelScroll", onWheel);
-  //   }
-  // } else { // IE8-
-  //   body.attachEvent("onmousewheel", onWheel);
-  // }
-
-  // function onWheel(e) {
-  //   e = e || window.event;
-
-  //   // wheelDelta не даёт возможность узнать количество пикселей
-  //   var delta = e.deltaY || e.detail || e.wheelDelta;
-
-
-  //   e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-  // }
 
 
 
