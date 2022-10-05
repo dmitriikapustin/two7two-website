@@ -1,6 +1,7 @@
 $(document).ready(function () {
   // window.addEventListener('mousemove', cursor);
 
+
   $('.words-wrapped').each(function () {
     var words = $(this).text().split(/\s+/);
     var total = words.length;
@@ -33,7 +34,6 @@ $(document).ready(function () {
   //   getSpeed: true,
   //   getDirection: true
   // })
-
 
 
 

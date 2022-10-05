@@ -11,20 +11,6 @@
         top: 150vh;
         position: absolute;
         color: white;
-        .words-wrapped {
-            position: relative;
-            margin: 0;
-            // opacity: 0 !important;
-            overflow: hidden !important;
-            height: 12vh;
-                span {
-                    display: inline-block;
-                    font-size: 5vw;
-                }
-                span:not(:last-child) {
-                    margin-right: 1.5vw;
-                }
-        }
     }
     .block__1__shapes {
         position: relative;
@@ -145,9 +131,7 @@
 
 
 
-.anim-h {
-    transform: translate3d(0, 1.1em, 0);
-}
+
 
 
 .block_3 {

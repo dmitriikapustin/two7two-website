@@ -1,0 +1,33 @@
+// Animated headings settings
+
+.words-wrapped {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: fit-content;
+
+    span {
+        display: inline-block;
+        font-size: 5vw;
+    }
+
+    span:not(:last-child) {
+        margin-right: 1.5vw;
+    }
+}
+
+.anim-heading-span {
+    transform: translate3d(0, 1.1em, 0);
+}
+
+.trigger {
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+}
+
+.text_white {
+    color: #fff !important;
+}
