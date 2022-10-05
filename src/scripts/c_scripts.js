@@ -2,40 +2,6 @@ $(document).ready(function () {
   // window.addEventListener('mousemove', cursor);
 
 
-  $('.words-wrapped').each(function () {
-    var words = $(this).text().split(/\s+/);
-    var total = words.length;
-    $(this).empty();
-    for (index = 0; index < total; index++) {
-      $(this).append($("<span /> ").addClass("myclass_" + index).addClass("anim-h").text(words[index]));
-    }
-  })
-  // var mouseCursor = document.querySelector('.cursor')
-  var spans = document.querySelectorAll('.words-wrapped span')
-
-  console.log(spans);
-
-
-  // locomotive scroll tests ////////////////////////////////////////////////////////////////
-
-  (function () {
-    var scroll = new LocomotiveScroll({
-      el: document.querySelector('#js-scroll'),
-      lerp: 0.06,
-      smooth: true,
-    });
-  })();
-
-  // const lscroll = new LocomotiveScroll({
-  //   el: document.querySelector('#js-scroll'),
-  //   smooth: true,
-  //   lerp: 0.06,
-  //   smooth: true,
-  //   getSpeed: true,
-  //   getDirection: true
-  // })
-
-
 
   // function cursor (e) {
   //   mouseCursor.style.top = e.pageY + 'px';

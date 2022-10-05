@@ -9,6 +9,7 @@ $(document).ready(function () {
     $('.words-wrapped').each(function (heading_index) {
         var words = $(this).text().split(/\s+/);
         var total = words.length;
+        
 
         // Set class with heading index for everyone
         $(this).addClass('heading-index-' + heading_index)
