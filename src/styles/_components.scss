@@ -1,5 +1,4 @@
 // Animated headings settings
-
 .words-wrapped {
     position: relative;
     margin: 0;
@@ -9,17 +8,15 @@
     span {
         display: inline-block;
         font-size: 5vw;
-    }
 
-    span:not(:last-child) {
-        margin-right: 1.5vw;
+        &:not(:last-child) {
+            margin-right: 1.5vw;
+        }
     }
+    .anim-heading-span { transform: translate3d(0, 1.1em, 0); }
 }
 
-.anim-heading-span {
-    transform: translate3d(0, 1.1em, 0);
-}
-
+// Universal trigger style for every trigger
 .trigger {
     display: block;
     position: relative;
@@ -28,6 +25,23 @@
     opacity: 0;
 }
 
-.text_white {
-    color: #fff !important;
+// Text color controls
+.text_white { color: #fff !important; }
+.text_black { color: #000 !important; }
+
+// Text underlined
+.underline_text {
+    position: relative;
+    width: fit-content;
+    overflow: visible;
+    &:after {
+        margin: 0;
+        left: 0;
+        position: absolute;
+        content: '';
+        height: 1px;
+        background: #000;
+        width: 100%;
+        display: block;
+    }
 }

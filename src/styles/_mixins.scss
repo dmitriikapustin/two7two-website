@@ -2,7 +2,6 @@
     transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
 }
 
-
 @mixin text-transition {
     transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
 }
@@ -39,13 +38,4 @@
     height: 400px;
     background: white;
     border-radius: 0;
-}
-
-@mixin text-underline {
-    margin: 0 auto;
-    top: 100%;
-    position: absolute;
-    content: '';
-    height: 2px;
-    background: black;
 }

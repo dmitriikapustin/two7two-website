@@ -43,7 +43,6 @@ $(document).ready(function () {
                 reverse: true
             })
             .setTween(tl)
-            .addIndicators()
             .addTo(controller_anim_h);
         });
     }
