@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    // #TASK Track old browsers or slow connection
+
     var images = [
         "./images/frame-1.png",
         "./images/frame-2.png",

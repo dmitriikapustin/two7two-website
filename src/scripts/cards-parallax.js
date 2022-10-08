@@ -1,18 +1,8 @@
 $(document).ready(function () {
 
-    // #TASK Remake like circles in one timeline
-
     // Set ScrollMagic controller and duration
     var controller_cards_anim = new ScrollMagic.Controller();
     var cards_anim_duration = 1600;
-
-    // $('.cards').each(function (card_index) {
-
-    //     // Set class with card index for every item
-    //     $(this).addClass('card-index' + card_index)
-
-
-    // })
 
      // Set timeline with zero delay after parameters
      var cards_animation_timeline = new TimelineMax()

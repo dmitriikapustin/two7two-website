@@ -1,33 +1,3 @@
-// $(function() {
-// 	var hScroll = $(".h-scroll"),
-// 		hScrollContain = $(".h-scroll__container"),
-// 		scrollPercent = 200;
-
-// 	function checkWidth() {
-// 		var windowHeight = $(window).height(),
-// 			calc = scrollPercent * 100 + windowHeight;
-// 		hScrollContain.css({
-// 			height: calc
-// 		});
-// 	}
-// 	checkWidth();
-// 	$(window).resize(checkWidth);
-
-// 	$(window).scroll(function() {
-// 		var scroll = $(this).scrollTop();
-// 		hScroll.css({
-// 			transform: "translateX(-" + scroll / scrollPercent + "%)"
-// 		});
-// 	});
-
-// 	/// SCROLL MAGIC ///
-// 		var controller = new ScrollMagic.Controller({
-// 			vertical: false
-// 		});
-
-//     });
-
-
 $(document).ready(function () {
 
     // Set ScrollMagic controller 
