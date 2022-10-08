@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+  // #TASK Create new one 
+
   var $c = $("[data-custom-cursor]");
   var $h = $(".words-wrapped");
   // var $i = $("img");
