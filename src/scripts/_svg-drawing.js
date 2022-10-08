@@ -22,6 +22,6 @@ $(document).ready(function () {
     // build scene
     var scene = new ScrollMagic.Scene({triggerElement: ".svg-drawing", duration: 200})
                     .setTween(tween)
-                    // .addIndicators() // add indicators (requires plugin)
+                    // .addIndicators()
                     .addTo(controller);
 })                    
