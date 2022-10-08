@@ -4,7 +4,7 @@ $(document).ready(function () {
     var controller_heading_anim = new ScrollMagic.Controller({
         container: "body"
     })
-    var heaiding_anim_duration = 4000;
+    var heaiding_anim_duration = 2000;
 
     // Set timeline with zero delay after parameters
     var heaiding_animation_timeline = new TimelineMax()
@@ -19,9 +19,9 @@ $(document).ready(function () {
             reverse: true
         })
         .offset($(window).height() * 0.5 + 400)
-        .setPin(".animated_heading_item")
+        // .setPin(".animated_heading_item")
         .setTween(heaiding_animation_timeline)
-        .setClassToggle('.animated_heading', 'activePin')
+        // .setClassToggle('.animated_heading', 'activePin')
         .addIndicators()
         .addTo(controller_heading_anim)
 

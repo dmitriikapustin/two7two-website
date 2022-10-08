@@ -377,9 +377,12 @@
     align-items: center; 
     background: black;
     // margin: 0 auto !important;
+    position: relative;
     .animated_heading {
-        text-transform: uppercase;
+        margin-bottom: 400px;
         margin-top: 400px;
+        text-transform: uppercase;
+
         // transform-origin: 0 0;
         h1 {
             text-align: center;
@@ -387,8 +390,7 @@
         }
     }
     .animated_heading.activePin {
-        margin-bottom: 400px;
-        position: relative;
+
 
     }
 }
