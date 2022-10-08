@@ -16,7 +16,7 @@
 
 
 @mixin image-transition_1 {
-    transition: all 0.75s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
 }
 
 @mixin text-transition_1 {
