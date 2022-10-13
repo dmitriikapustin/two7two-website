@@ -2,7 +2,7 @@ $color_1: #ffffff;
 $color_2: #041022;
 $color_3: #FADD4B;
 
-
+$font-name: FunAndFresh;
 
 
 * {
@@ -51,26 +51,6 @@ p {
   font-family: PROXIMANOVA-REGULAR;
   font-weight: 500;
 }
-
-// .cursor {
-//     width: 1rem;
-//     height: 1rem;
-//     background-color: #fff;
-//     // border: 2px solid white;
-//     border-radius: 50%;
-//     position: absolute;
-//     z-index: 1 !important;
-//     transform: translate(-50%, -50%);
-//     pointer-events: none;
-//     transition: .2s cubic-bezier(.55,.055,.675,.19);
-//     transition-property: opacity, background, transform;
-//     transform-origin: 100% 100%;
-// }
-
-// .span-grow {
-//     transform: scale(2);
-//     background: white;
-// }
 
 body:hover .custom-cursor {
     opacity: 1;
