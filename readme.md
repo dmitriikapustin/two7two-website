@@ -1,3 +1,3 @@
-# KDV lab first version website
+# FUN AND FRESH team webiste
 
-Сука блять сука
+First version of fun and fresh website
