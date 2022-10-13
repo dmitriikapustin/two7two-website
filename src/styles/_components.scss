@@ -8,14 +8,57 @@
     span {
         display: inline-block;
         font-size: 5vw;
-
+        font-family: PROXIMANOVA-BOLD;
+        font-weight: 700;
+        text-transform: uppercase;
         &:not(:last-child) {
             margin-right: 1.5vw;
         }
     }
-    .anim-heading-span { transform: translate3d(0, 1.1em, 0); }
+    .anim-heading-span { transform: translate3d(0, 1.2em, 0); }
 }
 
+.animated-paragraph_item {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: fit-content;
+    .ov-hidden {
+        overflow: hidden;
+        display: block;
+        span {
+            display: inline-block;
+            font-size: 1.5vw;
+            color: #fff;
+            transform: translate3d(0, 1.3em, 0);
+        }
+    }    
+}
+.section-horizontal-scroll {
+    display: flex;  
+    flex-direction: row; 
+ 
+    // overflow: auto;
+    .horizontal-scroll-paragraph {
+        position: relative;
+        margin: 0;
+
+        height: fit-content;
+        .ov-hidden {
+            overflow: hidden;
+            display: block;
+            span {
+                display: inline-block;
+                font-size: 1.5vw;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }  
+    }
+    .horizontal-scroll-image {
+        width: 15%;
+    }
+}
 // Universal trigger style for every trigger
 .trigger {
     display: block;
@@ -26,8 +69,8 @@
 }
 
 // Text color controls
-.text_white { color: #fff !important; }
-.text_black { color: #000 !important; }
+.text_white { color: $color_1 !important; }
+.text_blue { color: $color_2 !important; }
 
 // Text underlined
 .underline_text {
@@ -45,3 +88,82 @@
         display: block;
     }
 }
+
+.preloader {
+    /*фиксированное позиционирование*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    flex-direction: column;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: $color_2 !important;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+    transition: all .5s ease-out; 
+    .preloader-container-logo {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      margin-bottom: 50px;
+      transform: translate3d(0,0,0) rotate(0deg) scale(1);
+      transition: all ease-in 0.3s;
+      svg {
+          transition: all ease-in 0.5s;
+      }
+      .logo-part-F-1 {
+        position: absolute;
+        left: -43.5%;
+        top: 2px;
+        z-index: 3 !important;
+      }
+      .logo-part-amp {
+        transform: translate3d(-50%,0,0);
+        z-index: 2 !important;
+        overflow: hidden;
+      }
+      .logo-part-F-2 {
+        position: absolute;
+        left: -44%;
+        top: 2px;
+        z-index: 1 !important;
+      }
+    }
+    .preloader-container-logo.loaded {
+        .logo-part-F-1 { left: -43.5%; }
+        .logo-part-amp { transform: translate3d(0,0,0); }
+        .logo-part-F-2 { left: 72.5%; }
+      }
+    .preloader-container-logo.first {
+        transform: translate3d(-15%,25%,0) rotate(-13deg) scale(0);
+      }
+    .preloader-container-counter {
+        position: relative;
+        .percentage {
+            position: absolute;
+            left: 21%;
+            top: 36%;
+            font-family: KLYAKSON;
+            color: $color_3;
+            width: 60%;
+            text-align: center;
+        }
+    }
+    .preloader-counter {
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.5s;
+        stroke-dashoffset: 192.45150756835938px;
+        stroke-dasharray: 192.45150756835938px;
+    }
+  }
+
+.preloader.take_away {
+    opacity: 0;
+    transform: scale(1.3);
+}
+
+.hidden-locked { display: none !important; z-index: -1 !important; opacity: 0 !important; pointer-events: none !important;}

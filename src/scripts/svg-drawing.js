@@ -21,8 +21,8 @@ $(document).ready(function () {
         .to($dot, 0.1, {strokeDashoffset: 0, ease:Linear.easeNone}, 0.77)  // draw dot for 0.1
 
     // build scene
-    var scene = new ScrollMagic.Scene({triggerElement: ".section-horizontal-scroll", duration: 200})
+    var scene = new ScrollMagic.Scene({triggerElement: ".svg-drawing", duration: 200})
         .setTween(tween)
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller);
 })                    

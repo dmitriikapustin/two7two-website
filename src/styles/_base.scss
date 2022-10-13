@@ -5,7 +5,7 @@
 .block__1 {
     width: 100vw;
     height: 300vh;
-    background: black;
+    background: $color_2;
     position: relative;
     .block__1__heading {
         top: 150vh;
@@ -47,9 +47,73 @@
             z-index: 3;
         }
     }
+    .animated-paragraph {
+        position: absolute;
+        top: 200vh;
+    }
 }
 
 .block_2 {
+    width: 100%;
+    height: 100vh;
+    background: $color_2;
+    padding-bottom: 200px;
+    .mySwiper {
+        //z-index: 1000 !important;
+        // margin-bottom: 500px;
+        // position: relative;
+        width: 100%;
+        // display:flex;
+        // align-items:center;
+        // justify-content:center;
+        height: 100%;
+        transition: .3s all ease;
+        .swiper-wrapper {
+        //  transform: translate3d(0, 0, 0) !important;
+        //  width: 70% !important;
+        //  height: 100% !important;
+        // display: flex;
+        // justify-content: center;
+
+         .swiper-slide { 
+            // display:flex;
+            // align-items:center;
+            // justify-content:center;
+            // //  margin: 0 !important;
+            // text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+            // flex-direction: row;
+            width: 25% !important;
+            height: 100% !important;
+            transition: .3s all ease;
+                .swiper-slide picture {
+                    // width: 280px !important;
+                    // height: 400px !important;
+                    .swiper-slide img {
+                        // display: block;
+                        // width: 10%;
+                        // height: 100%;
+                        background-size: contain;
+                        // object-fit: cover; 
+                    }
+                }
+            }
+          .slide-next {
+            transition: .3s all ease;
+            transform: rotate(15deg) !important;
+          }    
+          
+        }
+        // .swiper-slide-prev { transform: rotate(-13deg); }
+        // .swiper-slide-next { transform: rotate(13deg); }
+    }
+    .swiper-slide-prev {
+        transform: translate3d(0,20%,0);
+      }  
     .sections {
         display: flex;
         flex-flow: column;
@@ -235,6 +299,7 @@
 .block_3 {
     @include block_props;
     z-index: 5 !important;
+    background: $color_2;
     .pseudo-3d-trigger {
         width: 100%;
         display: flex;
@@ -281,6 +346,7 @@
 
 .block_4 {
     height: 1000px;
+    background: $color_2;
     .cards {
         display: flex;
         justify-content: center;
@@ -316,6 +382,7 @@
 
 .block_5 {
     display: flex;
+    background: $color_2;
     width: 100%;
     height: 200vh;
     // overflow: hidden;
@@ -345,28 +412,34 @@
 }
 .block_6 {
     display: flex;  
-    flex-direction: column; 
+    // flex-direction: row; 
     width: 100%;
     height: 100vh;
     align-items: center;
     white-space: nowrap;
+    background: #fff;
     .section-horizontal-scroll {
-        background: #fff;
-        height: fit-content;
-        width: 300% !important; 
+        // height: fit-content;
+        width: 200% !important; 
         // text-transform: uppercase;
         // word-break: break-word;
         position: relative;
-        margin-bottom: 100px;
         p {
             font-size: 4vw;
             margin-top: 20px;
             margin-bottom: 20px;
       }
     }
-    .svg-drawing {
-        color: white;
-    }
+}
+
+.block_6_2 {
+    display: flex;  
+    // flex-direction: column; 
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: $color_2;
 }
 
 .block_7 {
@@ -375,7 +448,7 @@
     justify-content: center !important;
     z-index: 2 !important;
     align-items: center; 
-    background: black;
+    background: $color_2;
     // margin: 0 auto !important;
     position: relative;
     .animated_heading {
@@ -407,10 +480,12 @@
     align-items: center; 
     background: white;
     .footer_heading {
-        color: black;
+        color: $color_2;
         text-transform: uppercase;
         h1 {
             font-size: 25vw;
+            font-family: PROXIMANOVA-BOLD !important;
+            font-weight: 700;
         }
     }
 }

@@ -1,4 +1,7 @@
 $color_1: #ffffff;
+$color_2: #041022;
+$color_3: #FADD4B;
+
 
 
 
@@ -7,7 +10,7 @@ $color_1: #ffffff;
 }
 
 body, html {
-    background: black;
+    background: $color_2;
     font-family: 'Montserrat', sans-serif !important;
     margin: 0;
     padding: 0;
@@ -18,6 +21,13 @@ body, html {
     // overscroll-behavior: none !important;
     // scrollbar-width: none !important;
 }
+
+
+
+::selection {
+  background: rgba(250, 221, 75, 0.5)
+}
+
 
 picture {
     height: 100%;
@@ -35,6 +45,11 @@ section {
     display: block;
     overflow: hidden;
     width: 100%;
+}
+
+p {
+  font-family: PROXIMANOVA-REGULAR;
+  font-weight: 500;
 }
 
 // .cursor {
@@ -126,4 +141,6 @@ body:hover .custom-cursor {
 .anim-h {
     z-index: 3 !important;
 }
+
+
 
