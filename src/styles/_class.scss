@@ -1,5 +1,5 @@
 // Container settings
-.container {  }
+.container { max-width: calc(100vw - 200px) !important; }
 .container-100 { width: 100% !important; }
 
 // Text color controls
@@ -7,6 +7,9 @@
 .text-color-2 { color: $color_2 !important; }
 .text-color-3 { color: $color_3 !important; }
 .text-color-4 { color: $color_4 !important; }
+.text-color-5 { color: $color_5 !important; }
+.text-color-6 { color: $color_6 !important; }
+.text-color-7 { color: $color_7 !important; }
 
 // Text weight controls
 .w-400 { font-weight: 400 !important; }
