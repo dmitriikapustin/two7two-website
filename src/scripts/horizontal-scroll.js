@@ -18,7 +18,7 @@ $(document).ready(function () {
             duration: 1000
         })
         .offset($(window).height() / 2)
-        .addIndicators()
+        //.addIndicators()
         .setPin(".block_6")
         .addTo(controller_h_scroll);
 
@@ -31,6 +31,6 @@ $(document).ready(function () {
         .setTween(".section-horizontal-scroll", {
             x: -1000
         })
-        .addIndicators()
+        //.addIndicators()
         .addTo(controller_h_scroll);
 })

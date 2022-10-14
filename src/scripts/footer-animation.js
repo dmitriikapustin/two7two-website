@@ -4,8 +4,7 @@ $(document).ready(function () {
     var controller_footer_anim = new ScrollMagic.Controller({
         container: "body"
     })
-    // var heaiding_anim_duration = 1000;
-    var footer = document.getElementById('footer')
+    var footer = document.getElementById("footer");
 
     var scene = new ScrollMagic.Scene({
             triggerElement: footer,
@@ -14,7 +13,7 @@ $(document).ready(function () {
         })
         .offset(0)
         .setPin(footer)
-        .addIndicators()
+        .addIndicators({name: "pin scene", colorEnd: "#FFFFFF"})
         .addTo(controller_footer_anim) 
         
 })
