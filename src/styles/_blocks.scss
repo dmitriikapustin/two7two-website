@@ -459,10 +459,13 @@
 
 .footer {
     height: 100vh;
+    // margin-top: 100vh;
     top: -100vh;
-    z-index: 0 !important;
+    z-index: 9 !important;
     background: $color-1;
-    transform: translate3d(0,-100vh,0);
+    top: 0;
+    left: 0;
+    display: block;
     .footer_heading {
         color: $color-2;
         h1 {

@@ -11,7 +11,7 @@ $(document).ready(function () {
             triggerHook: 1,
             reverse: true
         })
-        .offset(0)
+        .offset( 0 )
         .setPin(footer)
         .addIndicators({name: "pin scene", colorEnd: "#FFFFFF"})
         .addTo(controller_footer_anim) 
