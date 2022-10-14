@@ -12,7 +12,7 @@ $(document).ready(function () {
         // .addIndicators()
         .addTo(controller_heading_anim);
 
-    var scene = new ScrollMagic.Scene({ triggerElement: '#big-text', duration: 700, reverse: true })
+    var scene = new ScrollMagic.Scene({ triggerElement: '#big-text', duration: 1000, reverse: true })
         .offset($(window).height() * 1 + 650)
         .setPin( '#big-text' )
         // .addIndicators()
