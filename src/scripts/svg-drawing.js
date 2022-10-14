@@ -1,6 +1,6 @@
 $(document).ready(function () {
     function pathPrepare ($el) {
-        var lineLength = $el[0].getTotalLength();
+        var lineLength = Math.round($el[0].getTotalLength());
         $el.css("stroke-dasharray", lineLength - 0.3 );
         $el.css("stroke-dashoffset", lineLength );
     }

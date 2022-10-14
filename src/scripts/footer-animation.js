@@ -4,16 +4,14 @@ $(document).ready(function () {
     var controller_footer_anim = new ScrollMagic.Controller({
         container: "body"
     })
-    var footer = document.getElementById("footer");
-    var prev_block = document.getElementById("big-text");
 
     var scene = new ScrollMagic.Scene({
-            triggerElement: footer,
+            triggerElement: "#footer",
             triggerHook: 1,
             reverse: true
         })
-        .offset($(window).height() / 2)
-        .setPin(footer)
+        .offset($(window).height())
+        .setPin("#footer > .container-100")
         .addIndicators({name: "pin scene", colorEnd: "#FFFFFF"})
         .addTo(controller_footer_anim) 
         
