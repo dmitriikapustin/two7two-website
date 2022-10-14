@@ -1,7 +1,23 @@
+a, p, h1, h2, h3, body, input, button, span, div, ul, li {
+    font-family: $font-name;
+}
 
+a {  }
 
+p {  }
 
-// Text color controls
-.text_white { color: $color_1 !important; }
-.text_blue { color: $color_2 !important; }
+h1 { text-transform: uppercase; font-weight: 700; 
+ }
+
+h2 {  }
+
+h3 {  }
+
+ul, li {  }
+
+span {  }
+
+input {  }
+
+button {  }
 

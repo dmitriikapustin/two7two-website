@@ -8,7 +8,7 @@
     span {
         display: inline-block;
         font-size: 5vw;
-        font-family: PROXIMANOVA-BOLD;
+        font-family: $font-name;
         font-weight: 700;
         text-transform: uppercase;
         &:not(:last-child) {
@@ -62,16 +62,6 @@
     }
 }
 
-// Universal trigger style for every trigger
-.trigger {
-    display: block;
-    position: relative;
-    height: 1px;
-    width: 1px;
-    opacity: 0;
-}
-
-
 
 // Text underlined
 .underline_text {
@@ -89,7 +79,3 @@
         display: block;
     }
 }
-
-
-
-.hidden-locked { display: none !important; z-index: -1 !important; opacity: 0 !important; pointer-events: none !important;}

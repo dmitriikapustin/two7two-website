@@ -6,15 +6,15 @@ $(document).ready(function () {
 
 
     // ScrollMagic animation for circles timeline
-    var scene = new ScrollMagic.Scene({ triggerElement: '#block_7', duration: heading_anim_duration, reverse: true })
+    var scene = new ScrollMagic.Scene({ triggerElement: '#big-text', duration: heading_anim_duration, reverse: true })
         .offset($(window).height() * 1 + 400)
         .setTween(".animated_heading_item", { scale: 0.25 } )
         // .addIndicators()
         .addTo(controller_heading_anim);
 
-    var scene = new ScrollMagic.Scene({ triggerElement: '#block_7', duration: 700, reverse: true })
+    var scene = new ScrollMagic.Scene({ triggerElement: '#big-text', duration: 700, reverse: true })
         .offset($(window).height() * 1 + 650)
-        .setPin( '#block_7' )
+        .setPin( '#big-text' )
         // .addIndicators()
         .addTo(controller_heading_anim); 
         

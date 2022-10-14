@@ -5,16 +5,16 @@ $(document).ready(function () {
         container: "body"
     })
     // var heaiding_anim_duration = 1000;
-    var footer = document.getElementById('block_8')
+    var footer = document.getElementById('footer')
 
     var scene = new ScrollMagic.Scene({
             triggerElement: footer,
             triggerHook: 1,
             reverse: true
         })
-        .offset($(window).height())
+        .offset(0)
         .setPin(footer)
-        // .addIndicators()
+        .addIndicators()
         .addTo(controller_footer_anim) 
         
 })

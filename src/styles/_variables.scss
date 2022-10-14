@@ -1,56 +1,12 @@
 $color_1: #ffffff;
 $color_2: #041022;
 $color_3: #FADD4B;
+$color_4: #FADD4B;
 
 $font-name: FunAndFresh;
 
 
-* {
-    box-sizing: border-box;
-}
 
-body, html {
-    background: $color_2;
-    font-family: 'Montserrat', sans-serif !important;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden !important;
-    // cursor: none !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    // overscroll-behavior: none !important;
-    // scrollbar-width: none !important;
-}
-
-
-
-::selection {
-  background: rgba(250, 221, 75, 0.5)
-}
-
-
-picture {
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-
-img {
-    // width: 100%;
-    background-size: cover;
-    width: fill;
-}
-
-section {
-    display: block;
-    overflow: hidden;
-    width: 100%;
-}
-
-p {
-  font-family: PROXIMANOVA-REGULAR;
-  font-weight: 500;
-}
 
 body:hover .custom-cursor {
     opacity: 1;

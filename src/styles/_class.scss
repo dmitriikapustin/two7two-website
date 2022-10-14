@@ -1,0 +1,47 @@
+// Container settings
+.container {  }
+.container-100 {  }
+
+// Text color controls
+.text-color-1 { color: $color_1 !important; }
+.text-color-2 { color: $color_2 !important; }
+.text-color-3 { color: $color_3 !important; }
+.text-color-4 { color: $color_4 !important; }
+
+// Text weight controls
+.w-400 { font-weight: 400 !important; }
+.w-500 { font-weight: 500 !important; }
+.w-600 { font-weight: 600 !important; }
+.w-700 { font-weight: 700 !important; }
+.w-800 { font-weight: 800 !important; }
+.w-900 { font-weight: 900 !important; }
+
+// Flex control
+.flex {
+    display: flex;
+    &-col { flex-direction: column; }
+    &-row { flex-direction: row; }
+}
+
+// Align styles
+.align {
+    display: flex;
+    &-center { align-items: center; justify-content: center; }
+    &-left { align-items: flex-start; justify-content: flex-start; }
+}
+
+// Flex-wrap styles
+.wrap { flex-wrap: wrap; }
+.no-wrap { flex-wrap: nowrap; }
+
+// Universal trigger style for every trigger
+.trigger {
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+}
+
+// Hiding sure
+.hidden-locked { display: none !important; z-index: -1 !important; opacity: 0 !important; pointer-events: none !important;}

@@ -1,23 +1,23 @@
 @font-face {
-    font-family: PROXIMANOVA-REGULAR; /* Имя шрифта */
+    font-family: $font-name; /* Имя шрифта */
     src: url(fonts/ProximaNova-Regular.woff); /* Путь к файлу со шрифтом */
     font-weight: 500;
 }
 
 @font-face {
-    font-family: PROXIMANOVA-BOLD; /* Имя шрифта */
+    font-family: $font-name; /* Имя шрифта */
     src: url(fonts/ProximaNova-Bold.woff); /* Путь к файлу со шрифтом */
     font-weight: 700;
 }
 
 @font-face {
-    font-family: PROXIMANOVA-BLACK; /* Имя шрифта */
+    font-family: $font-name; /* Имя шрифта */
     src: url(fonts/ProximaNova-Black.woff); /* Путь к файлу со шрифтом */
     font-weight: 900;
 }
 
 @font-face {
-    font-family: KLYAKSON; /* Имя шрифта */
+    font-family: $font-name; /* Имя шрифта */
     src: url(fonts/Klyakson.woff); /* Путь к файлу со шрифтом */
     font-weight: 600;
 }
