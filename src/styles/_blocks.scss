@@ -447,8 +447,8 @@
     background: $color_2;
     // margin: 0 auto !important;
     .animated_heading {
-        margin-bottom: 500px;
-        margin-top: 200px;
+        margin-bottom: 400px;
+        margin-top: 400px;
         h1 {
             text-align: center;
             font-size: 45vw;
@@ -462,7 +462,7 @@
     top: -100vh;
     z-index: 0 !important;
     background: $color-1;
-    transform: translate3d(0,-100vh,0);
+    // transform: translate3d(0, -100vh, 0);
     .footer_heading {
         color: $color-2;
         h1 {
