@@ -23,11 +23,14 @@
 // 7. Other styles for blocks
 @import "blocks";
 
-// 8. Mobile styles
-@import "mobile";
-
 // 9. Mobile styles
 @import "preloader";
 
 // 10. Default classes
 @import "class";
+
+// 11. Default classes
+@import "case-page";
+
+// 8. Mobile styles
+@import "mobile";

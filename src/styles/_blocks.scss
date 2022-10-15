@@ -446,6 +446,102 @@
     background: $color_2;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    .logo-text {
+        width: fit-content;
+        height: fit-content;
+        width: 40%;
+        svg {
+            height: 30px;
+            width: auto;
+        }
+        p {
+            font-weight: 600;
+            margin-left: 20px;
+        }
+    }
+    .menu-items {
+        a {
+            margin-left: 50px;
+        }
+    }
+}
+
+.main-hero {
+    .container { height: 100vh; }
+    h1 {
+        text-transform: none;
+        margin-bottom: 0%;
+    }
+    span {
+        font-weight: 600;
+        position: relative;
+        &.text-color-5::after { 
+            content: 'от 250к руб'; 
+            font-size: 50%;
+            position: absolute;
+            width: max-content;
+            transform: rotate(7deg);
+            left: 80%;
+            top: -20px;
+        }
+        &.text-color-4::after { 
+            content: 'от 400к руб'; 
+            font-size: 50%;
+            position: absolute;
+            width: max-content;
+            transform: rotate(-3deg);
+            left: 50%;
+            top: 100%;
+        }
+        &.text-color-6::after { 
+            content: 'от 150к руб'; 
+            font-size: 50%;
+            position: absolute;
+            width: max-content;
+            transform: rotate(-7deg);
+            left: 75%;
+            top: 95%;
+        }
+    }
+    .hero-bottom {
+        .team {
+            width: 40%;
+            .team-photos {
+                height: 69px;
+                picture {
+                    width: 69px;
+                    height: 69px;
+                    border: $color-2 5px solid;
+                    position: absolute;
+                    border-radius: 1000px !important;
+                    img {
+                        border-radius: 1000px !important;
+                    }
+                    &:nth-child(1) { z-index: 1; left: 0px }
+                    &:nth-child(2) { z-index: 2; left: 50px }
+                    &:nth-child(3) { z-index: 3; left: 100px }
+                    &:nth-child(4) { z-index: 4; left: 150px }
+                    &:nth-child(5) { z-index: 5; left: 200px }
+                    &:nth-child(6) { z-index: 6; left: 250px }
+                    &:nth-child(7) { z-index: 7; left: 300px }
+                    &:nth-child(8) { z-index: 8; left: 350px }
+                }
+            }
+        }
+        .hero-text {
+            width: 30%;
+            p {
+                text-align: right;
+            }
+        }
+    }
+}
+
 .big-text {
     z-index: 2 !important;
     background: $color_2;

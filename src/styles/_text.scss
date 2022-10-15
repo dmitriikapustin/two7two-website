@@ -1,13 +1,19 @@
 a, p, h1, h2, h3, body, input, button, span, div, ul, li {
     font-family: $font-name;
-    
+    color: $color-1;
 }
 
-a {  }
+a { 
+    font-size: 1.3vw;
+    text-decoration: none;
+}
 
-p {}
+p {
+    font-size: 1.3vw;
+}
 
 h1 {
+    font-size: 5vw;
     text-transform: uppercase;
     font-weight: 700;
 }
