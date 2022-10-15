@@ -542,6 +542,74 @@
     }
 }
 
+
+.cases-scroll {
+    .row {
+        margin-bottom: 20px;
+        width: fit-content;
+        &:nth-child(1) { transform: translate3d(-15%,0,0); }
+        &:nth-child(2) { transform: translate3d(-8%,0,0); }
+        &:nth-child(3) { transform: translate3d(-20%,0,0); }
+        &:nth-child(4) { transform: translate3d(-13%,0,0); }
+        .case-item {
+            margin: 0 10px;
+            min-width: 45vw;
+            height: fit-content !important;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.13);
+            picture {
+                width: 45vw;
+                height: 13vw;
+            }
+        }
+    }
+}
+
+.services {
+    h2, p {
+        font-size: 5vw;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .service-item {
+        width: 100%;
+        position: relative;
+        align-items: center;
+        margin: 20px 0;
+        .service-name { width: 40%;  }
+        .service-price { width: 30%; }
+        & .service-name h2::after {
+            font-size: 45%;
+            font-weight: 600;
+            position: absolute;
+            width: max-content;
+            transform: rotate(-2deg);
+            left: -20px;
+            top: 30px;
+        }
+        &:nth-child(1) .service-name h2::after {
+            content: 'для стартапов и небольших брендов'; 
+            color: $color_5;
+        }
+        &:nth-child(3) .service-name h2::after {
+            content: 'для крупных компаний'; 
+            color: $color_4;
+        }
+        &:nth-child(5) .service-name h2::after {
+            content: 'для нового визуального стиля'; 
+            color: $color_6;
+        }
+    }
+    .line-separate {
+        height: 1px;
+        width: 100%;
+        background: $color-1;
+    }
+    
+    
+}
+
 .big-text {
     z-index: 2 !important;
     background: $color_2;

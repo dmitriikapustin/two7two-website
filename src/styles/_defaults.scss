@@ -14,6 +14,10 @@ body, html {
 
 ::selection { background: rgba(250, 221, 75, 0.5); }
 
+::-webkit-scrollbar {
+    display: none !important;
+}
+
 picture {
     height: 100%;
     width: 100%;
@@ -30,6 +34,7 @@ img {
     height: auto;
     position: relative;
     object-fit: cover;
+    background-size: cover;
 }
 
 section {
@@ -43,6 +48,11 @@ section {
     // z-index: 100;
     // display: block;
     // overflow: visible;
+    &:not(.header, .main-hero) {
+        padding: 50px 0;
+    }
+
+    
 }
 
 div { 
