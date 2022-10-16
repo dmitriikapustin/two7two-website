@@ -1,21 +1,12 @@
 $(document).ready(function () {
-    var header = document.getElementById("header")
-    // HEADER APPEARANCE
-    setTimeout(function() {
-        header.classList.remove("hidden")
-    }, 2300)
-
-    var cases = ('.cases-scroll')
-    var footer = ('.footer')
-
     var controller_header_animation = new ScrollMagic.Controller();
 
     // HIDE BEFORE CASES
 
     // variant with toggling class
     var scene = new ScrollMagic.Scene({
-        duration: 850,
-        triggerElement: cases,
+        duration: 770,
+        triggerElement: '.cases-scroll',
         triggerHook: 1,
         reverse: true
     })
@@ -27,7 +18,7 @@ $(document).ready(function () {
 
     var scene = new ScrollMagic.Scene({
         duration: 200,
-        triggerElement: footer,
+        triggerElement: '.footer',
         triggerHook: 0.2,
         reverse: true
     })

@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     // ScrollMagic animation for texts timeline
     var scene = new ScrollMagic.Scene({
-        triggerElement: '.scrolling-text-trigger',
+        triggerElement: cases,
         duration: text_anim_duration,
         reverse: true
     })

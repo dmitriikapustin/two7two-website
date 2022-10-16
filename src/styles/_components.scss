@@ -19,7 +19,7 @@
 }
 
 // Animation line-by-line
-.animated-paragraph_item, .animated-paragraph_item_no-scroll {
+.animated-paragraph_item, .animated-paragraph_item_no-scroll_1, .animated-paragraph_item_no-scroll_2 {
     position: relative;
     margin: 0;
     overflow: hidden;
@@ -30,9 +30,7 @@
         span {
             display: inline-block;
             font-family: $font-name;
-            font-size: 1.5vw;
             font-weight: 500 !important;
-            color: #fff;
             transform: translate3d(0, 1.3em, 0);
         }
     }    

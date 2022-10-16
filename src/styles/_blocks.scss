@@ -487,9 +487,9 @@
     top: 0%;
     left: 0;
     z-index: 1000;
-    transition: all .6s linear;
+    transition: all 1.2s linear;
     &.hidden {
-        transition: all .6s linear;
+        transition: all 1.2s linear;
         top: -100%;
     }
     .logo-text {
@@ -523,39 +523,46 @@
     span {
         font-weight: 600;
         position: relative;
-        &.text-color-5::after { 
-            content: 'от 250к руб'; 
-            font-size: 50%;
-            position: absolute;
-            width: max-content;
-            transform: rotate(7deg);
-            left: 80%;
-            top: -20px;
-        }
-        &.text-color-4::after { 
-            content: 'от 400к руб'; 
-            font-size: 50%;
-            position: absolute;
-            width: max-content;
-            transform: rotate(-3deg);
-            left: 50%;
-            top: 100%;
-        }
-        &.text-color-6::after { 
-            content: 'от 150к руб'; 
-            font-size: 50%;
-            position: absolute;
-            width: max-content;
-            transform: rotate(-7deg);
-            left: 75%;
-            top: 95%;
-        }
+        // &.text-color-5::after { 
+        //     content: 'от 250к руб'; 
+        //     font-size: 50%;
+        //     position: absolute;
+        //     width: max-content;
+        //     transform: rotate(7deg);
+        //     left: 80%;
+        //     top: -20px;
+        // }
+        // &.text-color-4::after { 
+        //     content: 'от 400к руб'; 
+        //     font-size: 50%;
+        //     position: absolute;
+        //     width: max-content;
+        //     transform: rotate(-3deg);
+        //     left: 50%;
+        //     top: 100%;
+        // }
+        // &.text-color-6::after { 
+        //     content: 'от 150к руб'; 
+        //     font-size: 50%;
+        //     position: absolute;
+        //     width: max-content;
+        //     transform: rotate(-7deg);
+        //     left: 75%;
+        //     top: 95%;
+        // }
     }
     .hero-bottom {
         width: 100%;
         .team {
             width: 40%;
+            .under-text { 
+                p {
+                    margin-top: 18.72px !important;
+                    margin-bottom: 18.72px !important;
+                }
+            }
             .team-photos {
+                transform: translate3d(-200%, 0, 0);
                 height: 69px;
                 picture {
                     width: 69px;
@@ -567,13 +574,13 @@
                         border-radius: 1000px !important;
                     }
                     &:nth-child(1) { z-index: 1; left: 0px }
-                    &:nth-child(2) { z-index: 2; left: 50px }
-                    &:nth-child(3) { z-index: 3; left: 100px }
-                    &:nth-child(4) { z-index: 4; left: 150px }
-                    &:nth-child(5) { z-index: 5; left: 200px }
-                    &:nth-child(6) { z-index: 6; left: 250px }
-                    &:nth-child(7) { z-index: 7; left: 300px }
-                    &:nth-child(8) { z-index: 8; left: 350px }
+                    &:nth-child(2) { z-index: 2; left: 0px }
+                    &:nth-child(3) { z-index: 3; left:  0px }
+                    &:nth-child(4) { z-index: 4; left:  0px }
+                    &:nth-child(5) { z-index: 5; left:  0px }
+                    &:nth-child(6) { z-index: 6; left:  0px }
+                    &:nth-child(7) { z-index: 7; left:  0px }
+                    &:nth-child(8) { z-index: 8; left:  0px }
                 }
             }
         }
@@ -583,6 +590,8 @@
             width: 38%;
             p {
                 text-align: end;
+                margin-top: 18.72px;
+                margin-bottom: 18.72px;
             }
         }
     }
@@ -626,7 +635,7 @@
         position: relative;
         align-items: center;
         margin: 20px 0;
-        .service-name { width: 40%;  }
+        .service-name { width: 40%; }
         .service-price { width: 30%; }
         & .service-name h2::after {
             font-size: 45%;
@@ -653,13 +662,14 @@
     .line-separate {
         height: 1px;
         background: $color-1;
-        transition: all .6s linear;
+        transition: all .4s linear;
     }
     .line-1, .line-2 {
         width: 0%;
+        transition: all .4s linear;
         &.ready {
             width: 100%;
-            transition: all .6s linear;
+            transition: all .4s linear;
         }
     }
 

@@ -17,21 +17,20 @@ $(document).ready(function () {
 
     // ScrollMagic animation for texts timeline
     var scene = new ScrollMagic.Scene({
-        triggerElement: '.container-lines:nth-child(1)',
-        // duration: 200,
+        triggerElement: '.container-lines-1',
+        duration: 2000,
     })
-    .offset($(window).height() - 400)
+    .offset($(window).height() - 600)
     .setClassToggle(".line-1", "ready")
-    .addIndicators()
     .addTo(controller_lines_animation)
-    scene.removeClassToggle(".line-1", "ready");
+    .reverse(false)
 
     var scene = new ScrollMagic.Scene({
-        triggerElement: '.container-lines:nth-child(2)',
-        // duration: 200,
+        triggerElement: '.container-lines-2',
+        duration: 2000,
     })
-    .offset($(window).height() - 400)
+    .offset($(window).height() - 600)
     .setClassToggle(".line-2", "ready")
     .addTo(controller_lines_animation)
-    scene.removeClassToggle(".line-2", "ready");
+    .reverse(false)
 })
