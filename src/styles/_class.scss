@@ -1,5 +1,5 @@
 // Container settings
-.container {  }
+.container { width: calc(100vw - 100px) !important; margin: 0 auto; padding: 25px 0; }
 .container-100 { width: 100% !important; }
 
 // Text color controls
@@ -7,6 +7,9 @@
 .text-color-2 { color: $color_2 !important; }
 .text-color-3 { color: $color_3 !important; }
 .text-color-4 { color: $color_4 !important; }
+.text-color-5 { color: $color_5 !important; }
+.text-color-6 { color: $color_6 !important; }
+.text-color-7 { color: $color_7 !important; }
 
 // Text weight controls
 .w-400 { font-weight: 400 !important; }
@@ -23,11 +26,30 @@
     &-row { flex-direction: row; }
 }
 
+// Justify control
+.space-between {
+    justify-content: space-between;
+}
+
 // Align styles
 .align {
     display: flex;
     &-center { align-items: center; justify-content: center; margin: 0 auto !important; }
     &-left { align-items: flex-start; justify-content: flex-start; }
+}
+
+// Start / End positions
+.flex {
+    display: flex;
+    &-start { align-items: flex-start; }
+    &-center { align-items: center; }
+    &-end { align-items: flex-end; }
+}
+
+.justify {
+    &-start {justify-content: flex-start;}
+    &-center {justify-content: center;}
+    &-end {justify-content: flex-end;}
 }
 
 // Flex-wrap styles
@@ -41,6 +63,17 @@
     height: 1px;
     width: 1px;
     opacity: 0;
+}
+
+.only-mobile { display: none !important; }
+@media (max-width: 800px) {
+    .no-mobile { display: none !important; }
+    .only-mobile { display: block !important; }
+}
+
+// Relative container
+.relative {
+    position: relative !important;
 }
 
 // Hiding sure

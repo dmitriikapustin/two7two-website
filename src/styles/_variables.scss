@@ -1,23 +1,12 @@
 $color_1: #ffffff;
 $color_2: #041022;
 $color_3: #FADD4B;
-$color_4: #FADD4B;
+$color_4: #B74BFA;
+$color_5: #B7FA4B;
+$color_6: #4BD0FA;
+$color_7: #FADD4B;
 
 $font-name: FunAndFresh;
-
-
-.cursor-container {
-  position: absolute;
-  width: fit-content;
-  height: fit-content;
-  overflow: hidden !important;
-  transform: translate(15%, -90%);
-  z-index: 5000 !important;
-}
-
-.cursor.active {
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
 
 body:hover .custom-cursor {
     opacity: 1;
