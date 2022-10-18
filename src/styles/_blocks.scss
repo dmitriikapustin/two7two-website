@@ -483,6 +483,7 @@
 }
 
 .header {
+    background: $color_2;
     position: fixed;
     top: 0%;
     left: 0;
@@ -499,6 +500,55 @@
         svg {
             height: 30px;
             width: auto;
+            // LETTERS TO TRANSLATE AND HIDE 
+            transition: all ease-in 0.3s;
+            .u, .n, .r, .e, .s, .h, .first-f, .ampersand, .second-f, .u-hide, .n-hide, .r-hide, .e-hide, .s-hide, .h-hide, .f-1, .amp, .f-2 { transition: all ease-in 0.2s; }
+            .u-hide, .n-hide, .r-hide, .e-hide, .s-hide, .h-hide {
+                opacity: 0; 
+            }
+            .u-hide {
+                transform: translate3d(-5.8%, 0, 0);
+            }
+            
+            .n-hide {
+                transform: translate3d(-11.6%, 0, 0); 
+            }
+
+            .r-hide {
+                transform: translate3d(-36%, 0, 0); 
+            }
+
+            .e-hide {
+                transform: translate3d(-42%, 0, 0); 
+            }
+
+            .s-hide {
+                transform: translate3d(-48%, 0, 0);
+            }
+
+            .h-hide {
+                transform: translate3d(-54%, 0, 0);
+            }
+            // LETTERS TO TRANSLATE
+            .f-1 {
+                z-index: 3 !important;
+                transform: translate3d(0%, 0, 0);
+            }
+            .amp {
+                transform: translate3d(-29.6%, 0, 0);
+                z-index: 2 !important;
+            }
+            .f-2 {
+                transform: translate3d(-31.8%, 0, 0);
+                z-index: 1 !important;
+            }
+        }
+        .text-change {
+            transition: all ease-in 0.3s;
+        }
+        .change {
+            transform: translate3d(-160%, 0, 0);
+            transition: all ease-in 0.3s;
         }
         p {
             font-weight: 600;
@@ -515,12 +565,35 @@
 
 
 .main-hero {
-    .container { height: 100vh; }
+    .container { 
+        height: 100vh;
+        .svg_250, .svg_150, .svg_400 {
+            position: absolute;
+            top: 21.5%;
+            left: 60%;
+            transform: rotate(10deg);
+        }
+        .svg_250 {
+            top: 21.5%;
+            left: 60%;
+            transform: rotate(10deg);
+        }
+        .svg_400 {
+            top: 45.5%;
+            left: 20%;
+            transform: rotate(-4deg);
+        }
+        .svg_150 {
+            top: 47.5%;
+            left: 60%;
+            transform: rotate(-5.5deg);
+        }
+    }
     h1 {
         text-transform: none;
         margin-bottom: 0%;
     }
-    span {
+    h1 .text-color-5, .text-color-6, .text-color-5, .text-color-4 {
         font-weight: 600;
         position: relative;
         // &.text-color-5::after { 
@@ -556,14 +629,16 @@
         .team {
             width: 40%;
             .under-text { 
+                margin-bottom: 20px;
                 p {
-                    margin-top: 18.72px !important;
-                    margin-bottom: 18.72px !important;
+                    // margin-top: 18.72px !important;
+                    // margin-bottom: 18.72px !important;
                 }
             }
             .team-photos {
-                transform: translate3d(-200%, 0, 0);
+                transform: translate3d(-40%,0,0) rotate(-70deg) scale(0);
                 height: 69px;
+                margin-bottom: 20px;
                 picture {
                     width: 69px;
                     height: 69px;
@@ -575,12 +650,12 @@
                     }
                     &:nth-child(1) { z-index: 1; left: 0px }
                     &:nth-child(2) { z-index: 2; left: 0px }
-                    &:nth-child(3) { z-index: 3; left:  0px }
-                    &:nth-child(4) { z-index: 4; left:  0px }
-                    &:nth-child(5) { z-index: 5; left:  0px }
-                    &:nth-child(6) { z-index: 6; left:  0px }
-                    &:nth-child(7) { z-index: 7; left:  0px }
-                    &:nth-child(8) { z-index: 8; left:  0px }
+                    &:nth-child(3) { z-index: 3; left: 0px }
+                    &:nth-child(4) { z-index: 4; left: 0px }
+                    &:nth-child(5) { z-index: 5; left: 0px }
+                    &:nth-child(6) { z-index: 6; left: 0px }
+                    &:nth-child(7) { z-index: 7; left: 0px }
+                    &:nth-child(8) { z-index: 8; left: 0px }
                 }
             }
         }
@@ -588,10 +663,11 @@
             display: flex;
             justify-content: end;
             width: 38%;
+            margin-bottom: 20px;
             p {
                 text-align: end;
-                margin-top: 18.72px;
-                margin-bottom: 18.72px;
+                // margin-top: 18.72px;
+                // margin-bottom: 18.72px;
             }
         }
     }
@@ -634,8 +710,27 @@
         width: 100%;
         position: relative;
         align-items: center;
-        margin: 20px 0;
-        .service-name { width: 40%; }
+        margin: 90px 0;
+        .service-name { width: 50%;
+            .svg_startup, .svg_company, .svg_new-design {
+                position: absolute;
+            }
+            .svg_startup {
+                top: -31.5%;
+                left: -2.8%;
+                transform: rotate(-2deg);
+            }
+            .svg_company {
+                top: -27%;
+                left: -2.8%;
+                transform: rotate(-2deg);
+            }
+            .svg_new-design {
+                top: -31.5%;
+                left: -0.3%;
+                transform: rotate(-2deg);
+            }
+        }
         .service-price { width: 30%; }
         & .service-name h2::after {
             font-size: 45%;
@@ -646,18 +741,18 @@
             left: -20px;
             top: 30px;
         }
-        &:nth-child(1) .service-name h2::after {
-            content: 'для стартапов и небольших брендов'; 
-            color: $color_5;
-        }
-        &:nth-child(3) .service-name h2::after {
-            content: 'для крупных компаний'; 
-            color: $color_4;
-        }
-        &:nth-child(5) .service-name h2::after {
-            content: 'для нового визуального стиля'; 
-            color: $color_6;
-        }
+        // &:nth-child(1) .service-name h2::after {
+        //     content: 'для стартапов и небольших брендов'; 
+        //     color: $color_5;
+        // }
+        // &:nth-child(3) .service-name h2::after {
+        //     content: 'для крупных компаний'; 
+        //     color: $color_4;
+        // }
+        // &:nth-child(5) .service-name h2::after {
+        //     content: 'для нового визуального стиля'; 
+        //     color: $color_6;
+        // }
     }
     .line-separate {
         height: 1px;
@@ -666,11 +761,15 @@
     }
     .line-1, .line-2 {
         width: 0%;
-        transition: all .4s linear;
+        transition: all .3s linear;
         &.ready {
             width: 100%;
-            transition: all .4s linear;
+            transition: all .3s linear;
         }
+    }
+
+    .trigger {
+        position: absolute !important;
     }
 
     

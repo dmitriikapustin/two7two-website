@@ -3,10 +3,19 @@ var counting = setInterval(function () {
     var currval = parseInt(loader.innerHTML);
     var Width = 99 - currval;
     var loadscreen = document.getElementById("loader-progress");
+    var parapraphs_h = $(".animated-paragraph_item_no-scroll_h");
     var parapraphs_1 = $(".animated-paragraph_item_no-scroll_1");
     var parapraphs_2 = $(".animated-paragraph_item_no-scroll_2");
+    var svg_animation = $('.svg-animation_item_no-scroll');
+    var parapraphs_h_count = parapraphs_h.length;
     var parapraphs_1_count = parapraphs_1.length;
     var parapraphs_2_count = parapraphs_2.length;
+    var svg_count = svg_animation.length;
+    var svg_paths_count = 0;
+
+    $(".animated-paragraph_item_no-scroll_h").each(function (paragraph_h_index) {
+        $(this).addClass("paragraph_h-index-" + paragraph_h_index)
+    })
 
     $(".animated-paragraph_item_no-scroll_1").each(function (paragraph_1_index) {
         $(this).addClass("paragraph_1-index-" + paragraph_1_index)
@@ -15,6 +24,10 @@ var counting = setInterval(function () {
 
     $(".animated-paragraph_item_no-scroll_2").each(function (paragraph_2_index) {
         $(this).addClass("paragraph_2-index-" + paragraph_2_index)
+    })
+
+    $('.svg-animation_item_no-scroll').each(function (svg_index) {
+        $(this).addClass("svg-index-no-scroll-" + svg_index);
     })
 
     loader.innerHTML = ++currval;
@@ -31,16 +44,52 @@ var counting = setInterval(function () {
                 clearInterval(counting);
                 loader.innerHTML = 100;
                 jQuery("body").toggleClass('page-loaded');
-                var header = document.getElementById("header")
+
                 // HEADER APPEARANCE
-                setTimeout(function() {
+
+                var header = document.getElementById("header")
+                
+                setTimeout(function () {
                     header.classList.remove("hidden")
                 }, 0)
+
+                // HEADING APPEARANCE
+                for (parapraphs_h_index = 0; parapraphs_h_index < parapraphs_h_count; parapraphs_h_index++) {
+                    $('.paragraph_h-index-' + parapraphs_h_index + " span").each(function (index) {
+                        var tl_1 = new TimelineMax();
+                        tl_1.to(this, 0.4, { y: 0 }, 1.1 + index * 0.09);
+                    });
+                }
+
+                // SVG DRAWING
+
+                for (svg_index = 0; svg_index < svg_count; svg_index++) {
+                    var svg_paths_count = $(".svg-index-no-scroll-" + svg_index + " path").length;
+                    console.log(svg_paths_count);
+                    $(".svg-index-no-scroll-" + svg_index + " path").each(function (index) {
+                        $(this).addClass("path-no-scroll-" + index)
+                        $(this).attr('id', "path-no-scroll-" + index);
+                        const path = $('path#path-no-scroll-' + index)
+                        console.log(path)
+                        var lineLength = Math.round(path[0].getTotalLength());
+                        $(this).css("stroke-dasharray", lineLength);
+                        $(this).css("stroke-dashoffset", lineLength);
+                        var duration = 1.1 / svg_paths_count;
+                        var delay = 1.15 / svg_paths_count * index;
+                        var tween = new TimelineMax()
+                        tween.to($(this), duration, {
+                            strokeDashoffset: 0,
+                            ease: Linear.easeNone
+                        }, 2 + delay)
+                    })
+                }
+
+
                 // PARAGRAPH UNDER IMAGES APPEARANCE
                 for (parapraphs_1_index = 0; parapraphs_1_index < parapraphs_1_count; parapraphs_1_index++) {
                     $('.paragraph_1-index-' + parapraphs_1_index + " span").each(function (index) {
                         var tl_1 = new TimelineMax();
-                        tl_1.to(this, 0.5, { y: 0 }, 2.5 + index * 0.09);
+                        tl_1.to(this, 0.42, { y: 0 }, 3 + index * 0.09);
                     });
                 }
 
@@ -48,19 +97,19 @@ var counting = setInterval(function () {
                 for (parapraphs_2_index = 0; parapraphs_2_index < parapraphs_2_count; parapraphs_2_index++) {
                     $('.paragraph_2-index-' + parapraphs_2_index + " span").each(function (index) {
                         var tl_2 = new TimelineMax();
-                        tl_2.to(this, 0.5, { y: 0 }, 3 + index * 0.09);
+                        tl_2.to(this, 0.42, { y: 0 }, 3.6 + index * 0.09);
                     });
-                }   
+                }
                 // IMAGES APPEARANCE
 
-                // COMMON BLOCK OF IMAGES
+                //  SHOW CONTAINER OF IMAGES
                 var tl_images = new TimelineMax();
-                tl_images.to($(".team-photos"), 0.4, { x: 0 }, 1.4);
+                tl_images.to($(".team-photos"), 0.35, { x: 0, y: 0, scale: 1, rotate: "0deg" }, 2);
 
-                // IMAGES
-                $(".team-photos picture").each(function(image_index) {
+                //  SHOW ALL IMAGES 
+                $(".team-photos picture").each(function (image_index) {
                     var tl = new TimelineMax();
-                    tl.to(this, 0.9, { x: 0 + image_index * 50 }, 2.1);
+                    tl.to(this, 0.8, { x: 0 + image_index * 50 }, 2.7);
                 })
             }
         }

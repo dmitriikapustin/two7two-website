@@ -18,19 +18,20 @@ $(document).ready(function () {
     // ScrollMagic animation for texts timeline
     var scene = new ScrollMagic.Scene({
         triggerElement: '.container-lines-1',
-        duration: 2000,
+        duration: 800,
     })
-    .offset($(window).height() - 600)
+    .offset($(window).height() / 2 - 270)
     .setClassToggle(".line-1", "ready")
+    // .addIndicators()
     .addTo(controller_lines_animation)
-    .reverse(false)
+
 
     var scene = new ScrollMagic.Scene({
         triggerElement: '.container-lines-2',
-        duration: 2000,
+        duration: 800,
     })
-    .offset($(window).height() - 600)
+    .offset($(window).height() / 2 - 270)
     .setClassToggle(".line-2", "ready")
     .addTo(controller_lines_animation)
-    .reverse(false)
+
 })

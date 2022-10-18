@@ -1,14 +1,14 @@
 $(document).ready(function () {
 
-    var svg_animation = $('.svg-animation_item');
-    var svg_count = svg_animation.length;
+    var svg_animation_scroll = $('.svg-animation_item');
+    var svg_count = svg_animation_scroll.length;
 
     $('.svg-animation_item').each(function (svg_index) {
         $(this).addClass("svg-index-" + svg_index);
         $(this).parent().prepend('<div class="trigger-for-svg-' + svg_index + ' trigger"></div>');
     })
 
-    var controller_svg_animation = new ScrollMagic.Controller();
+    var controller_svg_animation_scroll = new ScrollMagic.Controller();
 
     var svg_paths_count = 0;
     for (svg_index = 0; svg_index < svg_count; svg_index++) {
@@ -18,7 +18,7 @@ $(document).ready(function () {
             $(this).addClass("path-" + index)
             $(this).attr('id', "path-" + index);
             const path = $('path#path-' + index)
-            console.log(path)
+            // console.log(path)
             var lineLength = Math.round(path[0].getTotalLength());
             $(this).css("stroke-dasharray", lineLength);
             $(this).css("stroke-dashoffset", lineLength);
@@ -32,11 +32,12 @@ $(document).ready(function () {
             // build scene
             var scene = new ScrollMagic.Scene({
                     triggerElement: "trigger-for-svg-" + svg_index,
-                    duration: 100
+                    duration: 800
                 })
+                .offset($(window).height() * 0.5 + 680)
                 .setTween(tween)
-                // .addIndicators()
-                .addTo(controller_svg_animation);
+                .addIndicators()
+                .addTo(controller_svg_animation_scroll);
         })
     }
 })

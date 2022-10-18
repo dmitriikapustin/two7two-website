@@ -19,21 +19,11 @@
 }
 
 // Animation line-by-line
-.animated-paragraph_item, .animated-paragraph_item_no-scroll_1, .animated-paragraph_item_no-scroll_2 {
+.animated-paragraph_item, .animated-paragraph_item_no-scroll_1, .animated-paragraph_item_no-scroll_2, .animated-paragraph_item_no-scroll_h {
     position: relative;
     margin: 0;
     overflow: hidden;
-    height: fit-content;
-    .ov-hidden {
-        overflow: hidden;
-        display: block;
-        span {
-            display: inline-block;
-            font-family: $font-name;
-            font-weight: 500 !important;
-            transform: translate3d(0, 1.3em, 0);
-        }
-    }    
+    height: fit-content; 
 }
 
 .section-horizontal-scroll {
