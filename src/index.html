@@ -34,14 +34,12 @@
 </head>
 
 <body class="parent" onload="init()">
-    <div class="cursor-container">
-        <div class="cursor active">
+        <div class="cursor" id="cursor">
             <h3>СМОТРЕТЬ КЕЙС</h3>
             <svg width="29" height="17" viewBox="0 0 39 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.47559 9.92949C0.713199 9.60538 0.357906 8.72459 0.682021 7.9622C1.00614 7.19981 1.88692 6.84451 2.64931 7.16863L1.47559 9.92949ZM37.506 5.88624C38.2589 6.2319 38.589 7.12244 38.2434 7.8753L32.6104 20.144C32.2648 20.8968 31.3742 21.2269 30.6214 20.8813C29.8685 20.5356 29.5384 19.6451 29.8841 18.8922L34.8911 7.98673L23.9856 2.97969C23.2327 2.63402 22.9026 1.74349 23.2483 0.990623C23.594 0.237757 24.4845 -0.0923463 25.2374 0.253318L37.506 5.88624ZM2.64931 7.16863C7.16619 9.08888 20.5395 11.7069 36.3588 5.84294L37.4015 8.6559C20.848 14.792 6.68181 12.1428 1.47559 9.92949L2.64931 7.16863Z" fill="#041022"/>
             </svg>
-        </div>
-    </div>    
+        </div>  
     <div class="preloader">
         <div class="preloader-container-logo first" id="logo">
             <svg class="logo-part-F-1" width="95" height="124" viewBox="0 0 95 124" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,11 +120,15 @@
     <section class="main-hero">
         <div class="container flex-end">
             <div class="hero-title align-left">
-                    <h1 class="animated-paragraph_item_no-scroll_h">                        
+                    <h1 class="animated-paragraph_item_no-scroll_h no-mobile">                        
                         <span class="ov-hidden"><span>Разработаем&nbsp;<br class="only-mobile">вам <span class="text-color-5">лендинг</span>,</span></span>
                         <span class="ov-hidden"><span><span class="text-color-4">корпоративный сайт</span> или <span class="text-color-6">брендинг</span></span></span>
                     </h1>
-                    <svg class="svg_250 svg-animation_item_no-scroll" width="300" height="90" viewBox="0 0 400 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <h1 class="animated-paragraph_item_no-scroll_h only-mobile">                        
+                        <span class="ov-hidden"><span>Разработаем&nbsp;<br class="only-mobile"></span></span><span class="ov-hidden"><span>вам <span class="text-color-5">лендинг</span>,</span></span>
+                        <span class="ov-hidden"><span><span class="text-color-4">корпоративный сайт</span></span></span><span class="ov-hidden"><span> или <span class="text-color-6">брендинг</span></span></span>
+                    </h1>
+                    <svg class="svg_250 svg-animation_item_no-scroll" width="200" height="90" viewBox="0 0 400 119" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M29.018 53.224C28.8513 51.0574 29.8181 47.024 33.0181 44.224C37.0183 40.724 44.0183 36.224 50.5181 38.7241C55.4789 40.6322 59.5181 47.2241 48.5181 60.7241C40.3816 70.7099 37.018 76.0574 35.518 77.7241L31.018 83.2241C30.018 83.7241 39.5183 77.224 52.0181 85.724" stroke="black" stroke-width="8" stroke-linecap="round"/>
                         <path d="M71 42C72 49.1667 74.3 64.3 75.5 67.5C78 63.1667 83.9 54.7 87.5 55.5C92 56.5 101 66.5 96 79C91 91.5 81 85 80.5 80.5" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M92 39C87.8333 40.1667 77.6 42.4 70 42" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -137,7 +139,7 @@
                         <path d="M316.5 87.1872C315 70.3539 312 35.5247 316.5 35.1872C356.5 32.187 353.5 66.2836 308.5 63.2835" stroke="black" stroke-width="8" stroke-linecap="round"/>
                         <path d="M308 78.7837C316.167 77.117 319.5 75.2837 332.5 75.2837" stroke="black" stroke-width="8" stroke-linecap="round"/>
                     </svg>
-                    <svg class="svg_150 svg-animation_item_no-scroll" width="300" height="90" viewBox="0 0 400 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="svg_150 svg-animation_item_no-scroll" width="200" height="90" viewBox="0 0 400 119" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M34 51.6659C47.5 43.1659 50.2 42.1659 52 39.1659C53.5 36.6659 45 63.1659 44.5 68.6659C44.1 73.0659 43.8333 76.4992 44 77.6659" stroke="black" stroke-width="8" stroke-linecap="round"/>
                         <path d="M35 81.1659C39.5 80.8326 52 81.6659 56 83.6659" stroke="black" stroke-width="8" stroke-linecap="round"/>
                         <path d="M92 39C87.8333 40.1667 77.6 42.4 70 42" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -149,7 +151,7 @@
                         <path d="M316.5 87.1872C315 70.3539 312 35.5247 316.5 35.1872C356.5 32.187 353.5 66.2836 308.5 63.2835" stroke="black" stroke-width="8" stroke-linecap="round"/>
                         <path d="M308 78.7837C316.167 77.117 319.5 75.2837 332.5 75.2837" stroke="black" stroke-width="8" stroke-linecap="round"/>
                     </svg>
-                    <svg class="svg_400 svg-animation_item_no-scroll" width="300" height="90" viewBox="0 0 400 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="svg_400 svg-animation_item_no-scroll" width="200" height="90" viewBox="0 0 400 119" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M40.7395 38C41.7394 47 38.9215 53.0754 35.7395 60.5C29.7394 74.5 31.2395 71.5 38.2395 71.5C43.0395 71.5 48.0729 70.6667 49.7395 70M49.2394 57C48.7394 71.5 51.9394 86.2 52.7394 87" stroke="black" stroke-width="8" stroke-linecap="round"/>
                         <path d="M76.4029 41.5C76.4029 42.1561 76.4027 42.5 75.7239 45.8439C75.4028 47.4253 67.6347 67.6479 72.7238 78.8439C77.7238 89.8439 88.9584 84.4504 92.7238 75.8439C96.2238 67.8439 95.7238 51.3439 92.7238 45.3439C91.1113 42.119 83.7238 32.8439 78.7238 45.3439" stroke="black" stroke-width="8" stroke-linecap="round"/>
                         <path d="M116.403 41.5C116.403 42.1561 116.403 42.5 115.724 45.8439C115.403 47.4253 107.635 67.6479 112.724 78.8439C117.724 89.8439 128.958 84.4504 132.724 75.8439C136.224 67.8439 135.724 51.3439 132.724 45.3439C131.111 42.119 123.724 32.8439 118.724 45.3439" stroke="black" stroke-width="8" stroke-linecap="round"/>
@@ -159,8 +161,6 @@
                         <path d="M316.5 87.1872C315 70.3539 312 35.5247 316.5 35.1872C356.5 32.187 353.5 66.2836 308.5 63.2835" stroke="black" stroke-width="8" stroke-linecap="round"/>
                         <path d="M308 78.7836C316.167 77.1169 319.5 75.2836 332.5 75.2836" stroke="black" stroke-width="8" stroke-linecap="round"/>
                     </svg>
-                        
-                        
             </div>
             <div class="hero-bottom space-between flex-row no-wrap flex-end">
                 <div class="team flex-col">
@@ -198,8 +198,8 @@
                             <img src="./images/person_8.jpg">
                         </picture>
                     </div>
-                    <div class="under-text">
-                        <p class="animated-paragraph_item_no-scroll_1">
+                    <div class="under-text" id="text_container">
+                        <p class="animated-paragraph_item_no-scroll_1" id="text_under_iamges">
                             <span class="ov-hidden"><span>
                                 Мы помогаем бизнесу увеличивать продажи,
                             </span></span>
@@ -230,19 +230,19 @@
     </section>
     <section class="cases-scroll flex-col">
         <div class="row flex-row no-wrap">
-            <div class="case-item">
+            <div class="case-item" id="case-1">
                 <picture>
                     <source srcset="./images/cover_axios.webp" type="image/webp">
                     <img src="./images/cover_axios.jpg">
                 </picture>
             </div>
-            <div class="case-item">
+            <div class="case-item" id="case-2">
                 <picture>
                     <source srcset="./images/cover_rell.webp" type="image/webp">
                     <img src="./images/cover_rell.jpg">
                 </picture>
             </div>
-            <div class="case-item">
+            <div class="case-item" id="case-3">
                 <picture>
                     <source srcset="./images/cover_yeslist.webp" type="image/webp">
                     <img src="./images/cover_yeslist.jpg">
@@ -250,19 +250,19 @@
             </div>
         </div>
         <div class="row flex-row no-wrap">
-            <div class="case-item">
+            <div class="case-item" id="case-4">
                 <picture>
                     <source srcset="./images/cover_lesrf.webp" type="image/webp">
                     <img src="./images/cover_lesrf.jpg">
                 </picture>
             </div>
-            <div class="case-item">
+            <div class="case-item" id="case-5">
                 <picture>
                     <source srcset="./images/cover_realclinic.webp" type="image/webp">
                     <img src="./images/cover_realclinic.jpg">
                 </picture>
             </div>
-            <div class="case-item">
+            <div class="case-item" id="case-6">
                 <picture>
                     <source srcset="./images/cover_party.webp" type="image/webp">
                     <img src="./images/cover_party.jpg">
@@ -270,19 +270,19 @@
             </div>
         </div>
         <div class="row flex-row no-wrap">
-            <div class="case-item">
+            <div class="case-item" id="case-7">
                 <picture>
                     <source srcset="./images/cover_lord.webp" type="image/webp">
-                    <img src="./images/cover_lord.jpg">
+                    <img src="./images/cover_lord-1.jpg">
                 </picture>
             </div>
-            <div class="case-item">
+            <div class="case-item" id="case-8">
                 <picture>
                     <source srcset="./images/cover_ownex.webp" type="image/webp">
                     <img src="./images/cover_ownex.jpg">
                 </picture>
             </div>
-            <div class="case-item">
+            <div class="case-item" id="case-9">
                 <picture>
                     <source srcset="./images/cover_issledovatel.webp" type="image/webp">
                     <img src="./images/cover_issledovatel.jpg">
@@ -290,19 +290,19 @@
             </div>
         </div>
         <div class="row flex-row no-wrap">
-            <div class="case-item">
+            <div class="case-item" id="case-10">
                 <picture>
                     <source srcset="./images/cover_inc88.webp" type="image/webp">
                     <img src="./images/cover_inc88.jpg">
                 </picture>
             </div>
-            <div class="case-item">
+            <div class="case-item" id="case-11">
                 <picture>
                     <source srcset="./images/cover_dislexia.webp" type="image/webp">
                     <img src="./images/cover_dislexia.jpg">
                 </picture>
             </div>
-            <div class="case-item">
+            <div class="case-item" id="case-12">
                 <picture>
                     <source srcset="./images/cover_expocom.webp" type="image/webp">
                     <img src="./images/cover_expocom.jpg">
@@ -442,6 +442,62 @@
                 </div>
 
             </div>
+        </div>
+    </section>
+    <section class="service-block">
+        <div class="container">
+            <div class="service-block-item">
+                <div class="service-text flex-col">
+                    <h2 class="animated-paragraph_item">
+                        <span class="ov-hidden"><span>real clinic</span></span>
+                    </h2>
+                    <svg class="svg_website no-mobile" width="150" height="36" viewBox="0 0 268 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M91.9864 31.0846C102.082 28.1557 113.561 18.9618 117.051 13.8579C122.354 6.10396 116.559 -1.92187 105.937 10.5449C94.7118 23.7199 94.7716 45.2087 97.1272 55.7182C97.9234 59.2701 104.499 66.5308 114.627 53.9843C127.97 37.4553 122.873 27.9951 112.957 32.9495C104.069 37.3904 104.214 43.1873 103.497 47.6298" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M58.2335 47.7981C66.7335 44.7981 75.2335 33.8463 75.2335 30.2981C75.2335 23.7981 61.7335 27.7981 55.2335 37.7981C48.7335 47.7981 53.2334 57.7981 58.2335 60.2981C61.0619 61.7123 73.2335 61.2981 78.2335 50.2981" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M243.233 47.7981C251.733 44.7981 260.233 33.8463 260.233 30.2981C260.233 23.7981 246.733 27.7981 240.233 37.7981C233.733 47.7981 238.233 57.7981 243.233 60.2981C246.062 61.7123 258.233 61.2981 263.233 50.2981" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M4 35.6314C6 46.6314 12.9 59.4314 14.5 60.6314C16.1 61.8314 19.5 49.1314 21 50.6314L28.5 60.1314C29.5 61.6314 33 43.6314 38 35.1314" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M155 34.1312C150.5 29.6312 140 29.7314 138 36.1314C136 42.5314 146.5 43.9647 151.5 45.1314C157.5 47.1314 164.7 54.0314 161.5 57.6314C157.5 62.1314 146 63.1314 140.5 54.1314" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M178 29.1314C178 41.1314 176 60.6314 185 60.6314" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M198 22.1314C197 39.1314 207.277 64.6569 213.5 60.1314C219 56.1314 221 53.1314 222.5 48.6314" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M195.5 42.6314C200 41.6314 207.4 35.4314 211 34.6314" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M178 17.1314H178.1" stroke="white" stroke-width="9" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="svg_website only-mobile" width="67" height="16" viewBox="0 0 268 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M91.9864 31.0846C102.082 28.1557 113.561 18.9618 117.051 13.8579C122.354 6.10396 116.559 -1.92187 105.937 10.5449C94.7118 23.7199 94.7716 45.2087 97.1272 55.7182C97.9234 59.2701 104.499 66.5308 114.627 53.9843C127.97 37.4553 122.873 27.9951 112.957 32.9495C104.069 37.3904 104.214 43.1873 103.497 47.6298" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M58.2335 47.7981C66.7335 44.7981 75.2335 33.8463 75.2335 30.2981C75.2335 23.7981 61.7335 27.7981 55.2335 37.7981C48.7335 47.7981 53.2334 57.7981 58.2335 60.2981C61.0619 61.7123 73.2335 61.2981 78.2335 50.2981" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M243.233 47.7981C251.733 44.7981 260.233 33.8463 260.233 30.2981C260.233 23.7981 246.733 27.7981 240.233 37.7981C233.733 47.7981 238.233 57.7981 243.233 60.2981C246.062 61.7123 258.233 61.2981 263.233 50.2981" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M4 35.6314C6 46.6314 12.9 59.4314 14.5 60.6314C16.1 61.8314 19.5 49.1314 21 50.6314L28.5 60.1314C29.5 61.6314 33 43.6314 38 35.1314" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M155 34.1312C150.5 29.6312 140 29.7314 138 36.1314C136 42.5314 146.5 43.9647 151.5 45.1314C157.5 47.1314 164.7 54.0314 161.5 57.6314C157.5 62.1314 146 63.1314 140.5 54.1314" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M178 29.1314C178 41.1314 176 60.6314 185 60.6314" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M198 22.1314C197 39.1314 207.277 64.6569 213.5 60.1314C219 56.1314 221 53.1314 222.5 48.6314" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M195.5 42.6314C200 41.6314 207.4 35.4314 211 34.6314" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M178 17.1314H178.1" stroke="white" stroke-width="9" stroke-linecap="round"/>
+                    </svg>
+                    <p class="animated-paragraph_item">
+                        <span class="ov-hidden"><span>
+                                Real clinic - клиника уровня люкс, специализирующаяся на пластической
+                            </span></span>
+                        <span class="ov-hidden"><span>
+                                хирургии и косметологии. Задачей было разработать дизайн сайта клиники
+                            </span></span>
+                        <span class="ov-hidden"><span>
+                                современной стилистике, не отходя от нынешнего фирменного стиля с
+                            </span></span>
+                        <span class="ov-hidden"><span>
+                                расчетом на органический SEO трафик. В течении 3–х месяцев мы
+                            </span></span>
+                        <span class="ov-hidden"><span>
+                                подготавливали дизайн проект, разрабатывали сайт на системе 1С Битрикс и
+                            </span></span>
+                        <span class="ov-hidden"><span>
+                                переносили всю информацию с прошлого сайта на новый.
+                            </span></span>
+                    </p>
+                </div>
+                <div class="service-smth">
+                    
+                </div>
+            </div>    
         </div>
     </section>
     <section class="big-text align-center" id="big-text">

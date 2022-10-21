@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
 
     a {
         font-size: 4vw;
@@ -46,6 +46,9 @@
             p {
                 line-height: 0.8 !important;
             }
+            .change {
+                transform: translate3d(-150%, 0, 0);
+            }
         }
         .flex-row {  flex-direction: row !important; }
     }
@@ -67,14 +70,14 @@
             picture {
                 width: 50px !important;
                 height: 50px !important;
-                &:nth-child(1) { left: 0px !important }
-                &:nth-child(2) { left: 40px !important }
-                &:nth-child(3) { left: 80px !important }
-                &:nth-child(4) { left: 120px !important }
-                &:nth-child(5) { left: 160px !important }
-                &:nth-child(6) { left: 200px !important }
-                &:nth-child(7) { left: 240px !important }
-                &:nth-child(8) { left: 280px !important }
+                &:nth-child(1) { z-index: 1; left: 0px !important }
+                &:nth-child(2) { z-index: 2; left: 0px !important }
+                &:nth-child(3) { z-index: 3; left: 0px !important }
+                &:nth-child(4) { z-index: 4; left: 0px !important }
+                &:nth-child(5) { z-index: 5; left: 0px !important }
+                &:nth-child(6) { z-index: 6; left: 0px !important }
+                &:nth-child(7) { z-index: 7; left: 0px !important }
+                &:nth-child(8) { z-index: 8; left: 0px !important }
             }
         }
         span {
@@ -147,6 +150,18 @@
                 transform: rotate(-7deg);
             }
         }
+    }
+    
+    .service-block {
+        .service-block-item {
+            .service-text {
+                width: 100%;
+                svg {
+                    left: 40%;
+                    top: 0%;
+                }
+            }
+        }    
     }
 
     #big-text {

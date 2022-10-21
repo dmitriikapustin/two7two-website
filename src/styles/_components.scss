@@ -26,6 +26,10 @@
     height: fit-content; 
 }
 
+.animated-paragraph_item_no-scroll_h.no-mobile {
+    line-height: 12.5vh;
+}
+
 .section-horizontal-scroll {
     display: flex;  
     flex-direction: row; 

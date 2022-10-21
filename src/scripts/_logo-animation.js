@@ -8,6 +8,33 @@ $(document).ready(function () {
 
     var controller_logo_animation = new ScrollMagic.Controller();
 
+    var hide_letters_timeline = new TimelineMax()
+        .to(".u", { x: '-100%' }, 0)
+        .to(".u", 0.05, { opacity: '0' }, 0.4)
+        .to(".n", { x: '-200%' }, 0)
+        .to(".n", 0.05, { opacity: '0' }, 0.4)
+        .to(".r", { x: '-800%' }, 0)
+        .to(".r", 0.05, { opacity: '0' }, 0.4)
+        .to(".e", { x: '-900%' }, 0)
+        .to(".e", 0.05, { opacity: '0' }, 0.4)
+        .to(".s", { x: '-900%' }, 0)
+        .to(".s", 0.05, { opacity: '0' }, 0.4)
+        .to(".h", { x: '-900%' }, 0)
+        .to(".h", 0.05, { opacity: '0' }, 0.4)
+        .to(".second-f", { x: '-375%' }, 0)
+        .to(".ampersand", { x: '-270%' }, 0)
+        .to(".text-change", { x: '-150%' }, 0)
+
+    var scene = new ScrollMagic.Scene({
+        offset: offset,
+        triggerElement: '.hero-title',
+        triggerHook: 0,
+        // duration: duration,
+        reverse: true
+    })
+        .setTween(hide_letters_timeline)
+        .addTo(controller_logo_animation)
+
     var scene = new ScrollMagic.Scene({
         offset: offset,
         triggerElement: '.hero-title',
@@ -40,78 +67,78 @@ $(document).ready(function () {
         .addTo(controller_logo_animation)
 
 
-    var scene = new ScrollMagic.Scene({
-        offset: offset,
-        triggerElement: '.hero-title',
-        triggerHook: 0,
-        duration: duration,
-        reverse: true
-    })
+    // var scene = new ScrollMagic.Scene({
+    //     offset: offset,
+    //     triggerElement: '.hero-title',
+    //     triggerHook: 0,
+    //     duration: duration,
+    //     reverse: true
+    // })
 
-        .setClassToggle(".u", "u-hide")
+    //     .setClassToggle(".u", "u-hide")
 
-        .addTo(controller_logo_animation)
+    //     .addTo(controller_logo_animation)
 
 
-    var scene = new ScrollMagic.Scene({
-        offset: offset,
-        triggerElement: '.hero-title',
-        triggerHook: 0,
-        duration: duration,
-        reverse: true
-    })
+    // var scene = new ScrollMagic.Scene({
+    //     offset: offset,
+    //     triggerElement: '.hero-title',
+    //     triggerHook: 0,
+    //     duration: duration,
+    //     reverse: true
+    // })
 
-        .setClassToggle(".n", "n-hide")
+    //     .setClassToggle(".n", "n-hide")
 
-        .addTo(controller_logo_animation)
+    //     .addTo(controller_logo_animation)
 
-    var scene = new ScrollMagic.Scene({
-        offset: offset,
-        triggerElement: '.hero-title',
-        triggerHook: 0,
-        duration: duration,
-        reverse: true
-    })
+    // var scene = new ScrollMagic.Scene({
+    //     offset: offset,
+    //     triggerElement: '.hero-title',
+    //     triggerHook: 0,
+    //     duration: duration,
+    //     reverse: true
+    // })
 
-        .setClassToggle(".r", "r-hide")
+    //     .setClassToggle(".r", "r-hide")
 
-        .addTo(controller_logo_animation)
+    //     .addTo(controller_logo_animation)
 
-    var scene = new ScrollMagic.Scene({
-        offset: offset,
-        triggerElement: '.hero-title',
-        triggerHook: 0,
-        duration: duration,
-        reverse: true
-    })
+    // var scene = new ScrollMagic.Scene({
+    //     offset: offset,
+    //     triggerElement: '.hero-title',
+    //     triggerHook: 0,
+    //     duration: duration,
+    //     reverse: true
+    // })
 
-        .setClassToggle(".e", "e-hide")
+    //     .setClassToggle(".e", "e-hide")
 
-        .addTo(controller_logo_animation)
+    //     .addTo(controller_logo_animation)
 
-    var scene = new ScrollMagic.Scene({
-        offset: offset,
-        triggerElement: '.hero-title',
-        triggerHook: 0,
-        duration: duration,
-        reverse: true
-    })
+    // var scene = new ScrollMagic.Scene({
+    //     offset: offset,
+    //     triggerElement: '.hero-title',
+    //     triggerHook: 0,
+    //     duration: duration,
+    //     reverse: true
+    // })
 
-        .setClassToggle(".s", "s-hide")
+    //     .setClassToggle(".s", "s-hide")
 
-        .addTo(controller_logo_animation)
+    //     .addTo(controller_logo_animation)
 
-    var scene = new ScrollMagic.Scene({
-        offset: offset,
-        triggerElement: '.hero-title',
-        triggerHook: 0,
-        duration: duration,
-        reverse: true
-    })
+    // var scene = new ScrollMagic.Scene({
+    //     offset: offset,
+    //     triggerElement: '.hero-title',
+    //     triggerHook: 0,
+    //     duration: duration,
+    //     reverse: true
+    // })
 
-        .setClassToggle(".h", "h-hide")
+    //     .setClassToggle(".h", "h-hide")
 
-        .addTo(controller_logo_animation)
+    //     .addTo(controller_logo_animation)
 
     var scene = new ScrollMagic.Scene({
         offset: offset,

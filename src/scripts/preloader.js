@@ -70,7 +70,7 @@ var counting = setInterval(function () {
                         $(this).addClass("path-no-scroll-" + index)
                         $(this).attr('id', "path-no-scroll-" + index);
                         const path = $('path#path-no-scroll-' + index)
-                        console.log(path)
+                        // console.log(path)
                         var lineLength = Math.round(path[0].getTotalLength());
                         $(this).css("stroke-dasharray", lineLength);
                         $(this).css("stroke-dashoffset", lineLength);
@@ -107,10 +107,36 @@ var counting = setInterval(function () {
                 tl_images.to($(".team-photos"), 0.35, { x: 0, y: 0, scale: 1, rotate: "0deg" }, 2);
 
                 //  SHOW ALL IMAGES 
-                $(".team-photos picture").each(function (image_index) {
-                    var tl = new TimelineMax();
-                    tl.to(this, 0.8, { x: 0 + image_index * 50 }, 2.7);
-                })
+
+                if ($(window).width() > 800) {
+                    $(".team-photos picture").each(function (image_index) {
+                        var tl = new TimelineMax();
+                        tl.to(this, 0.8, { x: 0 + image_index * 50 }, 2.7);
+                    })
+                }
+                ///////////  FOR MOBILE  //////////
+
+                if ($(window).width() < 800) {
+                    $(".team-photos picture").each(function (image_index) {
+                        var tl = new TimelineMax();
+                        tl.to(this, 0.8, { x: 0 + image_index * 32 }, 3);
+                    })
+                    // PARAGRAPH UNDER IMAGES APPEARANCE
+                    for (parapraphs_1_index = 0; parapraphs_1_index < parapraphs_1_count; parapraphs_1_index++) {
+                        $('.paragraph_1-index-' + parapraphs_1_index + " span").each(function (index) {
+                            var tl_1 = new TimelineMax();
+                            tl_1.to(this, 0.42, { y: 0 }, 3.4 + index * 0.09);
+                        });
+                    }
+
+                    // SECOND PARAGRAPH APPEARANCE
+                    for (parapraphs_2_index = 0; parapraphs_2_index < parapraphs_2_count; parapraphs_2_index++) {
+                        $('.paragraph_2-index-' + parapraphs_2_index + " span").each(function (index) {
+                            var tl_2 = new TimelineMax();
+                            tl_2.to(this, 0.42, { y: 0 }, 2 + index * 0.09);
+                        });
+                    }
+                }
             }
         }
     }
