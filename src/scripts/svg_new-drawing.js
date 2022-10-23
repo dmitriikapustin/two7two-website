@@ -15,7 +15,7 @@ $(document).ready(function () {
         var svg_paths_count = $(".svg-index-" + svg_index + " path").length;
         console.log(svg_paths_count);
         $(".svg-index-" + svg_index + " path").each(function (index) {
-            $(this).addClass("path-" + index)
+            $(this).addClass("stroke-zero path-" + index)
             $(this).attr('id', "path-" + index);
             // const path = $('path#path-' + index)
             // console.log(path)
@@ -26,19 +26,18 @@ $(document).ready(function () {
             var delay = 1 / svg_paths_count * index;
             var tween = new TimelineMax()
             tween
-            .to($(this), duration - 1, 
-                { opacity: 1, ease: Linear.easeNone }, 
+            .to($(this), 0, 
+                { opacity: 1, ease: "none" }, 
                 delay)
                 .to($(this), duration, 
-                { strokeDashoffset: 0, ease: Linear.easeNone }, 
+                { strokeDashoffset: 0, ease: "none" }, 
                 delay)
             // build scene
             var scene = new ScrollMagic.Scene({
                     triggerElement: ".trigger-for-svg-" + svg_index,
-                    duration: 0,
-                    reverse: true
+                    reverse: false,
                 })
-                .offset(-100)
+                .offset(-50)
                 .setTween(tween)
                 .addIndicators()
                 .addTo(controller_svg_animation_scroll);

@@ -5,44 +5,84 @@ $(document).ready(function () {
     const textContainer = document.getElementById("text_container")
 
     const images = $('.team-photos picture')
-    Array.prototype.forEach.call(images, (child) => {
-        (function(){
-            child.addEventListener("mouseover", function (event) {
-                // console.log("image " + index + " over")
-                textContainer.innerHTML = ``
-                textContainer.classList.add("under-text")
-                const textOver = document.createElement('p')
-                textOver.classList.add("animated-paragraph_item_no-scroll_1")
-                textOver.innerHTML  = `                            
-                <span class="ov-hidden"><span>
-                    Дмитрий
-                </span></span>
-                `
-                textContainer.appendChild(textOver)
-            });
-        })();
-        // (function(){    
-        //     child.addEventListener("mouseleave", function (event) {
-        //         // console.log("image " + index + " leave")
-        //         textContainer.innerHTML = ``
-        //         textContainer.classList.add("under-text")
-        //         const textLeave = document.createElement('p')
-        //         textLeave.classList.add("animated-paragraph_item_no-scroll_1")
-        //         textLeave.innerHTML = `                            
-        //         <span class="ov-hidden"><span>
-        //             Мы помогаем бизнесу увеличивать продажи,
-        //         </span></span>
-        //         <span class="ov-hidden"><span>
-        //             соответствовать трендам и обновляться
-        //         </span></span>
-        //         `
-        //         textContainer.appendChild(textLeave)
-        
-        //     });
-        // })();  
-      });
+
+    let team = [];
+
+    team[0] = {
+        name: "Dmitrii",
+        role: "Pidor day fuck 0"
+    }
+    team[1] = {
+        name: "Dmitrii",
+        role: "Pidor day fuck 1"
+    }
+    team[2] = {
+        name: "Dmitrii",
+        role: "Pidor day fuck 2"
+    }
+    team[3] = {
+        name: "Dmitrii",
+        role: "Pidor day fuck 3"
+    }
+    team[4] = {
+        name: "Dmitrii",
+        role: "Pidor day fuck 3"
+    }
+    team[5] = {
+        name: "Dmitrii",
+        role: "Pidor day fuck 3"
+    }
+    team[6] = {
+        name: "Dmitrii",
+        role: "Pidor day fuck 3"
+    }
+    team[7] = {
+        name: "Dmitrii",
+        role: "Pidor day fuck 3"
+    }
+
+
+    for (i = 0; i < $('.team-photos picture').length; i++) {
+        $(".under-text").append('<p class="person-text animated-paragraph_item_no-scroll_team_' + i + '" id="text_under_iamges"><span class="ov-hidden"><span><b>' + team[i].name + '</b></span></span><span class="ov-hidden"><span>' + team[i].role + '</span></span></p>');
+    }
     
-    // console.log(typeof images)
+
+    $('.team-photos picture').on({
+        mouseenter: function() {
+            $('.animated-paragraph_item_no-scroll_team_' + $(this).index() + ' span span').each(function (index) {
+                var tl_1 = new TimelineMax();
+                tl_1.to(this, 0.42, { y: 0 }, 0.5 + index * 0.09);
+            });
+        },
+        mouseleave: function() {
+            $('.person-text span span').each(function (index) {
+                var tl_1 = new TimelineMax();
+                tl_1.to(this, 0.42, { y: "1.3em" }, index * 0.02);
+            });
+        }
+    });
+
+    $('.team-photos').on({
+        mouseenter: function() {
+            $('.animated-paragraph_item_no-scroll_1 span span').each(function (index) {
+                var tl_1 = new TimelineMax();
+                tl_1.to(this, 0.42, { y: "1.3em" }, index * 0.09);
+            });
+        },
+        mouseleave: function() {
+            $('.animated-paragraph_item_no-scroll_1 span span').each(function (index) {
+                var tl_1 = new TimelineMax();
+                tl_1.to(this, 0.42, { y: 0 }, 1 + index * 0.09);
+            });
+            $('.person-text span span').each(function (index) {
+                var tl_1 = new TimelineMax();
+                tl_1.to(this, 0.2, { y: "1.3em" }, index * 0.02);
+            });
+        }
+
+    });
+
+
 
 
 })

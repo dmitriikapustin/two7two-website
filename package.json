@@ -1,11 +1,12 @@
 {
-  "name": "mezon",
+  "name": "FUN&FRESH",
   "version": "1.0.0",
   "description": "Text",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "ftp-deploy --server 37.140.192.94 --username u1255912 --password \"27w_Ycy8\" --server-dir ./www/funandfresh.ru/ --local-dir ./dist/"
+    "deploy-production": "gulp build && ftp-deploy --server 37.140.192.94 --username u1255912 --password \"27w_Ycy8\" --server-dir ./www/funandfresh.ru/ --local-dir ./dist/",
+    "deploy-dev": "gulp build && ftp-deploy --server 37.140.192.94 --username u1255912 --password \"27w_Ycy8\" --server-dir ./www/dev.funandfresh.ru/ --local-dir ./dist/"
   },
   "keywords": [],
   "author": "Dmitrii Kapustin",

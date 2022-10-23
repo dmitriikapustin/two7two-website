@@ -38,6 +38,9 @@
     }
 
     .header {
+        .container {
+            padding: 10px 0 !important;
+        }
         .logo-text {
             width: fit-content;
             svg {
@@ -78,6 +81,7 @@
             flex-direction: column-reverse !important;
             margin-top: 50px;
             .hero-text {
+                justify-content: start;
                 margin-bottom: 30px;
             }
         }
@@ -144,10 +148,16 @@
             margin: 0.4em 0;
         }
         p {
-            font-weight: 500;
+            font-weight: 700;
         }
         .service-item {
             margin: 30px 0;
+            .service-name {
+                .heading_for_services {
+                    width: 70%;
+                    top: -25%;
+                }
+            }
             & .service-name h2::after {
                 font-size: 55%;
                 left: 50%;
@@ -172,15 +182,48 @@
     }
     
     .service-block {
+        h2 {
+            font-size: 12vw !important;
+            margin-bottom: 15px !important;
+        }
+        .container {
+            padding-top: 100px !important;
+        }
         .service-block-item {
             .service-text {
+                
                 width: 100%;
                 svg {
-                    left: 40%;
-                    top: 0%;
+                    width: 30%;
+                    left: 65%;
+                    top: -4%;
                 }
             }
         }    
+    }
+    .case-block {
+
+        img, video, picture {
+            border-radius: 13px !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+ 
+        .double-picture {
+            picture:nth-child(1) {
+                margin-bottom: 13px;
+            }
+        }
+
+        .container {
+            padding: 0 !important;
+            .container-small-text {
+                width: 100%;
+            }
+        }
+        padding-top: 0px;
+        padding-bottom: 0px;
+
     }
 
     .images-30-70 {
@@ -190,6 +233,9 @@
                 height: fit-content;
                 width: 100%;
                 margin-bottom: 20px;
+                &:nth-child(3) {
+                    margin-bottom: 0px;
+                }
             }
         }
     }

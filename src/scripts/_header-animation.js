@@ -4,15 +4,15 @@ $(document).ready(function () {
     // HIDE BEFORE CASES
 
     // variant with toggling class
-    var scene = new ScrollMagic.Scene({
-        duration: 770,
-        triggerElement: '.cases-scroll',
-        triggerHook: 1,
-        reverse: true
-    })
-    .offset($(window).height())
-    .setClassToggle(".header", "hidden")
-    .addTo(controller_header_animation)
+    // var scene = new ScrollMagic.Scene({
+    //     duration: 770,
+    //     triggerElement: '.cases-scroll',
+    //     triggerHook: 1,
+    //     reverse: true
+    // })
+    // .offset($(window).height())
+    // .setClassToggle(".header", "hidden")
+    // .addTo(controller_header_animation)
 
     // HIDE BEFORE FOOTER
 

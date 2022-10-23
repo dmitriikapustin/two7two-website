@@ -23,7 +23,7 @@ $(document).ready(function () {
         .to(".h", 0.05, { opacity: '0' }, 0.3)
         .to(".second-f", { x: '-375%' }, 0)
         .to(".ampersand", { x: '-270%' }, 0)
-        .to(".text-change", 0.1, { x: '-150%' }, 0.2)
+        .to(".text-change", 0.1, { x: '-150%', ease: Linear.easeNone }, 0.2)
 
     var scene = new ScrollMagic.Scene({
         offset: offset,

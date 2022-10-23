@@ -25,6 +25,7 @@ $(document).ready(function () {
                 duration: 69,
                 reverse: true
             })
+                .addIndicators()
                 .setTween(tl)
                 .addTo(controller_p_animation);
         });

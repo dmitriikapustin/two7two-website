@@ -17,8 +17,8 @@ $(document).ready(function () {
         // Set timeline with zero delay after parameters
         var text_animation_timeline = new TimelineMax()
             .to(".row:nth-child(1)", { x: '4%' }, 0)
-            .to(".row:nth-child(2)", { x: '-24%' }, 0)
-            .to(".row:nth-child(3)", { x: '-6%' }, 0)
+            .to(".row:nth-child(2)", { x: '-33%' }, 0)
+            .to(".row:nth-child(3)", { x: '-3%' }, 0)
             .to(".row:nth-child(4)", { x: '-26%' }, 0)
 
         // ScrollMagic animation for texts timeline

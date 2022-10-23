@@ -19,7 +19,7 @@
 }
 
 // Animation line-by-line
-.animated-paragraph_item, .animated-paragraph_item_no-scroll_1, .animated-paragraph_item_no-scroll_2, .animated-paragraph_item_no-scroll_h {
+.animated-paragraph_item, .animated-paragraph_item_no-scroll_1, .animated-paragraph_item_no-scroll_2, .animated-paragraph_item_no-scroll_h, .animated-paragraph_item_no-scroll_team {
     position: relative;
     margin: 0;
     overflow: hidden;
@@ -27,7 +27,11 @@
 }
 
 .animated-paragraph_item_no-scroll_h.no-mobile {
-    line-height: 12.5vh;
+    line-height: 1.3em;
+}
+
+.person-text {
+    margin: 0 !important
 }
 
 .section-horizontal-scroll {

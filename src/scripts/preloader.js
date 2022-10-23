@@ -67,8 +67,9 @@ var counting = setInterval(function () {
                 
                     for (svg_index = 0; svg_index < svg_count; svg_index++) {
                         var svg_paths_count = $(".svg-index-no-scroll-" + svg_index + " path").length;
-                        console.log(svg_paths_count);
                         
+                        var unique_delay = 500 * svg_index;
+                            console.log(svg_index);
                             $(".svg-index-no-scroll-" + svg_index + " path").each(function (index) {
                                 $(this).addClass("path-no-scroll-" + index)
                                 $(this).attr('id', "path-no-scroll-" + index);
@@ -81,14 +82,15 @@ var counting = setInterval(function () {
                                 var delay = 1.15 / svg_paths_count * index;
                                 var tween = new TimelineMax()
                                 tween
-                                    .to($(this), duration - 1, 
+                                    .to($(this), 0, 
                                     { opacity: 1, ease: Linear.easeNone }, 
-                                    2 + delay)
+                                    1 * svg_index + 2 + delay)
                                     .to($(this), duration, 
                                     { strokeDashoffset: 0, ease: Linear.easeNone }, 
-                                    2 + delay)
+                                    1 * svg_index + 2 + delay)
                             })
-                        
+
+
                     }
                 
 

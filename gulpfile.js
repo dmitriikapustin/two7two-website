@@ -71,7 +71,7 @@ function html() {
   }
 
   function favicons() {
-    return src('dist/images/favicons/**.{png,jpg,ico}')
+    return src('dist/images/favicons/**.{png,jpg,ico,xml,json}')
     .pipe(imagemin())
     .pipe(dest('dist/images/favicons'))
   }
