@@ -54,7 +54,26 @@
     }
 
     .main-hero {
-        .container { height: fit-content !important; padding-top: 25% !important; }
+        .container { 
+            height: fit-content !important; padding-top: 25% !important;
+            .svg_250, .svg_400, .svg_150 {
+                width: 26%;
+            }
+            .svg_250 {
+                top: 21%;
+                left: 65%;
+            }
+            .svg_400 {
+                top: 37%;
+                left: 72%;
+                transform: rotate(-5.43deg);
+            }
+            .svg_150 {
+                top: 44.5%;
+                left: 38%;
+                transform: rotate(-3.88deg);
+            }
+        }
         .hero-bottom {
             flex-direction: column-reverse !important;
             margin-top: 50px;
@@ -162,6 +181,17 @@
                 }
             }
         }    
+    }
+
+    .images-30-70 {
+        .container {
+            flex-direction: column;
+            picture {
+                height: fit-content;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
     }
 
     #big-text {

@@ -1,3 +1,5 @@
+// import DrawSVGPlugin 
+// gsap.registerPlugin(DrawSVG)
 var counting = setInterval(function () {
     var loader = document.getElementById("percentage");
     var currval = parseInt(loader.innerHTML);
@@ -62,27 +64,34 @@ var counting = setInterval(function () {
                 }
 
                 // SVG DRAWING
+                
+                    for (svg_index = 0; svg_index < svg_count; svg_index++) {
+                        var svg_paths_count = $(".svg-index-no-scroll-" + svg_index + " path").length;
+                        console.log(svg_paths_count);
+                        
+                            $(".svg-index-no-scroll-" + svg_index + " path").each(function (index) {
+                                $(this).addClass("path-no-scroll-" + index)
+                                $(this).attr('id', "path-no-scroll-" + index);
+                                var path = $('path#path-no-scroll-' + index)
+                                // console.log(path)
+                                var lineLength = Math.round($(this)[0].getTotalLength());
+                                $(this).css("stroke-dasharray", lineLength);
+                                $(this).css("stroke-dashoffset", lineLength);
+                                var duration = 1.1 / svg_paths_count;
+                                var delay = 1.15 / svg_paths_count * index;
+                                var tween = new TimelineMax()
+                                tween
+                                    .to($(this), duration - 1, 
+                                    { opacity: 1, ease: Linear.easeNone }, 
+                                    2 + delay)
+                                    .to($(this), duration, 
+                                    { strokeDashoffset: 0, ease: Linear.easeNone }, 
+                                    2 + delay)
+                            })
+                        
+                    }
+                
 
-                for (svg_index = 0; svg_index < svg_count; svg_index++) {
-                    var svg_paths_count = $(".svg-index-no-scroll-" + svg_index + " path").length;
-                    console.log(svg_paths_count);
-                    $(".svg-index-no-scroll-" + svg_index + " path").each(function (index) {
-                        $(this).addClass("path-no-scroll-" + index)
-                        $(this).attr('id', "path-no-scroll-" + index);
-                        const path = $('path#path-no-scroll-' + index)
-                        // console.log(path)
-                        var lineLength = Math.round(path[0].getTotalLength());
-                        $(this).css("stroke-dasharray", lineLength);
-                        $(this).css("stroke-dashoffset", lineLength);
-                        var duration = 1.1 / svg_paths_count;
-                        var delay = 1.15 / svg_paths_count * index;
-                        var tween = new TimelineMax()
-                        tween.to($(this), duration, {
-                            strokeDashoffset: 0,
-                            ease: Linear.easeNone
-                        }, 2 + delay)
-                    })
-                }
 
 
                 // PARAGRAPH UNDER IMAGES APPEARANCE

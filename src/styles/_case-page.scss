@@ -1,0 +1,70 @@
+.case-block {
+    background: $color-2;
+    .full-width.container {
+        width: 100%;
+        
+        video {
+            max-width: 100%;
+            height: fit-content;
+            display: block;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        picture img { @include radius }
+    }
+    .double-picture.container {
+        picture {
+            width: calc(50% - 25px);
+            @include radius
+        }
+    }
+}
+
+.service-block {
+    padding-top: 169px !important;
+    .service-block-item {
+        width: 100%;
+        .service-text {
+            width: 50%;
+            position: relative;
+            h2 {
+                text-transform: uppercase;
+                font-size: 7.25vw;
+                margin-bottom: 43px;
+            }
+            svg {
+                position: absolute;
+                left: 79%;
+                top: 0%;
+                transform: rotate(5.73deg);
+            }
+        }
+    }
+}
+
+.small-text {
+    .container-small-text {
+        position: relative;
+        width: 50%;
+        svg {
+            position: absolute;
+            left: 130%;
+            top: 20%;
+            transform: rotate(5.73deg);        
+        }
+    }
+}
+
+.images-30-70 {
+    picture {
+        height: 80vh;
+        img { @include radius }
+        &:nth-child(1) {
+            width: calc(60% - 50px);
+            margin-right: 50px;
+        }
+        &:nth-child(2) {
+            width: 40%;
+        }
+    }
+}

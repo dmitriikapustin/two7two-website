@@ -7,8 +7,8 @@ $(document).ready(function () {
 
     // Set timeline with zero delay after parameters
     var text_animation_timeline = new TimelineMax()
-        .to(".scrolling-text-item1", {left: '0'}, 0)
-        .to(".scrolling-text-item2", {left: '-100%'}, 0)
+        .to(".scrolling-item1", {x: '0'}, 0)
+        .to(".scrolling-item2", {x: '-100%'}, 0)
 
     // ScrollMagic animation for texts timeline
     var scene = new ScrollMagic.Scene({

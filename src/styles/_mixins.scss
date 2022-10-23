@@ -39,3 +39,8 @@
     background: white;
     border-radius: 0;
 }
+
+@mixin radius {
+    border-radius: 30px;
+    overflow: hidden;
+}
