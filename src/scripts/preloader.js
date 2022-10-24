@@ -49,11 +49,13 @@ var counting = setInterval(function () {
 
                 // HEADER APPEARANCE
 
-                var header = document.getElementById("header")
                 
-                setTimeout(function () {
-                    header.classList.remove("hidden")
-                }, 0)
+                // setTimeout(function () {
+                //     header.classList.remove("hidden")
+                // }, 0)
+                
+                var tl_header = new TimelineMax();
+                tl_header.to($("#header"), 1.2, {y: 0}, 0)
 
                 // HEADING APPEARANCE
                 for (parapraphs_h_index = 0; parapraphs_h_index < parapraphs_h_count; parapraphs_h_index++) {

@@ -1,6 +1,8 @@
 $(document).ready(function () {
     // LINES ANIMATION
-
+    // if ($( window ).width() >= 801 ) {
+        
+    // }
     var duration = 800;
     var offset = -50;
 

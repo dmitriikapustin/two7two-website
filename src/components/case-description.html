@@ -2,43 +2,53 @@
     <div class="container">
         <div class="service-block-item">
             <div class="service-text flex-col hero-title">
-                <h2 class="animated-paragraph_item_no-scroll_1">
-                    <span class="ov-hidden"><span>@@project</span></span>
-                </h2>
+                <div class="h2-wrapper">
+                    <h2 class="animated-paragraph_item_no-scroll_1">
+                        <span class="ov-hidden"><span>@@project</span></span>
+                    </h2>
+                    @@if (service === "website") {
+                        <svg class="svg-animation_item_no-scroll svg_website svg-color-4" width="363" height="119" viewBox="0 0 363 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M54.0577 56.843C55.0577 51.343 48.5577 50.343 44.5866 51.343C37.3137 53.1745 32.5722 63.343 33.0305 68.843C33.326 72.3881 36.846 80.5069 47.5017 77.843C49.5306 77.3358 55.0577 74.843 57.0577 69.843" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M89.5905 53.6361C89.4238 49.9694 87.4905 42.936 83.0905 44.136C77.5905 45.636 70.0905 55.636 71.0905 66.6361C72.0508 77.1991 77.5905 80.1361 81.5905 76.1361C85.5905 72.1361 92.5905 59.1361 93.5905 54.6361C94.3905 51.0361 95.0905 47.4694 94.5905 47.6361C93.7571 52.8027 93.3905 69.4361 94.5905 74.6361" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M112.739 49.5C112.239 61.5 107.161 77.1537 112.239 78C115.239 78.5 120.739 70.5 133.239 57C133.739 55.5 132.739 75 135.739 78" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M125 44C128.5 42.5 131.5 41.5 136 41" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M152 55.5C160.167 53.8333 165.5 52 177 51" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M161.5 54C162 59.1667 162.5 70.5 161 76" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                        </svg>
+                        }
+                        @@if (service === "promo") {
+                            <svg class="svg-animation_item_no-scroll svg_promo svg-color-5" width="363" height="119" viewBox="0 0 363 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26 47C26 52.5 29.5 79 30 77C29.8333 70.3333 23.5 61.5 35 53.5C36.7365 52.292 41.5 47 43 48.5C46 50 49.5 67 50.5 76.5" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M65 45C65 53.6667 65.5 76.5 73 94C73 95 61.4801 61.1266 70 54.5C74.5 51 82.15 43.5 86 54.5C93 74.5 76.5 78.5 73.5 70.5" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M102.061 58.9173C102.483 63.7652 105.894 68.584 108.061 71.4173C116.061 79.0173 125.96 77.4173 128.061 72.2803C129.46 65.9173 125.561 54.8459 119.561 51.4173C112.561 47.4173 101.061 47.4173 102.061 58.9173Z" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M143 77.1705C144.5 69.5039 147 55.1705 146 47.1705C145.702 44.7891 159.5 68.1706 159.5 66.1705L169 50.1705C170 48.1706 175.5 74.6706 175.5 77.1705" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M190.061 58.9173C190.483 63.7652 193.894 68.584 196.061 71.4173C204.061 79.0173 213.96 77.4173 216.061 72.2803C217.46 65.9173 213.561 54.8459 207.561 51.4173C200.561 47.4173 189.061 47.4173 190.061 58.9173Z" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                            </svg>
+                        }
+                        @@if (service === "branding") {
+                            <svg class="svg-animation_item_no-scroll svg_branding svg-color-6" width="363" height="119" viewBox="0 0 363 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M44.0669 58.5C40.5668 54 30.0667 59.5 31.0668 74C31.7982 84.6031 42.4784 84 48.9784 79C52.9784 75 55.7667 70.8 50.5667 60C44.0667 46.5 34.5667 34.5 36.0667 34.5C37.2667 34.5 48.7335 34 54.5668 34" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M70 50C70 58.6667 70.5 81.5 78 99C78 100 66.4801 66.1266 75 59.5C79.5 56 87.15 48.5 91 59.5C98 79.5 81.5 83.5 78.5 75.5" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M113.233 68.6667C121.733 65.6667 130.233 54.7149 130.233 51.1667C130.233 44.6667 116.733 48.6667 110.233 58.6667C103.733 68.6667 108.233 78.6667 113.233 81.1667C116.062 82.5809 128.233 82.1667 133.233 71.1667" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M150.789 82.4739C148.789 77.4739 147.289 56.4739 147.289 50.4739" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M149 69.6055C154.167 67.6055 165.7 63.6055 168.5 63.6055C171.3 63.6055 169 48.6055 169 50.1054C169 57.1055 171 74.6055 173.5 81.1055" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M206.657 57.0964C203.324 53.4297 196.789 48.3572 191.789 56.4768C183.275 70.3036 190.345 88.123 200.789 81.4768C211.789 74.4768 206.657 46.5964 208.157 51.5964L211.289 68.9768L214.157 85.5964C215.789 94.9768 211.789 106.477 201.789 106.977C189.215 107.606 189.789 87.9768 202.789 92.4768" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M231.739 53.5C231.239 65.5 226.161 81.1537 231.239 82C234.239 82.5 239.739 74.5 252.239 61C252.739 59.5 251.739 79 254.739 82" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M273.5 82.4739C271.5 77.4739 270 56.4739 270 50.4739" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M271.711 69.6055C276.878 67.6055 288.411 63.6055 291.211 63.6055C294.011 63.6055 291.711 48.6055 291.711 50.1054C291.711 57.1055 293.711 74.6055 296.211 81.1055" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M310 57.7065C318.5 50.2065 330 45.2065 332 49.7065C335.558 57.713 317.921 67.7066 315.5 79.2065C314.237 85.2065 325 80.2065 333.5 74.7065" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                            </svg>
+                        }
+                        @@if (service === "smm") {
+                            <svg class="svg-animation_item_no-scroll svg_smm svg-color-3" width="363" height="119" viewBox="0 0 363 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M47.2501 49.1255C42.7501 44.6256 32.2501 44.7257 30.2501 51.1257C28.2501 57.5257 38.7501 58.9591 43.7501 60.1257C49.7501 62.1257 56.9501 69.0257 53.7501 72.6257C49.7501 77.1257 38.2501 78.1257 32.7501 69.1257" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M71.2361 45C70.2361 57 72.7361 79.5 72.736 76.5C70.7361 59 70.2361 63 81.7361 52C86.9634 47 83.7361 64.5 86.236 71.5C86.236 72.5 89.2361 58.5 95.2361 54.5C98.4854 52.3338 95.2361 71.5 102.236 76" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M117.236 44C116.236 56 118.736 78.5 118.736 75.5C116.736 58 116.236 62 127.736 51C132.963 46 129.736 63.5 132.236 70.5C132.236 71.5 135.236 57.5 141.236 53.5C144.485 51.3338 141.236 70.5 148.236 75" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                            </svg>
+                        }
+                </div>
 
-                @@if (service === "website") {
-                    <svg class="svg-animation_item_no-scroll svg_website svg-color-4" width="363" height="119" viewBox="0 0 363 119" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M54.0577 56.843C55.0577 51.343 48.5577 50.343 44.5866 51.343C37.3137 53.1745 32.5722 63.343 33.0305 68.843C33.326 72.3881 36.846 80.5069 47.5017 77.843C49.5306 77.3358 55.0577 74.843 57.0577 69.843" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M89.5905 53.6361C89.4238 49.9694 87.4905 42.936 83.0905 44.136C77.5905 45.636 70.0905 55.636 71.0905 66.6361C72.0508 77.1991 77.5905 80.1361 81.5905 76.1361C85.5905 72.1361 92.5905 59.1361 93.5905 54.6361C94.3905 51.0361 95.0905 47.4694 94.5905 47.6361C93.7571 52.8027 93.3905 69.4361 94.5905 74.6361" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M112.739 49.5C112.239 61.5 107.161 77.1537 112.239 78C115.239 78.5 120.739 70.5 133.239 57C133.739 55.5 132.739 75 135.739 78" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M125 44C128.5 42.5 131.5 41.5 136 41" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M152 55.5C160.167 53.8333 165.5 52 177 51" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M161.5 54C162 59.1667 162.5 70.5 161 76" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                    </svg>
-                }
-                @@if (service === "promo") {
-                    <svg class="svg-animation_item_no-scroll svg_promo svg-color-5" width="363" height="119" viewBox="0 0 363 119" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26 47C26 52.5 29.5 79 30 77C29.8333 70.3333 23.5 61.5 35 53.5C36.7365 52.292 41.5 47 43 48.5C46 50 49.5 67 50.5 76.5" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M65 45C65 53.6667 65.5 76.5 73 94C73 95 61.4801 61.1266 70 54.5C74.5 51 82.15 43.5 86 54.5C93 74.5 76.5 78.5 73.5 70.5" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M102.061 58.9173C102.483 63.7652 105.894 68.584 108.061 71.4173C116.061 79.0173 125.96 77.4173 128.061 72.2803C129.46 65.9173 125.561 54.8459 119.561 51.4173C112.561 47.4173 101.061 47.4173 102.061 58.9173Z" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M143 77.1705C144.5 69.5039 147 55.1705 146 47.1705C145.702 44.7891 159.5 68.1706 159.5 66.1705L169 50.1705C170 48.1706 175.5 74.6706 175.5 77.1705" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M190.061 58.9173C190.483 63.7652 193.894 68.584 196.061 71.4173C204.061 79.0173 213.96 77.4173 216.061 72.2803C217.46 65.9173 213.561 54.8459 207.561 51.4173C200.561 47.4173 189.061 47.4173 190.061 58.9173Z" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                    </svg>
-                }
-                @@if (service === "branding") {
-                    <svg class="svg-animation_item_no-scroll svg_branding svg-color-6" width="363" height="119" viewBox="0 0 363 119" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M44.0669 58.5C40.5668 54 30.0667 59.5 31.0668 74C31.7982 84.6031 42.4784 84 48.9784 79C52.9784 75 55.7667 70.8 50.5667 60C44.0667 46.5 34.5667 34.5 36.0667 34.5C37.2667 34.5 48.7335 34 54.5668 34" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M70 50C70 58.6667 70.5 81.5 78 99C78 100 66.4801 66.1266 75 59.5C79.5 56 87.15 48.5 91 59.5C98 79.5 81.5 83.5 78.5 75.5" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M113.233 68.6667C121.733 65.6667 130.233 54.7149 130.233 51.1667C130.233 44.6667 116.733 48.6667 110.233 58.6667C103.733 68.6667 108.233 78.6667 113.233 81.1667C116.062 82.5809 128.233 82.1667 133.233 71.1667" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M150.789 82.4739C148.789 77.4739 147.289 56.4739 147.289 50.4739" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M149 69.6055C154.167 67.6055 165.7 63.6055 168.5 63.6055C171.3 63.6055 169 48.6055 169 50.1054C169 57.1055 171 74.6055 173.5 81.1055" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M206.657 57.0964C203.324 53.4297 196.789 48.3572 191.789 56.4768C183.275 70.3036 190.345 88.123 200.789 81.4768C211.789 74.4768 206.657 46.5964 208.157 51.5964L211.289 68.9768L214.157 85.5964C215.789 94.9768 211.789 106.477 201.789 106.977C189.215 107.606 189.789 87.9768 202.789 92.4768" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M231.739 53.5C231.239 65.5 226.161 81.1537 231.239 82C234.239 82.5 239.739 74.5 252.239 61C252.739 59.5 251.739 79 254.739 82" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M273.5 82.4739C271.5 77.4739 270 56.4739 270 50.4739" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M271.711 69.6055C276.878 67.6055 288.411 63.6055 291.211 63.6055C294.011 63.6055 291.711 48.6055 291.711 50.1054C291.711 57.1055 293.711 74.6055 296.211 81.1055" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                        <path d="M310 57.7065C318.5 50.2065 330 45.2065 332 49.7065C335.558 57.713 317.921 67.7066 315.5 79.2065C314.237 85.2065 325 80.2065 333.5 74.7065" stroke="black" stroke-width="8" stroke-linecap="round"/>
-                    </svg>
-                }
+
 
                 <p class="animated-paragraph_item_no-scroll_2">
                     @@description

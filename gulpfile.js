@@ -20,9 +20,9 @@ function html() {
       .pipe(include({
         prefix: '@@'
       }))
-      .pipe(htmlmin({
-        collapseWhitespace: true
-      }))
+      // .pipe(htmlmin({
+      //   collapseWhitespace: true
+      // }))
       .pipe(dest('dist'))      
   }
 
