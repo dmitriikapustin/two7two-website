@@ -166,6 +166,7 @@
 }
 
 
+
 .main-hero {
     .container { 
         height: 100vh;
@@ -303,6 +304,18 @@
                 // margin-bottom: 18.72px;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .svg_250 {
+        top: 26% !important;
+    }
+    .svg_400 {
+        top: 51.8% !important;
+    }
+    .svg_150 {
+        top: 53% !important;
     }
 }
 
