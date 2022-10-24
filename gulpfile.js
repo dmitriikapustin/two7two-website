@@ -23,7 +23,7 @@ function html() {
       .pipe(htmlmin({
         collapseWhitespace: true
       }))
-      .pipe(dest('dist'))
+      .pipe(dest('dist'))      
   }
 
   function htmlprod() {

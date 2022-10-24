@@ -1,0 +1,36 @@
+@@include("./components/header.html", {
+    "meta-title": "F&F / Case template",
+    "meta-description": "Тестовое описание",
+    "meta-keywords": "Тестовые слова"
+}) <!-- 1. Header with preloader -->
+
+@@include("./components/case-description.html", {
+    "project": "dislexia",
+    "service": "website",
+    "description": "Заказчиком выступала НКО “Ассоциации родителей детей с дислексией”. Это инициативная группа деятелей культуры, науки и бизнеса, созданная в 2016 году с целью: разработать системные решения проблем детей и подростков, испытывающих трудности обучения (дислексию, дисграфию, дискалькулию и др.); создать методологию и научно-практическую базу  для работы со школьниками и студентами, испытывающими сложности обучения; найти и поддержать талантливых детей с особенностями восприятия. Главной задачей была разработка графических материалов: буклеты, прессвол, сертификаты, презентацию и другие pos-материалы. Также мы сделали иллюстрированную книгу и оформили совместную выставку с музеем ММОМА."
+}) <!-- 2. Case description -->
+
+@@include("./components/images-30-70.html", {
+    "first-image-source": "case-dislexia-1",
+    "second-image-source": "case-dislexia-2"
+}) <!-- 30-70 image block -->
+
+@@include("./components/small-text.html", {
+    "case-text": "Мы - креативная команда из 6 человек, которая разрабатывает веб-сайты, фирменный стиль и коммуникационную стратегию для малого и среднего бизнеса."
+}) <!-- Text block -->
+
+@@include("./components/full-width_picture.html", {
+    "image-source": "case-dislexia-1"
+}) <!-- One big picture block -->
+
+@@include("./components/full-width_video.html", {
+    "video-source": "case-dislexia-video"
+}) <!-- Video block -->
+
+@@include("./components/double-picture.html", {
+    "image-source-1": "case-dislexia-1",
+    "image-source-2": "case-dislexia-2"
+}) <!-- Double (50/50) pictures block -->
+@@include("./components/more-cases.html") <!-- See more cases -->
+
+@@include("./components/footer.html") <!-- Footer -->

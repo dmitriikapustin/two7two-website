@@ -57,6 +57,26 @@
     left: 0;
     z-index: 1000;
     transition: all 1.2s linear;
+    // BURGER MENU
+    .burger {
+        width: 50px;
+        height: 30px;
+        svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #overlay {
+            transition: all 0.3s linear;
+            stroke-dasharray: 200;
+            stroke-dashoffset: 200;
+        }
+        #close path {
+            transition: all 0.3s linear;
+            stroke-dasharray: 200;
+            stroke-dashoffset: 200;
+        }
+    }
     &.hidden {
         transition: all 1.2s linear;
         top: -100%;
@@ -177,8 +197,8 @@
             transform: rotate(10deg);
         }
         .svg_250 {
-            top: 18%;
-            left: 60%;
+            top: 16%;
+            left: 55%;
             transform: rotate(8.35deg);
         }
         .svg_400 {
@@ -309,7 +329,7 @@
 
 @media screen and (min-width: 1600px) {
     .svg_250 {
-        top: 26% !important;
+        top: 18% !important;
     }
     .svg_400 {
         top: 51.8% !important;
@@ -428,11 +448,22 @@
     }
 }
 
+.footer-margin {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
 .footer {
-    position: relative;
-    height: 110vh;
-    top: -100vh;
-    z-index: 0 !important;
+    // position: relative;
+    // height: 110vh;
+    // top: -100vh;
+    // z-index: 0 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1 !important;
     background: $color-1;
 
     .container-100 {
