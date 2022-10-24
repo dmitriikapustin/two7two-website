@@ -41,6 +41,7 @@
 }
 
 @mixin radius {
-    border-radius: 30px;
-    overflow: hidden;
+    border-radius: 0px;
+    overflow: hidden !important;
+    // transform: scale(0.8);
 }
