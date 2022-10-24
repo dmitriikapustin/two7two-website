@@ -39,7 +39,7 @@ $(document).ready(function () {
                 })
                 .offset(-50)
                 .setTween(tween)
-                .addIndicators()
+                //.addIndicators()
                 .addTo(controller_svg_animation_scroll);
         })
     }

@@ -12,7 +12,7 @@ $(document).ready(function () {
         })
         .offset($(window).height())
         .setPin("#footer > .container-100")
-        .addIndicators({name: "pin scene", colorEnd: "#FFFFFF"})
+        //.addIndicators({name: "pin scene", colorEnd: "#FFFFFF"})
         .addTo(controller_footer_anim) 
         
 })

@@ -27,7 +27,7 @@ $(document).ready(function () {
                 reverse: true
             })
                 .offset(0)
-                .addIndicators({name:"BORDER", color: "#222222"})
+                //.addIndicators({name:"BORDER", color: "#222222"})
                 .setTween(tl)
                 .addTo(controller_pictures_animation);
         });

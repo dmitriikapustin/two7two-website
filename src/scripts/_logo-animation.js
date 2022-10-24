@@ -33,7 +33,7 @@ $(document).ready(function () {
         reverse: true
     })
         .setTween(hide_letters_timeline)
-        .addIndicators()
+        //.addIndicators()
         .addTo(controller_logo_animation)
 
     // var scene = new ScrollMagic.Scene({
