@@ -58,7 +58,7 @@ function html() {
   function img() {
     return src('src/images/**.{png,jpg,svg,gif,ico,webp}')
       .pipe(imagemin([
-        imagemin.mozjpeg({quality: 69, progressive: true}),
+        imagemin.mozjpeg({quality: 60, progressive: true}),
 	      pngquant({quality: [0.3, 0.7], strip: true})
       ]))
       .pipe(dest('dist/images'))
