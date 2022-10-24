@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy-production": "gulp build && ftp-deploy --server 37.140.192.94 --username u1255912 --password \"27w_Ycy8\" --server-dir ./www/funandfresh.ru/ --local-dir ./dist/",
     "deploy-dev": "gulp build && ftp-deploy --server 37.140.192.94 --username u1255912 --password \"27w_Ycy8\" --server-dir ./www/dev.funandfresh.ru/ --local-dir ./dist/",
-    "git": "echo Write your commit message && read message && echo Your commit is $message. Starting Git work! && git add . && echo Files added && git commit -m '${message}' && echo Commited as $message && git push origin main && echo Build pushed to main branch! && exit 1"
+    "git": "echo Write your commit message && read message && echo Your commit is $message. Starting Git work! && git add . && echo Files added && git commit -m \"${message}\" && echo Commited as $message && git push origin main && echo Build pushed to main branch! && exit 1"
   },
   "keywords": [],
   "author": "Dmitrii Kapustin",
