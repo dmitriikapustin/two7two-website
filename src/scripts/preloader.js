@@ -49,11 +49,6 @@ var counting = setInterval(function () {
 
                 // HEADER APPEARANCE
 
-                
-                // setTimeout(function () {
-                //     header.classList.remove("hidden")
-                // }, 0)
-                
                 var tl_header = new TimelineMax();
                 tl_header.to($("#header"), 1.2, {y: 0}, 0)
 
@@ -127,6 +122,14 @@ var counting = setInterval(function () {
                         tl.to(this, 0.8, { x: 0 + image_index * 50 }, 2.7);
                     })
                 }
+
+                //  SHOW BUTTON
+
+                var tl_btn = new TimelineMax();
+                tl_btn.to($(".fixed_button_container"), 0.1, { opacity: 1 }, 4.2)
+                tl_btn.to($(".fixed_button_container"), 0.35, { y: 0 }, 4)
+
+
                 ///////////  FOR MOBILE  //////////
 
                 if ($(window).width() < 800) {
