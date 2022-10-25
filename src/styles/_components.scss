@@ -80,5 +80,37 @@
 }
 
 
+.form {
+    width: 100%;
+    form {
+        width: 100%;
+        justify-content: space-between !important;
+        margin-bottom: 50px !important;
+        button, a {
+            display: flex;
+            align-items: center;
+            color: $color-1 !important;
+        }
+        input {
+            width: calc(33% - 10px) !important;
+            max-width: calc(33% - 10px) !important;
+            margin: 0 !important;
+            &:nth-child(3) {
+                margin: 0 30px !important;
+            }
+        }
+        button {
+            max-width: calc(33% - 50px) !important;
+            width: calc(33% - 50px) !important;
+        }
+        button p {
+            margin: 0 !important;
+            color: $color-2;
+            padding: 15px 30px !important;
+            transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+    }    
+}    
+
 
 

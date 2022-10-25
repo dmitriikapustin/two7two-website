@@ -13,6 +13,11 @@ $(document).ready(function () {
     //     .offset($(window).height())
     //     .setPin("#footer > .container-100")
     //     //.addIndicators({name: "pin scene", colorEnd: "#FFFFFF"})
-    //     .addTo(controller_footer_anim) 
-          $(".footer").parent().append('<div class="footer-margin"></div>');
+    //     .addTo(controller_footer_anim)
+    
+    
+
+        //   $(".footer").parent().append('<div class="footer-margin"></div>');
+    
+    $(".footer-margin").css({'height':$(".footer .container").height() + 100 +"px" });
 })

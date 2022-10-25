@@ -474,10 +474,13 @@
 .footer-margin {
     display: block;
     width: 100vw;
-    height: 80vh;
+    // height: 80vh;
 }
 
 .footer {
+    p, a, span, h3 {
+        color: $color-2 !important;
+    }
     // position: relative;
     // height: 110vh;
     // top: -100vh;
@@ -500,14 +503,20 @@
         color: $color-2;
         z-index: 10 !important;
         // padding-top: 400px;
-        svg {
+        img {
+            display: block;
+            max-height: 100% !important;
             width: 100% !important;
         }
+        .top-content {
+            height: fit-content;
+        }
         .bottom-content {
-            padding-top: 50px;
+            padding-top: 69px;
             justify-content: space-between;
-            p, a {
-                color: $color-2;
+            
+            a {
+                margin: 0 10px;
             }
         }    
     }
