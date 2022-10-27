@@ -1,5 +1,5 @@
 // Container settings
-.container { width: calc(100vw - 100px) !important; margin: 0 auto; padding: 25px 0; }
+.container { width: calc(100vw - 260px) !important; margin: 0 auto; padding: 25px 0; }
 .container-100 { width: 100% !important; }
 
 // Text color controls
@@ -8,27 +8,11 @@
 .text-color-2 { color: $color_2 !important; }
 .text-color-2::selection {background: rgba(4, 16, 34, 0.5); }
 .text-color-3 { color: $color_3 !important; }
-.text-color-3::selection {background: rgba(250, 221, 75, 0.5); }
+.text-color-3::selection {background: rgba(255, 2, 2, 0.5); }
 .text-color-4 { color: $color_4 !important; }
-.text-color-4::selection {background: rgba(183, 75, 250, 0.5); }
-.text-color-5 { color: $color_5 !important; }
-.text-color-5::selection {background: rgba(183, 250, 75, 0.5); }
-.text-color-6 { color: $color_6 !important; }
-.text-color-6::selection {background: rgba(75, 208, 250, 0.5); }
-.text-color-7 { color: $color_7 !important; }
-.text-color-7::selection {background: rgba(250, 221, 75, 0.5); }
+.text-color-4::selection {background: rgba(184, 184, 184, 0.5); }
 
 
-// svg colors
-.svg-color-3 path { stroke: $color_3 }
-.svg-color-4 path { stroke: $color_4 }
-.svg-color-5 path { stroke: $color_5 }
-.svg-color-6 path { stroke: $color_6 }
-
-// REDUCE DOT BUG
-.svg-animation_item_no-scroll path, .svg-animation_item path{
-    opacity: 0;
-}
 
 // Text weight controls
 .w-400 { font-weight: 400 !important; }
@@ -38,7 +22,7 @@
 .w-800 { font-weight: 800 !important; }
 .w-900 { font-weight: 900 !important; }
 
-// Flex control
+// Flex-direction control
 .flex {
     display: flex;
     &-col { flex-direction: column; }
@@ -65,10 +49,14 @@
     &-end { align-items: flex-end; }
 }
 
+.width-100 {
+    width: 100%;
+}
+
 .justify {
-    &-start {justify-content: flex-start;}
-    &-center {justify-content: center;}
-    &-end {justify-content: flex-end;}
+    &-start { justify-content: start; }
+    &-center { justify-content: center; }
+    &-end { justify-content: end; }
 }
 
 // Flex-wrap styles
@@ -107,3 +95,8 @@
         transform: translate3d(0, 1.4em, 0);
     }
 }  
+
+
+.abs-el {
+    position: absolute !important;
+}

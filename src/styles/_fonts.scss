@@ -1,23 +1,23 @@
 @font-face {
     font-family: $font-name; /* Имя шрифта */
-    src: url(fonts/ProximaNova-Regular.woff); /* Путь к файлу со шрифтом */
+    src: url(fonts/Shadow-light.woff); /* Путь к файлу со шрифтом */
     font-weight: 500;
 }
 
 @font-face {
     font-family: $font-name; /* Имя шрифта */
-    src: url(fonts/ProximaNova-Bold.woff); /* Путь к файлу со шрифтом */
+    src: url(fonts/Shadow-regular.woff); /* Путь к файлу со шрифтом */
     font-weight: 700;
 }
 
 @font-face {
-    font-family: $font-name; /* Имя шрифта */
-    src: url(fonts/ProximaNova-Black.woff); /* Путь к файлу со шрифтом */
-    font-weight: 900;
+    font-family: $font-name-2; /* Имя шрифта */
+    src: url(fonts/Pixel-2.woff) format("woff"); /* Путь к файлу со шрифтом */
+    font-weight: 400;
 }
 
-@font-face {
-    font-family: $font-name; /* Имя шрифта */
-    src: url(fonts/Klyakson.woff); /* Путь к файлу со шрифтом */
-    font-weight: 600;
-}
+// @font-face {
+//     font-family: $font-name-2; /* Имя шрифта */
+//     src: url(fonts/Minecraftchmc.woff) format("woff"); /* Путь к файлу со шрифтом */
+//     font-weight: 500;
+// }

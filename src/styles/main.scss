@@ -20,8 +20,11 @@
 // 6. Groups of atoms to components (most simple blocks)
 @import "components";
 
-// 7. Other styles for blocks
-@import "blocks";
+// 7. Main file of project
+@import "base";
+
+// 8. Styles of reprobates page
+@import "reprobates";
 
 // 9. Mobile styles
 @import "preloader";
@@ -29,8 +32,5 @@
 // 10. Default classes
 @import "class";
 
-// 11. Default classes
-@import "case-page";
-
-// 8. Mobile styles
+// 11. Mobile styles
 @import "mobile";

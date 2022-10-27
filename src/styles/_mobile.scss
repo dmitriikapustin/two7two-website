@@ -27,227 +27,65 @@
         padding: 25px 0 !important;
     }
 
-    .flex-row { 
+    .flex-row:not(.navigation, .footer-columns) { 
         flex-direction: column !important;
-        div {
-            width: 100% !important;
-        }
-        p {
-            text-align: left !important;
-        }
+        // div {
+        //     width: 100% !important;
+        // }
+        // p {
+        //     text-align: left !important;
+        // }
     }
 
-    .header {
-        .container {
-            padding: 10px 0 !important;
-        }
-        .logo-text {
-            width: fit-content;
-            svg {
-                height: 25px !important;
-            }
-            p {
-                line-height: 0.8 !important;
-            }
-            .change {
-                transform: translate3d(-150%, 0, 0);
-            }
-        }
-        .flex-row {  flex-direction: row !important; }
-    }
 
-    .main-hero {
-        .container { 
-            height: fit-content !important; padding-top: 25% !important;
-            .svg_250, .svg_400, .svg_150 {
-                width: 26%;
-            }
-            .svg_250 {
-                top: 21%;
-                left: 65%;
-            }
-            .svg_400 {
-                top: 37%;
-                left: 72%;
-                transform: rotate(-5.43deg);
-            }
-            .svg_150 {
-                top: 44.5%;
-                left: 38%;
-                transform: rotate(-3.88deg);
-            }
-        }
-        .hero-bottom {
-            flex-direction: column-reverse !important;
-            margin-top: 50px;
-            .hero-text {
-                justify-content: start;
-                margin-bottom: 30px;
-            }
-        }
-        .team {
-            width: 100% !important;
-            .team-photos {
-                height: 50px !important;
-            }
-            picture {
-                width: 50px !important;
-                height: 50px !important;
-                &:nth-child(1) { z-index: 1; left: 0px !important }
-                &:nth-child(2) { z-index: 2; left: 0px !important }
-                &:nth-child(3) { z-index: 3; left: 0px !important }
-                &:nth-child(4) { z-index: 4; left: 0px !important }
-                &:nth-child(5) { z-index: 5; left: 0px !important }
-                &:nth-child(6) { z-index: 6; left: 0px !important }
-                &:nth-child(7) { z-index: 7; left: 0px !important }
-                &:nth-child(8) { z-index: 8; left: 0px !important }
-            }
-        }
-        span {
-            &.text-color-5::after { 
-                left: 110%;
-                top: 10px;
-            }
-            &.text-color-4::after { 
-                left: 70%;
-                top: 95%;
-            }
-            &.text-color-6::after { 
-                left: 50%;
-                top: 100%;
-            }
-        }
-    }
+    // HEADER
 
-    .cases-scroll { 
-        //.no-wrap { flex-wrap: nowrap !important; }
-        //.flex-row { flex-direction: row !important; }
-        .row {
-            margin-bottom: 0px;
-            &:nth-child(1) { transform: translate3d(0,0,0); }
-            &:nth-child(2) { transform: translate3d(0,0,0); }
-            &:nth-child(3) { transform: translate3d(0,0,0); }
-            &:nth-child(4) { transform: translate3d(0,0,0); }
-        }
-        .case-item {
-            margin: 10px 20px !important;
-            width: calc(100vw - 40px) !important;
-            height: fit-content !important;
-            border-radius: 5px;
-            overflow: hidden;
-            picture {
-                width: calc(100vw - 40px) !important;
-                height: calc(100vw / 3.4 - 40px) !important;
-            }
-        }
-    }
-
-    .services {
-        p, h2 {
-            font-size: 8vw !important;
-            margin: 0.4em 0;
-        }
-        p {
-            font-weight: 700;
-        }
-        .service-item {
-            margin: 30px 0;
-            .service-name {
-                .heading_for_services {
-                    width: 70%;
-                    top: -25%;
-                }
-            }
-            & .service-name h2::after {
-                font-size: 55%;
-                left: 50%;
-                top: 80px;
-                width: 45%;
-                text-align: left;
-                transform: rotate(-5deg);
-            }
-            &:nth-child(3) .service-name h2::after {
-                width: 32%;
-                left: 50%;
-                top: 90px;
-                transform: rotate(5deg);
-            }
-            &:nth-child(5) .service-name h2::after {
-                width: 32%;
-                left: 60%;
-                top: 60px;
-                transform: rotate(-7deg);
-            }
-        }
-    }
     
-    .service-block {
-        h2 {
-            font-size: 12vw !important;
-            margin-bottom: 15px !important;
-        }
-        .container {
-            padding-top: 100px !important;
-        }
-        .service-block-item {
-            .service-text {
-                
-                width: 100%;
-                svg {
-                    width: 30%;
-                    left: 65%;
-                    top: -4%;
+    
+
+    // FOOTER
+
+    .footer {
+        .footer-container {
+            margin: 50px 0 !important;
+            .footer-bottom-text {
+                p {
+                    font-size: 3vw;
                 }
             }
-        }    
-    }
-    .case-block {
-
-        img, video, picture {
-            border-radius: 13px !important;
-            height: 100% !important;
-            width: 100% !important;
         }
- 
-        .double-picture {
-            picture:nth-child(1) {
-                margin-bottom: 13px;
-            }
-        }
-
-        .container {
-            padding: 0 !important;
-            .container-small-text {
-                width: 100%;
-            }
-        }
-        padding-top: 0px;
-        padding-bottom: 0px;
-
     }
 
-    .images-30-70 {
-        .container {
-            flex-direction: column;
+
+    //// MAIN PAGE ////
+
+    .images {
+        .images-25-75 {
             picture {
-                height: fit-content;
-                width: 100%;
-                margin-bottom: 20px;
-                &:nth-child(3) {
-                    margin-bottom: 0px;
+                height: 20vh;
+                &:nth-child(1) {
+                    width: 100%;
+                    padding-bottom: 15px;
+                }     
+                &:nth-child(2) {
+                    width: 100%;
+                    padding-left: 0;
                 }
             }
         }
     }
 
-    #big-text {
-        height: 100vh;
-    }
-    .small-text, .animated-paragraph_item_no-scroll_2, .animated-paragraph_item {
-        max-width: 100% !important;
-    }
+    //// REPROBATES PAGE ////
 
-    .bottom-content {
-        justify-content: center;
+    .our-games {
+        .image-blocks {
+            flex-direction: column !important;
+            .block {
+                width: 100%;
+                h3 {
+                    font-size: 7vw;
+                }
+            }
+        }
     }
 }

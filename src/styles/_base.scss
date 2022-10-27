@@ -1,0 +1,92 @@
+.header {
+    height: fit-content;
+    h3 {
+        color: $color-1;
+    }
+    .container {
+        padding-top: 50px;
+        .logo {
+
+        }
+        .navigation a:not(:last-child) {
+            margin-right: 30px;
+
+        }
+        .navigation a {
+            h3 {
+                font-weight: 700;
+                font-size: 1.7vw;
+            }
+        }
+    }
+}
+
+.our-games {
+    .heading, .image-blocks {
+        h2 {
+            font-size: 2.3vw;
+        }
+        .block {
+            width: calc(50% - 10px);
+            h3 {
+                font-weight: 700;
+                font-size: 1.7vw;
+                text-align: center;
+            }
+        }
+    }
+    .image-blocks {
+        &:nth-child(2) {
+            img {
+            padding-left: 20px;
+            }
+        }
+    }
+}
+
+.images {
+    .images-25-75 {
+        picture {
+            height: 40vh;
+            &:nth-child(1) {
+                width: 30%;
+            }     
+            &:nth-child(2) {
+                width: calc(70% - 50px);
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+
+.footer {
+    p, h3 {
+        font-weight: 700;
+    }
+
+    .footer-container {
+        height: fit-content;
+        margin: 50px 120px 0;
+        .footer-columns {
+            width: 100%;
+            // justify-content: space-between !important;
+            h3 {
+                padding-bottom: 0px;
+            }
+            p {
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .footer-bottom-text {
+            align-items: flex-end;
+            padding-top: 100px;
+            padding-bottom: 10px;
+            width: 100%;
+            p {
+                font-size: 1vw;
+            }
+        }
+    }
+}
