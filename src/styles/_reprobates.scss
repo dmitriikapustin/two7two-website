@@ -16,38 +16,41 @@
 }
 
 .block-1 {
-    .seraphim {
-        left: 65%;
-        top: 85%;
-        img {
-            width: 60%;
+    .info {
+        position: relative;
+        .seraphim {
+            left: 65%;
+            top: 85%;
+            img {
+                width: 60%;
+            }
         }
-    }
-    h1 {
-        font-size: 8.5vw;
-        margin-top: 0;
-    }
-    h3 {
-        margin-top: 0;
-        font-size: 2.8vw;
-    }
-    p {
-        margin: 0;
-        padding: 0;
-        font-weight: 700;
-        color: $color_4;
-    }
-    .title {
-        padding-bottom: 0;
-    }
-    .platform-genre {
-        .left-side, .right-side {
-            width: calc(50% - 30px);
+        h1 {
+            font-size: 8.5vw;
+            margin-top: 0;
         }
-        .left-side {
-            margin-right: 60px;
-            h3, p {
-                text-align: end;
+        h3 {
+            margin-top: 0;
+            font-size: 2.8vw;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            font-weight: 700;
+            color: $color_4;
+        }
+        .title {
+            padding-bottom: 0;
+        }
+        .platform-genre {
+            .left-side, .right-side {
+                width: calc(50% - 30px);
+            }
+            .left-side {
+                margin-right: 60px;
+                h3, p {
+                    text-align: end;
+                }
             }
         }
     }
@@ -64,9 +67,10 @@
         padding-left: 80px;
         text-align: center;
         h2 {
-            font-size: 3.6vw;
+            font-size: 4.2vw;
         }
         p { 
+            font-size: 2.5vw;
             margin-top: 0;
             font-weight: 700;
         }
@@ -78,30 +82,39 @@
         margin-bottom: 70px;
         text-align: center;
         h2 {
-            font-size: 4vw;
+            font-size: 4.8vw;
         }
     }
     .content {
+        justify-content: center !important;
+        .breaking-five-svg {
+            width: 100%;
+            z-index: 2;
+            margin-right: 20px;
+        }
         .breaking-five {
+            position: relative;
             .attack {
                 z-index: 1;
-                top: 25%;
-                left: 11.2%;
+                top: -74.2%;
+                left: -40.2%;
                 img {
                     width: 75%;
                 }
             }
-            span {
-                z-index: 2;
-                margin-left: 20px;
-                font-weight: 800 !important;
-                font-size: 33vw;
-            }
+
         }
         .five-options {
-            p {
-                margin-bottom: 0;
+            width: 33%;
+            p { 
+                font-size: 2.5vw;
+                margin-top: 0;
+                margin-bottom: 20px;
+                font-weight: 700;
             }
+        }
+        .right-monster {
+            align-items: flex-start;
         }
     }
 }
@@ -115,10 +128,318 @@
         padding-left: 80px;
         text-align: start;
         h2 {
-            font-size: 3vw;
+            font-size: 4.8vw;
         }
         p {
             font-weight: 700;
+        }
+    }
+}
+
+.block-5 {
+    picture {
+        img {
+            height: auto;
+        }
+    }
+    span, p {
+        text-align: center;
+    }
+    p {
+        margin-top: 5px;
+        font-size: 3vw;
+    }
+    .left-side, .right-side {
+        position: relative;
+        width: calc(50% - 30px);
+        span {
+            font-size: 14.5vw;
+            font-weight: 800 !important;
+        }
+        .hubris {
+            width: 30%;
+            top: 85%;
+            left: 80%;
+        }
+
+        .bloodshed {
+            width: 12%;
+            top: 70.15%;
+            left: 38%;
+        }
+
+        .icefall {
+            width: 12%;
+            left: 75.8%;
+            top: 94.3%;
+        }
+
+        .sunstrike {
+            width: 18%;
+            left: 60.55%;
+            top: 41.2%;
+        }
+
+        .nuclear_explosion {
+            width: 12%;
+            top: 75.4%;
+            left: 68.8%;
+        }
+
+        .frostspike {
+            width: 18%;
+            top: 52.5%;
+            left: 46.3%;
+        }
+    }
+    .left-side {
+        margin-right: 60px;
+        position: relative;
+
+        p {
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
+}
+
+.block-6 {
+    height: 150vh;
+    .enemies-on-screen {
+        position: relative;
+        .left-text {
+            align-items: center;
+            p {
+                font-size: 3.6vw;
+                margin-right: 20px;
+            }
+            span {
+                font-size: 12.5vw;
+                font-weight: 900;
+            }
+        }
+        .right-text {
+            left: 78.2%;
+            top: 31%;
+            width: 33%;
+            h3 { 
+                font-size: 4.8vw;
+            }
+        }
+        picture {
+            width: 70%;
+            height: fit-content;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .left-image {
+            z-index: 2;
+            left: 5%;
+            top: 92%;
+            transform: rotate(-22deg);
+        }
+
+        .right-image {
+            z-index: 1;
+            left: 30%;
+            top: 175%;
+            transform: rotate(6.5deg);
+        }
+    }
+}
+
+.block-7 {
+
+}
+
+.block-8 {
+    .stories {
+        .top-block {
+            align-items: center;
+            h2 {
+                font-size: 10vw;
+            }
+            picture {
+                margin-left: 40px;
+                width: 12.5%;
+                img {
+                    height: auto;
+                }
+            .demon {
+                transition: demon-animation 1.2s linear infinite;
+            }
+            }
+            @keyframes demon-animation {
+                0% {
+                    transform: translate3d(0, -30%, 0);
+                }
+                100% {
+                    transform: translate3d(0, 30%, 0);
+            
+                }
+            }
+        }
+        .content {
+            .left-side, .right-side {
+                width: calc(50% - 30px)
+            }
+            .left-side {
+                margin-right: 60px;
+            }
+            p {
+                margin: 0 0 20px 0;
+                padding: 0;
+                font-size: 3.4vw;
+            }
+            img {
+                width: 80%;
+            }
+            .grenade {
+                width: 50%;
+                top: 60%;
+                left: 3%;
+            }
+        }
+    }
+}
+.block-9 {
+    margin-top: 120px;
+    height: 175vh;
+    h3 {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 5vw;
+    }
+    .comics-block {
+        position: relative;
+        .comics-1 {
+            width: 75%;
+            top: 80%;
+            transform: rotate(-20deg);
+        }
+        .comics-2 {
+            width: 55%;
+            top: 240%;
+            transform: rotate(4deg);
+        }
+        .blot-item {
+            width: 50%;
+            left: 70%;
+            .blot {
+                img {
+                    z-index: 1;
+                    width: 80%;
+                }
+                h3 {
+                    width: 73.5%;
+                    z-index: 2;
+                    font-size: 7vw;
+                }
+            }
+            .aam {
+                left: 50%;
+                top: 18%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .comics-text {
+            top: 80%;
+            left: 30%;
+            p {
+                font-size: 3vw;
+            }
+        }
+        .metagun {
+            img {
+                width: 80%;
+                z-index: 1;
+            }
+            h3 {
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }    
+}
+
+.block-10 {
+    margin-top: 60px;
+    .title {
+        z-index: 2;
+        width: 100%;
+        h2 {
+            font-size: 14vw;
+        }
+    }
+    .three-pictures {
+        width: 100%;
+        picture {
+            width: 60%;
+        }
+    }
+    .left-side, .right-side {
+        width: 50%;
+    }
+    .left-side {
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.block-11 {
+    margin-bottom: 400px;
+    .top-block {
+        text-align: center;
+        span {
+            font-size: 22vw;
+        }
+        h2 {
+            width: 40%;
+            font-size: 5vw;
+            margin-bottom: 0;
+        }
+    }
+    .bottom-block {
+        width: 100%;
+        .left-side, .right-block {
+            width: 50%;
+            position: relative;
+        }
+        .left-side {
+            p {
+                
+                font-size: 3vw;
+                text-align: right;
+            }
+            .metagun {
+                top: 65%;
+                left: 60%;
+                img {
+                    width: 100%;
+                }
+            }
+            .slaugterman{
+                top: 90%;
+                left: 30%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .right-side {
+            .orphan {
+                top: 50%;
+                picture {
+                    width: 80%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }
