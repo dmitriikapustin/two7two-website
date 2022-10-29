@@ -85,15 +85,20 @@
             font-size: 4.8vw;
         }
     }
+    .trigger {
+        position: absolute; // для фиксации триггеров надо сдлеать их абсолютами
+    }
     .content {
         justify-content: center !important;
         .breaking-five-svg {
             width: 100%;
             z-index: 2;
             margin-right: 20px;
+            &, & g { overflow: visible !important; }
         }
         .breaking-five {
             position: relative;
+            transform: translate3d(-50px,0,0);
             .attack {
                 z-index: 1;
                 top: -74.2%;
