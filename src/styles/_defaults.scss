@@ -24,7 +24,7 @@ picture {
     display: block;
     img {
         width: 100%;
-        height: fill-available;
+        height: auto;
         object-fit: cover;
     }
 }

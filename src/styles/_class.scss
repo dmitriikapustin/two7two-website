@@ -104,4 +104,6 @@
 .abs-el {
     position: absolute !important;
     overflow: visible !important;
+    display: block !important;
+    height: fit-content !important;
 }
