@@ -1,0 +1,25 @@
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    flex-direction: column;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: $color_2 !important;
+    z-index: 1001;
+    transition: all .5s ease-out; 
+    height: 100vh;
+
+
+    // "STUDIO" animation
+    .studio-letter.first {
+        transform: rotate(-20deg) scale(0);
+    }
+
+
+}

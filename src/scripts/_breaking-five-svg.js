@@ -19,6 +19,7 @@ $(document).ready(function () {
         var directionY;
         var randomDirectionX = Math.random();
         var randomDirectionY = Math.random();
+        var randomRotateBoolean = Math.random();
         if (randomDirectionX > 0.5) {
           directionX = 1;
         } else {
@@ -29,24 +30,32 @@ $(document).ready(function () {
         } else {
           directionY = -1;
         }
-        var randomRotate = Math.random()
+
+        if (randomRotateBoolean > 0.5) {
+          rotateBoolean = 1;
+        } else {
+          rotateBoolean = -1;
+        }
+
+        var randomRotate = Math.random() * rotateBoolean
         var speedX = getRandomArbitrary(0.5, 0.9);
         var speedY = getRandomArbitrary(0.5, 0.9);
         var tl = new TimelineMax();
-        tl.to(this, 10000, { x: directionX * speedX * 300, y: directionY * speedY * 300, transform: "rotate(" + randomRotate * 100 + ")" });
+        tl.to(this, 3000, { x: directionX * speedX * 400, y: directionY * speedY * 400, rotate: 10 + 100*randomRotate}, 1.4);
+        tl.to(this, 2000, { opacity: 0})
         var scene = new ScrollMagic.Scene({
           offset: 0 + 4 * rect_index,
           triggerElement: '.trigger-for-breaking-five-' + rect_index,
           triggerHook: 0.5,
-          duration: 130,
+          duration: 130 + speedX * 800,
           reverse: true
         })
-          .addIndicators()
+          // .addIndicators()
           .setTween(tl)
           .addTo(controller_breaking_svg);
       });
   })
 
   // у g внутри svg надо было совсем убрать clip path
-
+  // , transform: "rotate(" + randomRotate * 100 + "deg)" 
 })

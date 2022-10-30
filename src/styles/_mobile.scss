@@ -23,7 +23,7 @@
 
     .container {
         width: calc(100vw - 40px) !important;
-        margin: 0 auto;
+        margin: 0 auto !important;
         padding: 25px 0 !important;
     }
 
@@ -49,9 +49,13 @@
         .footer-container {
             margin: 50px 0 !important;
             .footer-bottom-text {
+                align-items: end;
+                margin-bottom: 0 !important;
+                padding-bottom: 0 !important;
                 p {
                     font-size: 3vw;
                 }
+            
             }
         }
     }
@@ -84,6 +88,323 @@
                 width: 100%;
                 h3 {
                     font-size: 7vw;
+                }
+            }
+        }
+    }
+
+    .block-1 {
+        .platform-genre {
+            .left-side, .right-side {
+                width: calc(50% - 15px) !important;
+            }
+            .left-side {
+                margin-right: 30px !important;
+            }
+        }
+        p {
+            font-size: 5.1vw;
+        }
+        h1 {
+            font-size: 14vw !important;
+        }
+        h3 {
+            font-size: 6.8vw !important;
+        }
+        .info {
+            .platform-genre {
+                flex-direction: row !important;
+            }
+            .seraphim {
+                left: 72%;
+                top: 85%;
+                width: 30%;
+                height: 30%;
+                img {
+                    //width: 10% !important;
+                    // height: fit-content !important;
+                    // height: auto !important;
+                    // max-height: 100% !important;
+                }
+            }
+        }
+    }
+    .block-2 {
+        .quote {
+            flex-direction: row !important;
+            .left-side {
+                width: 45%;
+            }
+            .right-side {
+                width: 55%;
+                padding-left: 0;
+                h2 {
+                    font-size: 6.8vw !important;
+                }
+                p {
+                    font-size: 5.1vw;
+                }
+            }
+        }
+    }
+    .block-3 {
+        p {
+            font-size: 5.1vw !important;
+        }
+        .egg {
+            img {
+                width: 30%;
+            }
+        }
+        .content {
+            width: 100%;
+            .breaking-five-svg {
+                width: 60% !important;
+                justify-content: center !important;
+                align-items: center !important;
+                margin-right: 0;
+                text-align: center !important;
+            }
+            .breaking-five, .five-options, .right-monster {
+                width: 100% !important;
+                justify-content: center !important;
+                text-align: center;
+            }
+            .breaking-five {
+                transform: translate3d(0, 0, 0);
+                .attack {
+                    left: 0%;
+                    top: 0%;
+                    width: 10%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .block-4 {
+        .way {
+            flex-direction: row !important;
+            .left-side {
+                width: 45%;
+            }
+            .right-side {
+                width: 55%;
+                padding-left: 0;
+                text-align: start;
+                h2 {
+                    font-size: 4.8vw;
+                }
+                p {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .block-5 {
+
+        p {
+            font-size: 6.2vw;
+        }
+        .left-side {
+            margin-bottom: 50px !important;
+        }
+        .left-side, .right-side {
+            width: 100% !important;
+            span {
+                font-size: 22vw !important;
+            }
+        }
+    }
+
+    .block-6 {
+        height: 50vh;
+        margin-bottom: 70px;
+        p {
+            font-size: 7vw !important;
+        }
+        h3 {
+            font-size: 9vw !important;
+        }
+        span {
+            font-size: 22vw !important;
+        }
+        picture {
+            width: 110% !important;
+        }
+        .left-image {
+            left: -30% !important;
+            top: 100% !important;
+            transform: rotate(-14deg) !important;
+        }
+        .right-image {
+            left: 22% !important;
+            top: 260% !important;
+        }
+    }
+
+    .block-8 {
+        h2 {
+            font-size: 12vw !important;
+        }
+        .top-block {
+            .stories-heading {
+                flex-direction: row !important;
+                picture {
+                    width: 25% !important;
+                }
+            }
+        }
+        .content {
+            flex-direction: column-reverse !important;
+            .left-side {
+                margin-right: 0;
+                img {
+                    width: 100%;
+                }
+                .grenade {
+                    width: 20%;
+                    top: 28%;
+                    left: 27%;
+                }
+            }
+            .right-side {
+                p {
+                    width: calc(100% - 25px) !important;
+                    font-size: 6.9vw;
+                    text-align: center !important;
+                }
+            }
+            .left-side, .right-side {
+                width: calc(100% - 25px) !important;
+            }
+        }
+    }
+    .block-9 {
+        height: 150vh !important;
+        .comics-block {
+            .comics-1, .comics-2 {
+                width: 100% !important;
+                position: relative !important;
+                top: 0 !important;
+                left: 0 !important;
+                picture {
+                    width: 100% !important;
+                    img {
+                        width: 100% !important;
+                        height: auto;
+                    }
+                }
+            }
+            .comics-1 {
+                width: 100% !important;
+                transform: rotate(-8deg) !important;
+            }
+            .comics-2 {
+                width: 120% !important;
+
+            }
+            .blot-item {
+                width: 100% !important;
+                .blot {
+                    flex-direction: row-reverse !important;
+                    .blot-block {
+                        width: 55%;
+                        justify-content: start !important;
+                        align-items: center !important;
+                        img {
+                            width: fit-content;
+                            height: 100%;
+                        }
+                        h3 {
+                            font-size: 11vw;
+                            width: 91.5% !important;
+                        }
+                    }
+                    .comics-text {
+                        margin: auto 0 !important;
+                        width: 45% !important;
+                        p  {
+                            font-size: 6vw;
+                        }
+                    }
+                }
+            }
+            .metagun-item {
+                margin-top: 10px !important;
+                width: 100% !important;
+                img {
+                    margin: 0 auto !important;
+                    height: auto;
+                    width: 75% !important;
+                    z-index: 1;
+                }
+                h3 {
+                    font-size: 11.6vw !important;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .block-10 {
+        margin-top: 90px !important;
+        .title {
+            top: 40px !important;
+            h2 {
+                margin-top: 0 !important;
+                font-size: 24vw !important;
+            }
+        }
+        .three-pictures {
+            .left-side, .right-side {
+                width: 100% !important;
+                picture {
+                    width: 100% !important;
+                    img {
+                        width: fit-content !important;
+                        height: 100% !important;
+                    }
+                }
+            }
+        }
+        .frostspike-backstage {
+            width: 100% !important;
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important;
+            display: flex !important;
+            justify-content: center !important;
+            img {
+                width: 30% !important;
+            }
+        }
+    }
+
+    .block-11 {
+        .top-block {
+            flex-direction: row !important;
+            span {
+                font-size: 50vw !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+                width: calc(35% - 30px)
+            }
+            h2 {
+                font-size: 10vw !important;
+                width: 65% !important;
+            }
+        }
+        .bottom-block {
+            .left-side {
+                p {
+                    font-size: 6.5vw !important;
+                }
+                .metagun {
+                    width: 50% !important;
                 }
             }
         }

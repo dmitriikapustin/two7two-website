@@ -23,14 +23,17 @@
 // 7. Main file of project
 @import "base";
 
-// 8. Styles of reprobates page
+// 8. Desktop styles for 1600 and more
+@import "desktop_b";
+
+// 9. Styles of reprobates page
 @import "reprobates";
 
-// 9. Mobile styles
+// 10. Mobile styles
 @import "preloader";
 
-// 10. Default classes
+// 11. Default classes
 @import "class";
 
-// 11. Mobile styles
+// 12. Mobile styles
 @import "mobile";
