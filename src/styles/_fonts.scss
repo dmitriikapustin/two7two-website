@@ -1,12 +1,12 @@
 @font-face {
     font-family: $font-name; /* Имя шрифта */
-    src: url(fonts/Shadow-light.woff); /* Путь к файлу со шрифтом */
+    src: url(fonts/Shadow-light.woff) format("woff"); /* Путь к файлу со шрифтом */
     font-weight: 500;
 }
 
 @font-face {
     font-family: $font-name; /* Имя шрифта */
-    src: url(fonts/Shadow-regular.woff); /* Путь к файлу со шрифтом */
+    src: url(fonts/Shadow-regular.woff) format("woff"); /* Путь к файлу со шрифтом */
     font-weight: 700;
 }
 
