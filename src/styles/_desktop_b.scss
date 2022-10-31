@@ -1,5 +1,11 @@
 @media screen and (min-width: 1600px) {
     .block-5 {
+        .left-side {
+            p {
+                width: 60% !important;
+                margin-left: 18% !important;
+            }
+        }
         .bloodshed {
             top: 71.6% !important;
         }
@@ -12,6 +18,13 @@
         .hubris {
             top: 95% !important;
             left: 79.5% !important;
+        }
+    }
+    .block-7 {
+        .video {
+            img {
+                width: 75% !important;
+            }
         }
     }
     .block-9 {

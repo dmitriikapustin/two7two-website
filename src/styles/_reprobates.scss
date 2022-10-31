@@ -294,7 +294,9 @@
     }
     .video {
         width: 100%;
-    
+        img {
+            width: 75% !important
+        }
     }
 }
 
