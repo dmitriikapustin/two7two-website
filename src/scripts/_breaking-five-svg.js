@@ -42,7 +42,8 @@ $(document).ready(function () {
         var speedY = getRandomArbitrary(0.5, 0.9);
         var tl = new TimelineMax();
         tl.to(this, 3000, { x: directionX * speedX * 400, y: directionY * speedY * 400, rotate: 10 + 100*randomRotate}, 1.4);
-        tl.to(this, 2000, { opacity: 0})
+        if($(window).width() >= 800) {tl.to(this, 2000, { opacity: 0})}
+        if($(window).width() < 800) {tl.to(this, 2000, { opacity: 0}), -1}
         var scene = new ScrollMagic.Scene({
           offset: 0 + 4 * rect_index,
           triggerElement: '.trigger-for-breaking-five-' + rect_index,
