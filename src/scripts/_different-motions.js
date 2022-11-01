@@ -2,6 +2,10 @@
 // ------------
 // Eye tracking
 // ------------
+
+const p = document.querySelectorAll(".animated-p");
+let pArray = Array.from(p)
+console.log(pArray)
 const seraphim = document.getElementById('seraphim');
 const tu1 = document.getElementById('t-u-1');
 const tu2 = document.getElementById('t-u-2');
@@ -23,6 +27,9 @@ function updateEyePosition(event) {
   const posX = ((event.clientX / document.body.clientWidth) * 3 - 1) * xMovement;
   const posY = ((event.clientY / window.screen.height) * 2 - 1) * yMovement;
   if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
+    p.forEach((item, index) => {
+      item.style.transform = `translate(${posX * 1.1 * (index + 0.5) + 1.2 * index}px, 0`;
+    })
     seraphim.style.transform = `translate(${posX * 5}px, ${posY * 5}px)`;
   }
   tu1.style.transform = `translate(0px, ${posY * 1.3}px)`;
@@ -52,8 +59,8 @@ tl_move_c.to(".comissar", 0, {scaleX: 1, ease: "none"}, 3.6)
 
 
 var tl_move_m = new TimelineMax({repeat: -1, repeatDelay: 0});
-tl_move_m.fromTo(".meat", {x: 0}, {x: 100, duration: 1.2, ease: "none"})
-tl_move_m.to(".meat", 2.4, {x: -100, ease: "none"}, 1.2)
+tl_move_m.fromTo(".meat", {x: 0}, {x: 80, duration: 1.2, ease: "none"})
+tl_move_m.to(".meat", 2.4, {x: -80, ease: "none"}, 1.2)
 tl_move_c.to(".meat", 0, {scaleX: -1, ease: "none"}, 1.2)
 tl_move_m.to(".meat", 1.2, {x: 0, ease: "none"}, 3.6)
 tl_move_c.to(".meat", 0, {scaleX: 1, ease: "none"}, 3.6)

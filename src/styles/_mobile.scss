@@ -41,10 +41,19 @@
     // HEADER
 
     .header {
+
         .container {
+            height: auto !important;
             flex-direction: row !important;
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
             .logo, .navigation  {
                 width: 50% !important;
+            }
+            .logo {
+                svg {
+                    height: 50% !important;
+                }
             }
             .burger-menu {
                 display: flex !important;
@@ -64,26 +73,59 @@
         h3 {
             font-size: 4.4vw !important;
         }
-        .footer-container {
-            margin: 50px 0 !important;
-            .social-pictures {
-                flex-direction: column !important;
-                .top, .bottom {
-                    flex-direction: row !important;
-                }
-            }
-            .footer-bottom-text {
-                flex-direction: row !important;
-                align-items: end;
-                margin-bottom: 0 !important;
-                padding-bottom: 0 !important;
+        .container {
+            .footer-container {
 
-                p {
-                    font-size: 4vw;
-                    text-align: center !important;
+                margin: 50px 0 0 0 !important;
+                .social-pictures {
+                    flex-direction: column !important;
+                    .top, .bottom {
+                        flex-direction: row !important;
+                        a {
+                            svg {
+                                width: 100% !important;
+                            }
+                        }
+
+                        a.social {
+                             width: 35px !important;
+                        }
+                        a:not(.left-empty, .right-empty) {
+                            svg::after {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: 2.8px;
+                                left: -2.8px;
+                                width: 50px;
+                                height: 50px;
+                                background: rgb(86, 86, 86);
+                                border-radius: 12px;
+                                z-index: -1;
+                            }
+                        }
+                        .tiktok, .vk {
+                            margin-left: 5px;
+                            margin-right: 5px;
+                        }
+                    }
                 }
-                img {
-                    width: 25% !important;
+                .footer-bottom-text {
+                    flex-direction: row !important;
+                    align-items: flex-end !important;
+                    margin-bottom: 0 !important;
+                    padding-bottom: 0 !important;
+                    margin-top: 10px !important;
+                    padding-top: 0 !important;
+                    p {
+                        font-size: 4vw;
+                        text-align: center !important;
+                        margin-top: 0 !important;
+                        margin-bottom: 0 !important;
+                    }
+                    img {
+                        width: 20% !important;
+                    }
                 }
             }
         }

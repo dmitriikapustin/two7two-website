@@ -26,9 +26,9 @@ $(document).ready(function () {
           directionX = -1;
         }
         if (randomDirectionY > 0.5) {
-          directionY = 1;
-        } else {
           directionY = -1;
+        } else {
+          directionY = 0.3;
         }
 
         if (randomRotateBoolean > 0.5) {
@@ -41,11 +41,11 @@ $(document).ready(function () {
         var speedX = getRandomArbitrary(0.5, 0.9);
         var speedY = getRandomArbitrary(0.5, 0.9);
         var tl = new TimelineMax();
-        tl.to(this, 3000, { x: directionX * speedX * 400, y: directionY * speedY * 400, rotate: 10 + 100*randomRotate}, 1.4);
+        tl.to(this, 4000, { x: directionX * speedX * 600, y: directionY * speedY * 400, rotate: 10 + 150*randomRotate}, 1.4);
         if($(window).width() >= 800) {tl.to(this, 2000, { opacity: 0})}
         if($(window).width() < 800) {tl.to(this, 2000, { opacity: 0}), -1}
         var scene = new ScrollMagic.Scene({
-          offset: 0 + 4 * rect_index,
+          offset: 0 + 5.5 * rect_index,
           triggerElement: '.trigger-for-breaking-five-' + rect_index,
           triggerHook: 0.5,
           duration: 130 + speedX * 800,
