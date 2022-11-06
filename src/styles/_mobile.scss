@@ -47,22 +47,67 @@
             flex-direction: row !important;
             padding-top: 15px !important;
             padding-bottom: 15px !important;
-            .logo, .navigation  {
-                width: 50% !important;
+            justify-content: space-between !important;
+            .logo {
+                width: 30% !important;
             }
             .logo {
                 svg {
                     height: 50% !important;
                 }
             }
+            .navigation {
+                width: calc(60% - 20px);
+                align-items: center !important;
+                a {
+                    h3 {
+                        font-size: 3.8vw;
+                    }
+                }
+            }
+            .navigation a:not(:last-child) {
+                margin-right: 15px !important;
+    
+            }
             .burger-menu {
                 display: flex !important;
                 justify-content: flex-end !important;
-                i  {
-                    font-size: 11.4vw !important;
-                }
-            }
+                width: 10% !important;
 
+                svg {
+                    width: 80% !important;
+                    height: 11.9% !important;
+                    :nth-child(1), :nth-child(2), :nth-child(3)  {
+                        transition: all ease-in 0.3s;
+                        transform: translate(0, 0) rotate(0deg);
+                    }
+                }
+                &.close {
+                    svg {
+                        transition: all ease-in 0.3s;
+                        :nth-child(1)  {
+                            transition: all ease-in 0.3s;
+                            position: relative;
+                            transform: translate(12px, -1.5px) rotate(45deg);
+
+                        }
+                        :nth-child(3)  {
+                            transition: all ease-in 0.3s;
+                            position: relative;
+                            transform: translate(-13px, 10.5px) rotate(-45deg);
+                        }
+                        :nth-child(2)  {
+                            transition: all ease-in 0.3s;
+                            position: relative;
+                            top: 0px;
+                            left:0;
+                            transform: rotate(90deg);
+                            opacity:0;
+                            width:0;
+                        }
+                    }
+                }
+            }   
         }
     }
     
@@ -78,12 +123,14 @@
 
                 margin: 50px 0 0 0 !important;
                 .social-pictures {
+                    width: 100% !important;
                     flex-direction: column !important;
                     .top {
-                        margin-bottom: 2.5px !important;
+                        margin-bottom: 6px !important;
                     }
                     .top, .bottom {
                         flex-direction: row !important;
+                        justify-content: center !important;
                         a {
                             svg {
                                 width: 100% !important;
@@ -122,10 +169,6 @@
                         .tiktok, .vk, .instagram , .facebook, .left-empty, .right-empty {
                             position: relative !important; 
                         }
-                        .tiktok, .left-empty, .right-empty {
-                            left: -5px !important;
-                        }
-                        margin-right: 20px !important;
                     }
                 }
                 .footer-bottom-text {
@@ -158,10 +201,12 @@
                 height: 20vh;
                 &:nth-child(1) {
                     width: 100%;
-                    padding-bottom: 15px;
+                    height: auto;
+                    margin-bottom: 15px;
                 }     
                 &:nth-child(2) {
                     width: 100%;
+                    height: auto;
                     padding-left: 0;
                 }
             }
@@ -171,12 +216,28 @@
     //// REPROBATES PAGE ////
 
     .our-games {
-        .image-blocks {
+
+        .heading-67 {
+            svg {
+                width: 90.5% !important;
+            }
+        }
+        .image-blocks-100 {
             flex-direction: column !important;
             .block {
                 width: 100%;
-                h3 {
-                    font-size: 7vw;
+                svg {
+                    margin-top: 20px !important;
+                    margin-bottom: 5px !important;
+                    width: 26% !important;
+                }
+
+                .diary {
+                    width: 100%;
+                    p {
+                        text-align: center;
+                        font-size: 10vw;
+                    }
                 }
             }
         }
@@ -192,13 +253,13 @@
             }
         }
         p {
-            font-size: 5.1vw;
+            font-size: 2.5vw;
         }
         h1 {
-            font-size: 14vw !important;
+            font-size: 7.2vw !important;
         }
         h3 {
-            font-size: 6.8vw !important;
+            font-size: 3.8vw !important;
         }
         .info {
             .platform-genre {
@@ -228,17 +289,25 @@
                 width: 55%;
                 padding-left: 0;
                 h2 {
-                    font-size: 6.8vw !important;
+                    font-size: 4vw !important;
                 }
                 p {
-                    font-size: 5.1vw;
+                    font-size: 2.5vw;
                 }
             }
         }
     }
     .block-3 {
+
+        .title {
+            z-index: 2 !important;
+            margin-bottom: 100px !important;
+            h2 {
+                font-size: 4.2vw !important;
+            }
+        }
         p {
-            font-size: 5.1vw !important;
+            font-size: 3vw !important;
         }
         .egg {
             img {
@@ -252,6 +321,7 @@
                 justify-content: center !important;
                 align-items: center !important;
                 margin-right: 0;
+                margin-bottom: 15px !important;
                 text-align: center !important;
             }
             .breaking-five, .five-options, .right-monster {
@@ -265,6 +335,7 @@
                     left: -3%;
                     top: -35%;
                     width: 40%;
+                    z-index: 1 !important;
                     img {
                         width: 100%;
                         height: auto;
@@ -285,7 +356,7 @@
                 padding-left: 0;
                 text-align: start;
                 h2 {
-                    font-size: 4.8vw;
+                    font-size: 4.2vw !important;
                 }
                 p {
                     font-weight: 700;
@@ -297,7 +368,7 @@
     .block-5 {
 
         p {
-            font-size: 6.2vw;
+            font-size: 3vw;
         }
         .left-side {
             margin-bottom: 50px !important;
@@ -305,7 +376,7 @@
         .left-side, .right-side {
             width: 100% !important;
             span {
-                font-size: 25vw !important;
+                font-size: 20vw !important;
             }
         }
     }
@@ -314,17 +385,22 @@
         height: 50vh;
         margin-bottom: 70px;
         p {
-            font-size: 7vw !important;
+            font-size: 4vw !important;
+            margin-right: 5px !important;
         }
         h3 {
-            font-size: 9vw !important;
+            font-size: 4vw !important;
         }
         span {
-            font-size: 22vw !important;
+            font-size: 10vw !important;
         }
         picture {
             width: 110% !important;
         }
+        .right-text {
+            left: 75.8% !important;
+        }
+
         .left-image {
             left: -30% !important;
             top: 100% !important;
@@ -338,22 +414,28 @@
 
     .block-7 {
         h2 {
-            font-size: 13vw !important;
+            font-size: 5.2vw !important;
         }
         p {
-            font-size: 6.4vw !important;
+            font-size: 3.8vw !important;
+        }
+        .video {
+            width: 100%;
+            img {
+                width: 90% !important
+            }
         }
     }
 
     .block-8 {
         h2 {
-            font-size: 12vw !important;
+            font-size: 7.2vw !important;
         }
         .top-block {
             .stories-heading {
                 flex-direction: row !important;
                 picture {
-                    width: 25% !important;
+                    width: 20% !important;
                 }
             }
         }
@@ -365,15 +447,15 @@
                     width: 100%;
                 }
                 .grenade {
-                    width: 100%;
-                    top: 70%;
+                    width: 90%;
+                    top: 65%;
                     left: 0%;
                 }
             }
             .right-side {
                 p {
                     width: calc(100% - 25px) !important;
-                    font-size: 6.9vw;
+                    font-size: 3.5vw;
                     text-align: center !important;
                 }
             }
@@ -403,31 +485,37 @@
                 transform: rotate(-8deg) !important;
             }
             .comics-2 {
+                margin-top: 30px;
                 width: 120% !important;
 
             }
             .blot-item {
                 width: 100% !important;
+                margin-left: 0px;
                 .blot {
-                    flex-direction: row-reverse !important;
                     .blot-block {
-                        width: 55%;
-                        justify-content: start !important;
+                        width: calc(100% - 20px);
+                        justify-content: center !important;
                         align-items: center !important;
+                        margin-left: 0 !important;
                         img {
-                            width: fit-content;
-                            height: 100%;
+                            width: 80%;
                         }
-                        h3 {
-                            font-size: 11vw;
-                            width: 91.5% !important;
-                        }
+
                     }
                     .comics-text {
                         margin: auto 0 !important;
-                        width: 45% !important;
+                        width: 100% !important;
+                        justify-content: center !important;
+                        h3 {
+                            text-align: center;
+                            font-size: 7vw;
+                            width: 91.5% !important;
+                            margin-bottom: 30px;
+                        }
                         p  {
-                            font-size: 6vw;
+                            text-align: center;
+                            font-size: 4vw;
                         }
                     }
                 }
@@ -443,7 +531,7 @@
                     z-index: 1;
                 }
                 h3 {
-                    font-size: 11.6vw !important;
+                    font-size: 7vw !important;
                     width: 100% !important;
                     margin-bottom: 0 !important;
                 }
@@ -453,10 +541,10 @@
     .block-10 {
         margin-top: 0px !important;
         .title {
-            top: 40px !important;
+            top: 20px !important;
             h2 {
                 margin-top: 0 !important;
-                font-size: 24vw !important;
+                font-size: 9.2vw !important;
             }
         }
         .three-pictures {
@@ -485,6 +573,10 @@
                 object-fit: cover;
             }
         }
+        .moving-slaugterman {
+            width: 24.5% !important;
+            top: 97.5% !important;
+        }
     }
 
     .block-11 {
@@ -493,20 +585,21 @@
         .top-block {
             flex-direction: row !important;
             span {
-                font-size: 50vw !important;
+                font-size: 17.5vw !important;
                 padding-left: 15px !important;
                 padding-right: 15px !important;
                 width: calc(35% - 30px)
             }
             h2 {
-                font-size: 10vw !important;
+                font-size: 4vw !important;
                 width: 65% !important;
             }
         }
         .bottom-block {
+            flex-direction: row !important;
             .left-side {
                 p {
-                    font-size: 6.5vw !important;
+                    font-size: 3.2vw !important;
                 }
                 .metagun {
                     width: 100% !important;
@@ -517,8 +610,17 @@
             }
             .right-side {
                 .orphan {
-                    width: 45% !important;
-                    left: 45%;
+                    width: 100% !important;
+                    left: 85%;
+                    top: -80% !important;
+                }
+
+                .play-btn {
+                    left: 38%;
+                    top: 100%;
+                    img { 
+                        width: 50% !important;
+                    }
                 }
             }
         }
@@ -526,13 +628,13 @@
 
     .block-12 {
         h2 {
-            font-size: 12.4vw !important;
+            font-size: 6.8vw !important;
         }
         p {
-            font-size: 4.8vw !important;
+            font-size: 2.6vw !important;
         }
         span {
-            font-size: 5.6vw !important;
+            font-size: 4vw !important;
         }
         img {
             width: 50% !important;

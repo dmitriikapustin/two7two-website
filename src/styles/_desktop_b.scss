@@ -1,24 +1,27 @@
 @media screen and (min-width: 1600px) {
     .block-5 {
         margin-bottom: 100px !important;
-        .left-side {
-            p {
-                width: 60% !important;
-                margin-left: 18% !important;
-            }
-        }
+        // .left-side {
+        //     p {
+        //         width: 80% !important;
+        //         margin-left: 18% !important;
+        //     }
+        // }
         .bloodshed {
-            top: 71.6% !important;
+            top: 68.6% !important;
         }
         .nuclear_explosion {
             top: 83% !important;
         }
         .icefall {
-            top: 96.9% !important;
+            top: 97.9% !important;
         }
         .hubris {
             top: 95% !important;
             left: 79.5% !important;
+        }
+        .sunstrike {
+            top: 40.3% !important;
         }
     }
     .block-7 {
@@ -31,6 +34,23 @@
     .block-9 {
         .metagun-item {
             margin-top: 300px !important;
+        }
+        .comics-2 {
+            top: 63% !important;
+        }
+    }
+    .block-10 {
+        .moving-slaugterman {
+            width: 28.5% !important;
+
+        }
+    }
+    .block-11 {
+        .play-btn {
+            left: 24% !important;
+            img { 
+                width: 80% !important;
+            }
         }
     }
 }

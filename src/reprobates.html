@@ -2,7 +2,9 @@
     "meta-title": "272",
     "meta-description": " ",
     "meta-keywords": " "
-})  
+})
+@@include("./components/bc.html", { })
+
 <div class="pixel-font-container">
     <section class="block-1">
         <div class="container">
@@ -34,11 +36,11 @@
         <div class="container">
             <div class="quote container-100 align-center flex-row">
                 <div class="left-side">
-                    <div class="metagun">
+                    <div class="metagun appearance-scroll-opacity">
                         <img src="./images/metagun.gif">
                     </div>
                 </div>
-                <div class="right-side flex-col">
+                <div class="right-side flex-col appearance-scroll-opacity">
                     <h2>“СВЕТ, КАК И ДОБРО,<br>ОСЛЕПЛЯЕТ,<br>ЕСЛИ ЕГО СЛИШКОМ МНОГО”</h2>
                     <p class="text-color-4">HOWARD LOVECRAFT</p>
                 </div>
@@ -54,8 +56,11 @@
                 <div class="title justify-center">
                     <h2 class="appearance-scroll-heading">ПИКСЕЛЬНАЯ ГРАФИКА В<br> ДУХЕ РЕТРО ИГР</h2>
                 </div>
+                <div class="under-title justify-center">
+                    <h3 class="text-color-4">18+</h3>
+                </div>
                 <div class="content flex-row space-between">
-                    <div class="breaking-five">
+                    <div class="breaking-five appearance-scroll-opacity">
                         <div class="attack abs-el">
                             <img src="./images/attack.gif">
                         </div>
@@ -121,16 +126,16 @@
                         </svg>      
                     </div>
                     <div class="five-options flex-col">
-                        <p class="text-color-4">5 БОССОВ - УБИВАЙТЕ
+                        <p class="text-color-4 appearance-scroll-opacity">5 БОССОВ - УБИВАЙТЕ
                             И ПОЛУЧАЙТЕ БОНУСЫ</p>
-                        <p class="text-color-4">5 УНИКАЛЬНЫХ ПЕРСОНАЖЕЙ
+                        <p class="text-color-4 appearance-scroll-opacity">5 УНИКАЛЬНЫХ ПЕРСОНАЖЕЙ
                             СО СВОИМИ
                             ИСТОРИЯМИ</p>
-                        <p class="text-color-4">5 ЛОКАЦИЙ - ВЫЖИВАЙТЕ
+                        <p class="text-color-4 appearance-scroll-opacity">5 ЛОКАЦИЙ - ВЫЖИВАЙТЕ
                             И ИССЛЕДУЙТЕ</p>
                     </div>
                     <div class="right-monster">
-                        <div class="meat">
+                        <div class="meat appearance-scroll-opacity">
                             <img src="./images/meat.gif">
                         </div>
                     </div>
@@ -157,7 +162,7 @@
         <div class="container">
             <div class="cards-and-combinations container-100 flex-row">
                 <div class="left-side justify-center flex-col">
-                    <span class="text-color-3 count" id="twenty">20 +</span>
+                    <span class="text-color-3 count" id="twenty">20+</span>
                     <p>КАРТ ТАРО  -  МЕНЯЙТЕ
                         ХОД СРАЖЕНИЯ</p>
                     <div class="cards">
@@ -174,7 +179,7 @@
                     </div>
                 </div>
                 <div class="right-side justify-center flex-col">
-                    <span class="text-color-3 count" id="thirty">30 +</span>
+                    <span class="text-color-3 count" id="thirty">30+</span>
                     <p>ВИДОВ ОРУЖИЯ  -  СОЗДАВАЙТЕ
                         СВОИ КОМБИНАЦИИ</p>
                     <div class="combinations">
@@ -202,10 +207,10 @@
     <section class="block-6">
         <div class="container">
             <div class="enemies-on-screen container-100">
-                <div class="left-text">
+                <div class="left-text appearance-scroll-p-left">
                     <p>до</p><span class="text-color-3">1500</span>
                 </div>
-                <div class="abs-el right-text">
+                <div class="abs-el right-text appearance-scroll-p-right-second">
                     <h3>врагов<br> на экране</h3>
                 </div>
                 <picture class="abs-el left-image">
@@ -237,8 +242,8 @@
             <div class="stories flex-col container-100">
                 <div class="top-block">
                     <div class="stories-heading flex-row justify-center">
-                        <h2 class="text-color-3 appearance-scroll-heading">истории</h2>
-                        <picture class="demon">
+                        <h2 class="text-color-3 appearance-scroll-p-left">истории</h2>
+                        <picture class="demon appearance-scroll-heading">
                             <source srcset="./images/demon.webp" type="image/webp">
                             <img src="./images/demon.png" alt="">
                         </picture>
@@ -257,7 +262,7 @@
                             КАЖДОГО ГЕРОЯ</p>
                         <p class="animated-p appearance-scroll-p-right">ПЯТЬ УДИВИТЕЛЬНЫХ ИСТОРИЙ<br>
                             О ПАДШИХ ОДИНОЧКАХ</p>
-                        <p class="animated-p appearance-scroll-p-right">ИГРОВОЙ ПРОЦЕСС - ПОГРУЖЕНИЕ<br>
+                        <p class="animated-p appearance-scroll-p-right" id="last-p">ИГРОВОЙ ПРОЦЕСС - ПОГРУЖЕНИЕ<br>
                             В ТРАГЕДИЮ ИХ БЫТИЯ</p>
                     </div>
                 </div>
@@ -267,7 +272,7 @@
     <section class="block-9">
         <div class="container">
             <div class="comics-block flex-col container-100">
-                <div class="abs-el comics-1">
+                <div class="abs-el comics-1 appearance-scroll-p-left">
                     <picture>
                         <source srcset="./images/blot-comics-1.webp" type="image/webp">
                         <img src="./images/blot-comics-1.png" alt="">
@@ -276,29 +281,29 @@
                 <div class="blot-item">
                     <div class="blot flex-col">
                         <div class="blot-block">
-                            <img src="./images/blot.gif" alt="">
-                            <h3 class="text-color-6 appearance-scroll-heading">Blot</h3>
+                            <img class="appearance-scroll-heading" src="./images/blot.gif" alt="">
                         </div>
-                        <div class="comics-text">
-                            <p class="text-color-4 appearance-scroll-p-right">ИСТОРИИ ПЕРСОНАЖЕЙ<br> ВСТРОЕНЫ<br>
+                        <div class="comics-text flex-col">
+                            <h3 class="text-color-6 appearance-scroll-heading justify-start">Blot</h3>
+                            <p class="text-color-4 appearance-scroll-p-right-second">ИСТОРИИ ПЕРСОНАЖЕЙ<br> ВСТРОЕНЫ<br>
                                 МЕЖДУ УРОВНЯМИ В<br> ВИДЕ КОМИКСОВ</p>
                         </div>
                     </div>
                 </div>
-                <div class="abs-el comics-2">
+                <div class="abs-el comics-2 appearance-scroll-p-right">
                     <picture>
                         <source srcset="./images/comics-2.webp" type="image/webp">
                         <img src="./images/comics-2.png" alt="">
                     </picture>
                 </div>
-                <div class="aam-item abs-el">
+                <div class="aam-item abs-el appearance-scroll-heading">
                     <div class="aam">
                         <img src="./images/AAM.gif" alt="">
                     </div>
                 </div>
                 <div class="metagun-item justify-center">
                     <div class="metagun flex-col">
-                        <img src="./images/changed-metagun.gif" alt="">
+                        <img class="appearance-scroll-heading" src="./images/changed-metagun.gif" alt="">
                         <h3 class="text-color-5 appearance-scroll-heading">Metagun</h3>
                     </div>
                 </div>
@@ -332,6 +337,9 @@
                 <div class="frostspike-backstage abs-el">
                     <img src="./images/frostspike.gif" alt="">
                 </div>
+                <div class="abs-el moving-slaugterman">
+                    <img src="./images/walk_calm.gif" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -339,7 +347,7 @@
         <div class="container">
             <div class="container-100 about-music">
                 <div class="top-block justify-center flex-row align-center">
-                    <span class="text-color-3">+</span>
+                    <span class="text-color-3" id="animated-plus">+</span>
                     <h2 class="text-color-3 appearance-scroll-p-left">АТМОСФЕРНЫЕ САУДТРЕКИ<br>
                         ОТ ЭЛЕКТРОННЫХ
                         МУЗЫКАНТОВ:</h2>
@@ -350,14 +358,6 @@
                             NWILL<br>
                             RECORDIE
                          </p>
-                         <div class="abs-el play-btn">
-                            <picture>
-                                <source srcset="./images/btn.webp" type="image/webp">
-                                <img src="./images/btn.png" alt="">
-                            </picture>
-                                
-                                
-                         </div>
                          <div class="abs-el metagun">
                             <img src="./images/metagun.gif" alt="">
                         </div>
@@ -366,9 +366,15 @@
                         </div>
                     </div>
                     <div class="right-side">
-                        <div class="abs-el orphan">
+                        <div class="orphan">
                             <img src="./images/orphan.gif" alt="">
                         </div>
+                        <div class="abs-el play-btn appearance-scroll-p-right">
+                            <picture>
+                                <source srcset="./images/btn.webp" type="image/webp">
+                                <img id="play-btn" src="./images/btn.png" alt="">
+                            </picture>
+                         </div>
                     </div>
                 </div>
             </div>

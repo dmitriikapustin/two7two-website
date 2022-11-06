@@ -113,7 +113,7 @@ $(document).ready(function () {
           .addTo(controller_breaking_svg);
       });
   })
-  $(".breaking-five-svg").ready(function () {
+  $(".attack").ready(function () {
     setTimeout(function () {
       $(".five-fractions rect").each(function (minirect_index) {
         $(this).addClass("mini-rect-index-" + minirect_index)
@@ -140,8 +140,7 @@ $(document).ready(function () {
           tl_fr.to(this, 1.045, { x: x_speed * 50 * x_direction, y: -(y_speed * 50), rotate: 10 + 180*randomRotate});
         })
       })
-    }, 1080)
+    }, 800)
   })
-  // у g внутри svg надо было совсем убрать clip path
-  // , transform: "rotate(" + randomRotate * 100 + "deg)" 
+
 })

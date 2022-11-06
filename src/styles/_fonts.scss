@@ -16,6 +16,12 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: $font-name-3; /* Имя шрифта */
+    src: url(fonts/Pribambas-Regular.woff) format("woff"); /* Путь к файлу со шрифтом */
+    font-weight: 300;
+}
+
 // @font-face {
 //     font-family: $font-name-2; /* Имя шрифта */
 //     src: url(fonts/Minecraftchmc.woff) format("woff"); /* Путь к файлу со шрифтом */

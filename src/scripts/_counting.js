@@ -15,7 +15,7 @@ $(document).ready(function () {
         setInterval(function() {
           if (localStart < value) {
             localStart++;
-            counters[id].innerHTML = localStart + " +";
+            counters[id].innerHTML = localStart + "+";
           }
         }, 80);
       }

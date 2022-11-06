@@ -4,6 +4,7 @@ $(document).ready(function () {
     var appearance_h3_left = $(".appearance-h3-left");
     var appearance_h3_right = $(".appearance-h3-right");
     var appearance_h1 = $(".appearance-h1");
+    const seraphim = document.getElementById('seraphim');
 
 
 
@@ -66,7 +67,17 @@ $(document).ready(function () {
     var tl_a_h1 = new TimelineMax();
     tl_a_h1.fromTo(appearance_h1, { opacity: 0, scale: 1.3, y: 10 }, { y: 0, opacity: 1, scale: 1, duration: 0.15, ease: "power3.out" }, 0.25);
 
+    var tl_a_seraphim = new TimelineMax({
+        onComplete: function() {
+            window.addEventListener('mousemove', function (event) {
+                const posX = ((event.clientX / document.body.clientWidth) * 3 - 1) * 6;
+                const posY = ((event.clientY / window.screen.height) * 2 - 1) * 6;
+                seraphim.style.transform = `translate(${posX * 5}px, ${posY * 5}px)`;
+            });
 
+        }
+    });
+    tl_a_seraphim.fromTo(seraphim, { x: 1000 }, { x: 0, duration: 1.3, ease: "power3.out" }, 1.2);
 
 
 })
