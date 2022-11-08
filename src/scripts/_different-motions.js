@@ -103,7 +103,13 @@ tl_plus.fromTo("#animated-plus", {scale: 0.88}, {scale: 1, duration: 0.3, ease: 
 tl_plus.to("#animated-plus", 0.3, {scale: 0.88, ease: "none"}, 0.3)
 
 
+// PLAY && PAUSE BUTTONS ANIMATION
+
 var tl_btn = new TimelineMax({repeat: -1, repeatDelay: 0});
 tl_btn.fromTo("#play-btn", {scale: 0.93}, {scale: 1, duration: 0.08, ease: "none"}, 0.23)
 tl_btn.to("#play-btn", 0.08, {scale: 0.93, ease: "none"}, 0.31)
+
+var tl_btn = new TimelineMax({repeat: -1, repeatDelay: 0});
+tl_btn.fromTo("#pause-btn", {scale: 0.93}, {scale: 1, duration: 0.08, ease: "none"}, 0.23)
+tl_btn.to("#pause-btn", 0.08, {scale: 0.93, ease: "none"}, 0.31)
 

@@ -99,8 +99,7 @@ $(document).ready(function () {
         var tl = new TimelineMax();
         tl.to(this, 4000, { x: directionX * speedX * kX, y: directionY * speedY * kY, rotate: 10 + 180*randomRotate}, 1.4);
         // tl.to(this, 2000, { x: directionX * speedX * 700, y: directionY * speedY * 300, rotate: 10 + 150*randomRotate}, 3.4);
-        if($(window).width() >= 800) {tl.to(this, 2000, { opacity: 0})}
-        if($(window).width() < 800) {tl.to(this, 2000, { opacity: 0}), -1}
+        tl.to(this, 1400, { opacity: 0})
         var scene = new ScrollMagic.Scene({
           offset: 0 + 5.5 * rect_index,
           triggerElement: '.trigger-for-breaking-five-' + rect_index,
@@ -113,34 +112,34 @@ $(document).ready(function () {
           .addTo(controller_breaking_svg);
       });
   })
-  $(".attack").ready(function () {
-    setTimeout(function () {
-      $(".five-fractions rect").each(function (minirect_index) {
-        $(this).addClass("mini-rect-index-" + minirect_index)
-        $(".mini-rect-index-" + minirect_index).each(function () { 
-          var x_direction;
-          var x_speed = Math.random();
-          var y_speed = Math.random();
-          var randomRotateBoolean = Math.random();
+  // $(".attack").ready(function () {
+  //   setTimeout(function () {
+  //     $(".five-fractions rect").each(function (minirect_index) {
+  //       $(this).addClass("mini-rect-index-" + minirect_index)
+  //       $(".mini-rect-index-" + minirect_index).each(function () { 
+  //         var x_direction;
+  //         var x_speed = Math.random();
+  //         var y_speed = Math.random();
+  //         var randomRotateBoolean = Math.random();
     
-          if (randomRotateBoolean > 0.5) {
-            rotateBoolean = 1;
-          } else {
-            rotateBoolean = -1;
-          }
-          if (x_speed > 0.5) {
-            x_direction = 1;
-          } else {
-            x_direction = -1;
-          }
+  //         if (randomRotateBoolean > 0.5) {
+  //           rotateBoolean = 1;
+  //         } else {
+  //           rotateBoolean = -1;
+  //         }
+  //         if (x_speed > 0.5) {
+  //           x_direction = 1;
+  //         } else {
+  //           x_direction = -1;
+  //         }
     
-          var randomRotate = Math.random() * rotateBoolean
+  //         var randomRotate = Math.random() * rotateBoolean
     
-          var tl_fr = new TimelineMax({repeat: -1, repeatDelay: 0});
-          tl_fr.to(this, 1.045, { x: x_speed * 50 * x_direction, y: -(y_speed * 50), rotate: 10 + 180*randomRotate});
-        })
-      })
-    }, 800)
-  })
+  //         var tl_fr = new TimelineMax({repeat: -1, repeatDelay: 0});
+  //         tl_fr.to(this, 1.045, { x: x_speed * 50 * x_direction, y: -(y_speed * 50), rotate: 10 + 180*randomRotate});
+  //       })
+  //     })
+  //   }, 800)
+  // })
 
 })

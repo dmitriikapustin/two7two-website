@@ -107,6 +107,7 @@
         z-index: 3;
         h2 {
             font-size: 2.3vw;
+            line-height: 1.42;
         }
     }
     .under-title {
@@ -618,11 +619,15 @@
                 }
             }
 
-            .play-btn {
-                left: 30%;
+            .play-pause-btn {
+                left: 28%;
                 top: 100%;
+                cursor: pointer;
                 img { 
                     width: 70% !important;
+                }
+                .pause-btn {
+                    display: none;
                 }
             }
         }

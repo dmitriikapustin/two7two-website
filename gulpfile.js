@@ -81,6 +81,11 @@ function html() {
       .pipe(dest('dist/videos'))
   }
 
+  function music() {
+    return src('src/static/**.mp3')
+      .pipe(dest('dist/static'))
+  }
+
   function fonts() {
     return src('src/fonts/**.woff')
       .pipe(dest('dist/fonts'))
@@ -117,6 +122,6 @@ function html() {
     watch('src/videos', series(videos)).on('change', sync.reload)
   }
   
-  exports.build = series(clear, scss, htmlprod, img, imgwebp, favicons, videos, php, scripts, libs, fonts)
-  exports.serve = series(clear, scss, html, img, imgwebp, favicons, videos, php, fonts, scripts, libs, serve)
+  exports.build = series(clear, scss, htmlprod, img, imgwebp, favicons, videos, music, php, scripts, libs, fonts)
+  exports.serve = series(clear, scss, html, img, imgwebp, favicons, videos, music, php, fonts, scripts, libs, serve)
   exports.clear = clear

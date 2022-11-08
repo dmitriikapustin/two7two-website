@@ -4,11 +4,14 @@ $(document).ready(function () {
     var appearance_h3_left = $(".appearance-h3-left");
     var appearance_h3_right = $(".appearance-h3-right");
     var appearance_h1 = $(".appearance-h1");
+    var pixels = $(".pixel");
+    var pixels_mob = $(".pixel-mob");
     const seraphim = document.getElementById('seraphim');
 
 
 
-   
+    var pixels_count = pixels.length;
+    var pixels_mob_count = pixels_mob.length;
 
     var appearance_h3_left_count = appearance_h3_left.length;
     var appearance_h3_right_count = appearance_h3_right.length;
@@ -16,6 +19,14 @@ $(document).ready(function () {
     var appearance_p_left_count = appearance_p_left.length;
     var appearance_p_right_count = appearance_p_right.length;
 
+
+    $(".pixel").each(function (pixel_index) {
+        $(this).addClass("pixel-index-" + pixel_index)
+    })
+
+    $(".pixel-mob").each(function (pixel_mob_index) {
+        $(this).addClass("pixel-mob-index-" + pixel_mob_index)
+    })
 
     $(".appearance-p-left").each(function (appearance_p_left_index) {
         $(this).addClass("appearance-p-left-index-" + appearance_p_left_index)
@@ -33,6 +44,22 @@ $(document).ready(function () {
         $(this).addClass("appearance-h3-right-index-" + appearance_h3_right_index)
     })
 
+    // PIXELS APPEARANCE
+    for (pixel_index = 0; pixel_index < pixels_count; pixel_index++) {
+        $(".pixel-index-" + pixel_index).each(function (index) {
+            var randomAppearanceK = Math.random()
+            var tl_pixel = new TimelineMax();
+            tl_pixel.fromTo(this, {opacity: 0}, {opacity: 1, duration: 0.4}, 0.9 + randomAppearanceK * 1)
+        })
+    }
+
+    for (pixel_mob_index = 0; pixel_mob_index < pixels_mob_count; pixel_mob_index++) {
+        $(".pixel-mob-index-" + pixel_mob_index).each(function (index) {
+            var randomAppearanceK = Math.random()
+            var tl_pixel = new TimelineMax();
+            tl_pixel.fromTo(this, {opacity: 0}, {opacity: 1, duration: 0.4}, 0.9 + randomAppearanceK * 1)
+        })
+    }
 
     // FIRST BLOCK NO SCROLL
 

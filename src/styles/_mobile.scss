@@ -17,6 +17,10 @@
         font-size: 8vw !important;
     }
 
+    .pixel {
+        width: 60% !important;
+    }
+
     section:not(.header, .main-hero) {
         padding: 10px 0 !important;
     }
@@ -306,6 +310,11 @@
                 font-size: 4.2vw !important;
             }
         }
+        .under-title {
+            h3 {
+                font-size: 4.8vw;
+            }
+        }
         p {
             font-size: 3vw !important;
         }
@@ -487,7 +496,11 @@
             .comics-2 {
                 margin-top: 30px;
                 width: 120% !important;
-
+            }
+            .aam-item {
+                left: 65%;
+                top: 25%;
+                width: 55%;
             }
             .blot-item {
                 width: 100% !important;
