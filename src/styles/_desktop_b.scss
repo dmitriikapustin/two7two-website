@@ -1,4 +1,9 @@
 @media screen and (min-width: 1600px) {
+    .footer {
+        p::after {
+            top: 6.5px !important;
+        }
+    }
     .block-5 {
         margin-bottom: 100px !important;
         // .left-side {
@@ -71,6 +76,7 @@
             p {
                 font-size: 25.6px !important;
             }
+
         }
         .footer-bottom-text {
             p {

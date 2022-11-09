@@ -6,9 +6,7 @@
     .container {
         padding-top: 50px;
         align-items: center;
-        .logo {
 
-        }
         .navigation {
             &.hidden {
                 display: none;
@@ -41,6 +39,11 @@
 
         }
         .navigation a {
+            transition: all ease-in 0.15s;
+            &:hover {
+                transition: all ease-in 0.15s;
+                transform: scale(1.1);
+            }
             h3 {
                 font-weight: 700;
                 font-size: 1.7vw;
@@ -54,20 +57,21 @@
     }
 }
 
+
 .our-games {
         picture {
             z-index: -1 !important;
             img {
                 position: relative;
                 z-index: -1 !important;
-                transition: all ease-in 0.3s;
+                transition: all ease-in 0.17s;
             }
             &:hover {
                 z-index: -1 !important;
                 img {
                     z-index: -1 !important;
                     position: relative;
-                    transition: all ease-in 0.3s;
+                    transition: all ease-in 0.17s;
                     transform: scale(1.03);
                     // filter: blur(0.45px);
                 }
@@ -191,12 +195,49 @@
                 margin-bottom: 10px;
             }
             p {
+                position: relative;
+                transition: opacity ease-in 0.3s; 
                 cursor: pointer;
                 margin: 0;
                 margin-bottom: 3px;
                 padding: 0;
                 font-family: $font-name-3 !important;
             }
+
+            p::after{
+                transition: all ease-in 0.15s; 
+                content: ' ';
+                position: absolute;
+                top: 2.5px;
+                left: -10px;
+                opacity: 0;
+                width: 8px !important;
+                height: 8px !important;
+                background: $color-3;
+                border-radius: 0px !important;
+                z-index: 5;
+                
+            }   
+
+            .hover-p:hover > div p {
+                transition: opacity ease-in 0.3s; 
+                opacity: 0.5;
+            }
+
+
+
+            .hover-p:hover > div:hover {
+                p {
+                    transition: opacity ease-in 0.3s; 
+                    opacity: 1;
+                }
+                p::after {
+                    transition: all ease-in 0.15s; 
+                    left: 108%;
+                    opacity: 1;
+                }
+            }
+
         }
         .footer-bottom-text {
             align-items: flex-end;
@@ -229,7 +270,7 @@
                 border-radius: 12px !important;
                 z-index: -1 !important; 
             }
-            a:not(.left-empty, .right-empty):active {
+            a:not(.left-empty, .right-empty):hover {
                 svg {
                     position: relative;
                     top: 2.8px;

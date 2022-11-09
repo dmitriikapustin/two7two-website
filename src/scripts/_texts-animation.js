@@ -99,7 +99,9 @@ $(document).ready(function () {
             window.addEventListener('mousemove', function (event) {
                 const posX = ((event.clientX / document.body.clientWidth) * 3 - 1) * 6;
                 const posY = ((event.clientY / window.screen.height) * 2 - 1) * 6;
-                seraphim.style.transform = `translate(${posX * 5}px, ${posY * 5}px)`;
+                if (location.href.indexOf('reprobates') !== -1) { // for example its login.php page
+                    seraphim.style.transform = `translate(${posX * 5}px, ${posY * 5}px)`;
+                }
             });
 
         }

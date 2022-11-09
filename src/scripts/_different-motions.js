@@ -6,7 +6,13 @@
 const p = document.querySelectorAll(".animated-p");
 let pArray = Array.from(p)
 
+// const p_after = window.getComputedStyle(
+// 	document.querySelector(".p_after"), ':after'
+// )
 
+// console.log(p_after)
+
+const comissar = document.getElementById('comissar');
 const tu1 = document.getElementById('t-u-1');
 const tu2 = document.getElementById('t-u-2');
 const troyan_tu = document.getElementById('troяn-t-u');
@@ -37,21 +43,25 @@ function updateEyePosition(event) {
   // if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
 
   // }
-  if(location.href.indexOf('index')!==-1) { // for example its login.php page
-    troyan_tu.style.transform = `translate(0px, ${posY * 0.2}px)`;
-    reprobates_tu.style.transform = `translate(0px, ${posY * -0.2}px)`;
-    troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
-    reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
-    our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
-  }
+  // if(location.href.indexOf('index')!==-1) { // for example its login.php page
+  //   troyan_tu.style.transform = `translate(0px, ${posY * 0.2}px)`;
+  //   reprobates_tu.style.transform = `translate(0px, ${posY * -0.2}px)`;
+  //   troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
+  //   reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  //   our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  // }
   // if (p_right_boolean === true) {
   //   p.forEach((item, index) => {
   //     item.style.transform = `translate(${posX * 1.1 * (index + 0.5) + 1.2 * index}px, 0`;
   //   })
   // }
-
-
-  tu1.style.transform = `translate(0px, ${posY * 1.3}px)`;
+  troyan_tu.style.transform = `translate(0px, ${posY * 0.2}px)`;
+  reprobates_tu.style.transform = `translate(0px, ${posY * -0.2}px)`;
+  troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
+  reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  // comissar.style.transform = `translate(${posX * 3.1}px, ${posY * 3.1}px)`;
+  tu1.style.transform = `translate(0px, ${posY * 1.1}px)`;
   tu2.style.transform = `translate(0px, ${posY * -0.9}px)`;
   eyeLeftPupil.style.transform = `translate(${posX * 0.25}px, ${posY * -0.5}px)`;
   eyeRightPupil.style.transform = `translate(${posX * -0.3}px, ${posY * 0.45}px)`;
@@ -70,20 +80,20 @@ tl_demon.to(".demon", 0.8, {y: 0, ease: "none"}, 2.4)
 
 // MEAT & COMISSAR ANIMATION
 
-var tl_move_c = new TimelineMax({repeat: -1, repeatDelay: 0});
-tl_move_c.fromTo(".comissar", {x: 0}, {x: 120, duration: 1.2, ease: "none"})
-tl_move_c.to(".comissar", 2.4, {x: -120, ease: "none"}, 1.2)
-tl_move_c.to(".comissar", 0, {scaleX: -1, ease: "none"}, 1.2)
-tl_move_c.to(".comissar", 1.2, {x: 0, ease: "none"}, 3.6)
-tl_move_c.to(".comissar", 0, {scaleX: 1, ease: "none"}, 3.6)
+// var tl_move_c = new TimelineMax({repeat: -1, repeatDelay: 0});
+// tl_move_c.fromTo(".comissar", {x: 0}, {x: 120, duration: 1.2, ease: "none"})
+// tl_move_c.to(".comissar", 2.4, {x: -120, ease: "none"}, 1.2)
+// tl_move_c.to(".comissar", 0, {scaleX: -1, ease: "none"}, 1.2)
+// tl_move_c.to(".comissar", 1.2, {x: 0, ease: "none"}, 3.6)
+// tl_move_c.to(".comissar", 0, {scaleX: 1, ease: "none"}, 3.6)
 
 
 var tl_move_m = new TimelineMax({repeat: -1, repeatDelay: 0});
 tl_move_m.fromTo(".meat", {x: 0}, {x: 80, duration: 1.2, ease: "none"})
 tl_move_m.to(".meat", 2.4, {x: -80, ease: "none"}, 1.2)
-tl_move_c.to(".meat", 0, {scaleX: -1, ease: "none"}, 1.2)
+tl_move_m.to(".meat", 0, {scaleX: -1, ease: "none"}, 1.2)
 tl_move_m.to(".meat", 1.2, {x: 0, ease: "none"}, 3.6)
-tl_move_c.to(".meat", 0, {scaleX: 1, ease: "none"}, 3.6)
+tl_move_m.to(".meat", 0, {scaleX: 1, ease: "none"}, 3.6)
 
 
 
