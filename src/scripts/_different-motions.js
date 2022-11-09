@@ -80,12 +80,12 @@ tl_demon.to(".demon", 0.8, {y: 0, ease: "none"}, 2.4)
 
 // MEAT & COMISSAR ANIMATION
 
-// var tl_move_c = new TimelineMax({repeat: -1, repeatDelay: 0});
-// tl_move_c.fromTo(".comissar", {x: 0}, {x: 120, duration: 1.2, ease: "none"})
-// tl_move_c.to(".comissar", 2.4, {x: -120, ease: "none"}, 1.2)
-// tl_move_c.to(".comissar", 0, {scaleX: -1, ease: "none"}, 1.2)
-// tl_move_c.to(".comissar", 1.2, {x: 0, ease: "none"}, 3.6)
-// tl_move_c.to(".comissar", 0, {scaleX: 1, ease: "none"}, 3.6)
+var tl_move_c = new TimelineMax({repeat: -1, repeatDelay: 0});
+tl_move_c.fromTo(".comissar", {x: 0}, {x: 120, duration: 1.2, ease: "none"})
+tl_move_c.to(".comissar", 2.4, {x: -120, ease: "none"}, 1.2)
+tl_move_c.to(".comissar", 0, {scaleX: -1, ease: "none"}, 1.2)
+tl_move_c.to(".comissar", 1.2, {x: 0, ease: "none"}, 3.6)
+tl_move_c.to(".comissar", 0, {scaleX: 1, ease: "none"}, 3.6)
 
 
 var tl_move_m = new TimelineMax({repeat: -1, repeatDelay: 0});
