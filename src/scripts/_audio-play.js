@@ -14,23 +14,27 @@ $(document).ready(function () {
 
 
 
-    play_btn.addEventListener("click", function () {
+    if (play_btn) {
+        play_btn.addEventListener("click", function () {
 
-        play_btn.style.display = "none";
-        pause_btn.style.display = "block";
-        audio.play();
-        // play_boolean = true;
+            play_btn.style.display = "none";
+            pause_btn.style.display = "block";
+            audio.play();
+            // play_boolean = true;
+    
+        })
+    }
 
-    })
+    if (pause_btn) {
+        pause_btn.addEventListener("click", function () {
 
-    pause_btn.addEventListener("click", function () {
-
-        play_btn.style.display = "block";
-        pause_btn.style.display = "none";
-        // play_boolean = false; 
-        audio.pause();
-
-    })
+            play_btn.style.display = "block";
+            pause_btn.style.display = "none";
+            // play_boolean = false; 
+            audio.pause();
+    
+        })
+    }
 })
 
 

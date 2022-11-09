@@ -51,7 +51,7 @@
             flex-direction: column !important;
             height: 85vh !important;
             background-color: black;
-            z-index: 999 !important;
+            z-index: 1001 !important;
             position: fixed;
             left: -100vw;
             top: 12vh;
@@ -246,10 +246,21 @@
         }
     }
 
+    .pixel-bc.hide-bc {
+        opacity: 0 !important;
+    }
+
+    .pixel-font-container.fixed-pos {
+        top: 200% !important;
+        position: fixed !important;
+        z-index: 5 !important;
+    }
+
     .header.fixed-pos {
         top: 0 !important;
         left: 0 !important;
     }
+
     
     .our-games.fixed-pos, .images.fixed-pos, .footer.fixed-pos {
         top: 200% !important;
