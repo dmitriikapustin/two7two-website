@@ -135,6 +135,9 @@
                     svg {
                         z-index: 3 !important;
                     }
+                    p {
+                        margin-top: 40px !important;
+                    }
                 }
             }
             // .third-game {
@@ -282,6 +285,34 @@
             margin-top: 20px;
             .tiktok, .vk, .instagram , .facebook, .left-empty, .right-empty {
                 position: relative !important; 
+            }
+            .youtube, .vk {
+                position: absolute !important;
+                z-index: 100 !important;
+                fill: white;
+            }
+            .youtube {
+                width: 37%;
+                top: -7%;
+                left: 33%;
+                transform: scale(0.85);
+                opacity: 0;
+                transition: all ease-in 0.15s; 
+            }
+            .vk {
+                width: 68%;
+                top: -16%;
+                left: 16%;
+                transform: scale(0.85);
+                opacity: 0;
+                transition: all ease-in 0.15s; 
+            }
+            .youtube, .vk {
+                transition: all ease-in 0.15s; 
+                &:hover {
+                    transform: scale(1);
+                    opacity: 1;
+                }
             }
             .instagram, .left-empty, .right-empty {
                 left: -12px;

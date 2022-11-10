@@ -166,7 +166,7 @@
                         a.social {
                              width: 35px !important;
                              height: 35px !important;
-                             svg {
+                             svg:not(.youtube, .vk) {
                                 width: 35px !important;
                                 height: 35px !important;
                              }
@@ -188,7 +188,22 @@
                                 left: -2.6px;
                             }
                         }   
-                        .tiktok, .vk {
+                        .youtube {
+                            width: 48% !important;
+                            transform: scale(0.85);
+                            top: -30% !important;
+                            left: 29% !important;
+                            opacity: 1;
+                        }
+                        .vk {
+                            width: 75% !important;
+                            top: -160% !important;
+                            left: 14.2% !important;
+                            transform: scale(0.85);
+                            opacity: 1;
+                            transition: all ease-in 0.15s; 
+                        }
+                        .tiktok {
                             margin-left: 5px;
                             margin-right: 5px;
                         }
@@ -290,6 +305,11 @@
                         font-size: 10vw;
                     }
                 }
+                .reprobates {
+                    p {
+                        font-size: 7.2vw !important;
+                    }
+                }
             }
         }
     }
@@ -351,7 +371,9 @@
         }
     }
     .block-3 {
-
+        .container {
+            padding-bottom: 0 !important;
+        }
         .title {
             z-index: 2 !important;
             margin-bottom: 100px !important;
@@ -404,6 +426,9 @@
     }
 
     .block-4 {
+        .container {
+            padding-top: 0 !important;
+        }
         .way {
             flex-direction: row !important;
             .left-side {
@@ -441,7 +466,8 @@
 
     .block-6 {
         height: 50vh;
-        margin-bottom: 70px;
+        margin-top: 15px !important;
+        margin-bottom: 50px !important;
         p {
             font-size: 4vw !important;
             margin-right: 5px !important;
@@ -494,6 +520,17 @@
                 flex-direction: row !important;
                 picture {
                     width: 20% !important;
+                    .demon {
+                        transition: demon-animation-mob 1.2s linear infinite !important;
+                    }
+                }
+                @keyframes demon-animation-mob {
+                    0% {
+                        transform: translate3d(0, -10%, 0) !important;
+                    }
+                    100% {
+                        transform: translate3d(0, 10%, 0) !important;
+                    }
                 }
             }
         }
@@ -524,6 +561,7 @@
     }
     .block-9 {
         height: auto !important;
+        margin-top: 70px !important;
         .comics-block {
             .comics-1, .comics-2 {
                 width: 100% !important;

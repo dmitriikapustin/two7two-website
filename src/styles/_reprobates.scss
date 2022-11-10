@@ -6,6 +6,9 @@
     width: 100vw !important;
     height: 150vh !important;
     z-index: 1 !important;
+    .pixel {
+        z-index: 0 !important;
+    }
 }
 
 
@@ -139,7 +142,7 @@
             position: relative;
             transform: translate3d(-50px,0,0);
             .attack {
-                z-index: 1;
+                z-index: -1;
                 top: -74.2%;
                 left: -40.2%;
                 img {
@@ -353,9 +356,9 @@
                     img {
                         height: auto;
                     }
-                .demon {
-                    transition: demon-animation 1.2s linear infinite;
-                }
+                    .demon {
+                        transition: demon-animation 1.2s linear infinite;
+                    }
                 }
                 @keyframes demon-animation {
                     0% {
@@ -388,8 +391,11 @@
                 text-align: start !important;
                 line-height: 1.42;
             }
-            img {
-                width: 90%;
+            .comissar-container {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
             }
             .grenade {
                 width: 50%;

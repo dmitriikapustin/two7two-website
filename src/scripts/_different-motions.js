@@ -13,6 +13,7 @@ let pArray = Array.from(p)
 // console.log(p_after)
 
 const comissar = document.getElementById('comissar');
+const comissar_container = document.getElementById('comissar-container');
 const tu1 = document.getElementById('t-u-1');
 const tu2 = document.getElementById('t-u-2');
 const troyan_tu = document.getElementById('troяn-t-u');
@@ -61,6 +62,7 @@ function updateEyePosition(event) {
   // reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
   // our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
   // comissar.style.transform = `translate(${posX * 3.1}px, ${posY * 3.1}px)`;
+  comissar_container.style.transform = `translate(${posX * 2.5}px, ${posY * 2.5}px)`;
   tu1.style.transform = `translate(0px, ${posY * 1.1}px)`;
   tu2.style.transform = `translate(0px, ${posY * -0.9}px)`;
   eyeLeftPupil.style.transform = `translate(${posX * 0.25}px, ${posY * -0.5}px)`;

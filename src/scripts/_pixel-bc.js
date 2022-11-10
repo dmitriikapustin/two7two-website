@@ -133,10 +133,21 @@ $(".pixel-mob").each(function(index) {
 
 
     if (index >= 6 && index < 8) {
-        var randomLeft = getRandomArbitrary(0.94, 1) * 100;
-        var randomTop = getRandomArbitrary(0, 0.08) * 100; 
+        var randomLeft = getRandomArbitrary(0.3, 0.48) * 100;
+        var randomTop = getRandomArbitrary(0, 0.1) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
+    if (index >= 21 && index < 22) {
+        var randomLeft = getRandomArbitrary(0.3, 0.48) * 100;
+        var randomTop = getRandomArbitrary(0, 0.1) * 100; 
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 22 && index < 25) {
+        var randomLeft = getRandomArbitrary(0.52, 0.7) * 100;
+        var randomTop = getRandomArbitrary(0, 0.1) * 100; 
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+
     if (index >= 8 && index < 10) {
         var randomLeft = getRandomArbitrary(0.92, 1) * 100;
         var randomTop = getRandomArbitrary(0.11, 0.19) * 100; 

@@ -1,5 +1,8 @@
 @media screen and (min-width: 1600px) {
     .footer {
+        .footer-container {
+            margin: 0 auto !important;
+        }
         p::after {
             top: 6.5px !important;
         }
@@ -126,8 +129,31 @@
         p {
             font-size: 27.5px !important;
         }
+        .bloodshed {
+            top: 72% !important;
+        }
+        .nuclear_explosion {
+            top: 83% !important;
+        }
+        .icefall {
+            top: 101.9% !important;
+        }
+        .hubris {
+            top: 97% !important;
+            left: 79.5% !important;
+        }
+        .sunstrike {
+            top: 41.3% !important;
+        }
+        .frostspike {
+
+            top: 56.5% !important;
+
+        }
     }
     .block-6 {
+        margin-top: 220px !important;
+        height: 80vh !important;
         span {
             font-size: 131.5px !important;
         }
@@ -152,6 +178,10 @@
         }
     }
     .block-9 {
+        height: 145vh !important;
+        .metagun-item {
+            margin-top: 440px !important;
+        }
         h3 {
             font-size: 43.2px !important;
         }
@@ -165,11 +195,18 @@
         }
     }
     .block-11 {
+
         h2 {
             font-size: 49.05px !important;
         }
         p {
             font-size: 31.4px !important;
+        }
+        .play-pause-btn {
+            left: 22% !important;
+            img {
+                width: 100% !important;
+            }
         }
     }
     .block-12 {
