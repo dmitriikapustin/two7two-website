@@ -66,28 +66,28 @@ $(document).ready(function () {
     for (appearance_p_left_index = 0; appearance_p_left_index < appearance_p_left_count; appearance_p_left_index++) {
         $('.appearance-p-left-index-' + appearance_p_left_index).each(function (index) {
             var tl_a_p = new TimelineMax();
-            tl_a_p.fromTo(this, { x: -1000 }, { x: 0, duration: 0.25, ease: "power3.out" }, 0.8 + index * 0.5);
+            tl_a_p.fromTo(this, { x: -1500 }, { x: 0, duration: 0.25, ease: "power3.out" }, 0.8 + index * 0.5);
         });
     }
 
     for (appearance_p_right_index = 0; appearance_p_right_index < appearance_p_right_count; appearance_p_right_index++) {
         $('.appearance-p-right-index-' + appearance_p_right_index).each(function (index) {
             var tl_a_p = new TimelineMax();
-            tl_a_p.fromTo(this, { x: 1000 }, { x: 0, duration: 0.25, ease: "power3.out" }, 0.8 + index * 0.5);
+            tl_a_p.fromTo(this, { x: 1500 }, { x: 0, duration: 0.25, ease: "power3.out" }, 0.8 + index * 0.5);
         });
     }
 
     for (appearance_h3_left_index = 0; appearance_h3_left_index < appearance_h3_left_count; appearance_h3_left_index++) {
         $('.appearance-h3-left-index-' + appearance_h3_left_index).each(function (index) {
             var tl_a_h3 = new TimelineMax();
-            tl_a_h3.fromTo(this, { x: -1000 }, { x: 0, duration: 0.3, ease: "power3.out" }, 0.4 + index * 0.5);
+            tl_a_h3.fromTo(this, { x: -1500 }, { x: 0, duration: 0.3, ease: "power3.out" }, 0.4 + index * 0.5);
         });
     }
 
     for (appearance_h3_right_index = 0; appearance_h3_right_index < appearance_h3_right_count; appearance_h3_right_index++) {
         $('.appearance-h3-right-index-' + appearance_h3_right_index).each(function (index) {
             var tl_a_h3 = new TimelineMax();
-            tl_a_h3.fromTo(this, { x: 1000 }, { x: 0, duration: 0.25, ease: "power3.out" }, 0.55 + index * 0.5);
+            tl_a_h3.fromTo(this, { x: 1500 }, { x: 0, duration: 0.25, ease: "power3.out" }, 0.55 + index * 0.5);
         });
     }
 

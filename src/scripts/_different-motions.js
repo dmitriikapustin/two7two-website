@@ -44,25 +44,41 @@ function updateEyePosition(event) {
   // if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
 
   // }
-  if(location.href.indexOf('index')!==-1) { // for example its login.php page
-    troyan_tu.style.transform = `translate(0px, ${posY * 0.2}px)`;
-    reprobates_tu.style.transform = `translate(0px, ${posY * -0.2}px)`;
-    troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
-    reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
-    our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
-  }
+  // if(location.href.indexOf('index')!==-1) { // for example its login.php page
+  //   troyan_tu.style.transform = `translate(0px, ${posY * 0.2}px)`;
+  //   reprobates_tu.style.transform = `translate(0px, ${posY * -0.2}px)`;
+  //   troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
+  //   reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  //   our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  // }
   // if (p_right_boolean === true) {
   //   p.forEach((item, index) => {
   //     item.style.transform = `translate(${posX * 1.1 * (index + 0.5) + 1.2 * index}px, 0`;
   //   })
   // }
-  // troyan_tu.style.transform = `translate(0px, ${posY * 0.2}px)`;
+  if (troyan_tu) {
+    troyan_tu.style.transform = `translate(0px, ${posY * 0.2}px)`;
+  }
+  if (reprobates_tu) {
+    reprobates_tu.style.transform = `translate(0px, ${posY * 0.2}px)`;
+  }
+  if (troyan_oc) {
+    troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
+  }
+  if (reprobates_oc) {
+    reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  }
+  if (our_games_oc) {
+    our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  }
   // reprobates_tu.style.transform = `translate(0px, ${posY * -0.2}px)`;
   // troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
   // reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
   // our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
   // comissar.style.transform = `translate(${posX * 3.1}px, ${posY * 3.1}px)`;
-  comissar_container.style.transform = `translate(${posX * 2.5}px, ${posY * 2.5}px)`;
+  if (comissar_container) {
+    comissar_container.style.transform = `translate(${posX * 2.5}px, ${posY * 2.5}px)`;
+  }
   tu1.style.transform = `translate(0px, ${posY * 1.1}px)`;
   tu2.style.transform = `translate(0px, ${posY * -0.9}px)`;
   eyeLeftPupil.style.transform = `translate(${posX * 0.25}px, ${posY * -0.5}px)`;

@@ -147,7 +147,7 @@
                     height: 6.5px !important;
                     top: 6px !important;
                 }
-                margin: 50px 0 0 0 !important;
+                margin: 0 !important;
                 .social-pictures {
                     width: 100% !important;
                     flex-direction: column !important;
@@ -308,6 +308,7 @@
                 .reprobates {
                     p {
                         font-size: 7.2vw !important;
+                        margin-bottom: 0 !important;
                     }
                 }
             }
