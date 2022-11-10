@@ -4,6 +4,7 @@ var img_block = document.getElementById('images-block');
 var og_block = document.getElementById('our-games-block');
 var header = document.getElementById('header');
 var footer = document.getElementById('footer');
+var logo = document.getElementById('logo');
 var reprobates_content = document.getElementById('pixel-font-container');
 
 var overlay = document.getElementById('navigation-mobile');
@@ -12,7 +13,7 @@ let burger_boolean = false;
 
 
 burgerMenu.addEventListener('click',function(){
-
+  logo.classList.toggle("scaling")
   this.classList.toggle("close");
   overlay.classList.toggle("open-nav");
   if (burger_boolean === false) {

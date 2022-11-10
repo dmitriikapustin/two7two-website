@@ -20,7 +20,10 @@ const troyan_tu = document.getElementById('troяn-t-u');
 const reprobates_tu = document.getElementById('reprobates-t-u');
 const troyan_oc = document.getElementById('troяn-o-c');
 const reprobates_oc = document.getElementById('reprobates-o-c');
+const developer_1_oc = document.getElementById('developer-1-o-c');
+const developer_2_oc = document.getElementById('developer-2-o-c');
 const our_games_oc = document.getElementById('our-games-o-c');
+const og_oc = document.getElementById('og-o-c');
 const eyeRightPupil = document.getElementById('eye-right-pupil');
 const eyeLeftPupil = document.getElementById('eye-left-pupil');
 const eyeLeftInner = document.getElementById('eye-left-inner');
@@ -56,6 +59,13 @@ function updateEyePosition(event) {
   //     item.style.transform = `translate(${posX * 1.1 * (index + 0.5) + 1.2 * index}px, 0`;
   //   })
   // }
+
+  if (developer_1_oc) {
+    developer_1_oc.style.transform = `translate(${posX * 0.02}px, ${posY * -0.09}px)`;
+  }
+  if (developer_2_oc) {
+    developer_2_oc.style.transform = `translate(${posX * -0.04}px, ${posY * 0.07}px)`;
+  }
   if (troyan_tu) {
     troyan_tu.style.transform = `translate(0px, ${posY * 0.2}px)`;
   }
@@ -71,6 +81,10 @@ function updateEyePosition(event) {
   if (our_games_oc) {
     our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
   }
+  if (og_oc) {
+    og_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  }
+
   // reprobates_tu.style.transform = `translate(0px, ${posY * -0.2}px)`;
   // troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
   // reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
@@ -90,10 +104,17 @@ function updateEyePosition(event) {
 
 // DEMON ANIMATION
 
-var tl_demon = new TimelineMax({repeat: -1, repeatDelay: 0});
-tl_demon.fromTo(".demon", {y: 0}, {y: 30, duration: 0.8, ease: "none"})
-tl_demon.to(".demon", 1.6, {y: -30, ease: "none"}, 0.8)
-tl_demon.to(".demon", 0.8, {y: 0, ease: "none"}, 2.4)
+if ($(window).width() > 800) {
+  var tl_demon = new TimelineMax({repeat: -1, repeatDelay: 0});
+  tl_demon.fromTo(".demon", {y: 0}, {y: 30, duration: 0.8, ease: "none"})
+  tl_demon.to(".demon", 1.6, {y: -30, ease: "none"}, 0.8)
+  tl_demon.to(".demon", 0.8, {y: 0, ease: "none"}, 2.4)
+} else {
+  var tl_demon = new TimelineMax({repeat: -1, repeatDelay: 0});
+  tl_demon.fromTo(".demon", {y: 0}, {y: 15, duration: 0.8, ease: "none"})
+  tl_demon.to(".demon", 1.6, {y: -15, ease: "none"}, 0.8)
+  tl_demon.to(".demon", 0.8, {y: 0, ease: "none"}, 2.4)
+}
 
 
 // MEAT & COMISSAR ANIMATION

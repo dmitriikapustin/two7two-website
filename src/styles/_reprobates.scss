@@ -162,6 +162,10 @@
                 line-height: 1.42;
             }
         }
+        .five-options p:last-child {
+            margin-bottom: 0 !important;
+        }
+
         .right-monster {
             z-index: 1;
             align-items: flex-start;
@@ -172,6 +176,7 @@
 }
 
 .block-4 {
+    margin-bottom: 120px !important;
     .left-side {
         width: 35%;
         img {
@@ -342,7 +347,7 @@
 }
 
 .block-8 {
-    margin-top: 70px !important;
+    margin-top: 70px;
     .stories {
         .top-block {
             .stories-heading {
@@ -481,7 +486,7 @@
             }
         }
         .metagun-item {
-            margin-top: 280px;
+            margin-top: 27vh;
             width: 50%;
             img {
                 height: auto;

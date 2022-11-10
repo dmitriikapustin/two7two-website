@@ -143,7 +143,7 @@ var counting = setInterval(function () {
     setTimeout(function () {
         $(".preloader").addClass("take_away");
         //$(window).scrollTop(0);
-    }, 5720)
+    }, 20)
     setTimeout(function () {
         $(".preloader").addClass("hidden-locked")
-    }, 6500)
+    }, 20)
