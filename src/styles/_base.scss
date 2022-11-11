@@ -7,6 +7,7 @@
         padding-top: 50px;
         align-items: center;
         .logo {
+            width: 33% !important;
             svg {
                 width: 72%;
                 margin: 0 auto;
@@ -98,10 +99,21 @@
 
         .heading-33, .heading-67 {
             svg {
-                width: 32% !important;
                 margin-bottom: 10px !important;
             }
         }
+        .heading-33 {
+            svg {
+                width: 100% !important;
+            }
+        }
+
+        .heading-67 {
+            svg {
+                width: 50% !important;
+            }
+        }
+
         .image-blocks-67, .heading-67 {
             width: 67%;
         }
@@ -124,50 +136,41 @@
                     text-align: center;
                 }
                 svg {
-                    width: 19.6% !important;
-                    height: 50%!important;
+                    width: 75% !important;
+                    // height: fit-content !important;
+                    height: 100%!important;
+                    margin-top: 20px !important;
                 }
-                .svg-reprobates::after, .svg-developer::after, .svg-troyan::after {
-                    transition: all ease-in 0.15s; 
-                    content: ' ';
-                    position: absolute;
-                    top: 4px;
-                    left: -100px;
-                    opacity: 0;
-                    width: 8px !important;
-                    height: 8px !important;
-                    background: $color-3;
-                    border-radius: 1000px !important;
-                    z-index: 5;
-                }
+                // .svg-reprobates::after, .svg-developer::after, .svg-troyan::after {
+                //     transition: all ease-in 0.15s; 
+                //     content: ' ';
+                //     position: absolute;
+                //     top: 4px;
+                //     left: -100px;
+                //     opacity: 0;
+                //     width: 8px !important;
+                //     height: 8px !important;
+                //     background: $color-3;
+                //     border-radius: 1000px !important;
+                //     z-index: 5;
+                // }
 
                 .svg-reprobates {
-                    margin-top: 19px !important;
-                    width: 35% !important;
-                    &:hover {
-                        .svg-reprobates::after {
-                            transition: all ease-in 0.15s; 
-                            left: 0px;
-                            opacity: 1;
-                        }
-                    }
-                }
-
-
-
-
-
-
-                .svg-troyan {
-                    margin-top: 16px !important;
-
+                    margin-top: 23px !important;
                 }
 
                 .svg-developer {
-                    width: 40% !important;
-                    margin-top: 21px !important;
-
+                    margin-top: 23px !important;
                 }
+
+
+
+
+                // .svg-troyan {
+                //     margin-top: 16px !important;
+
+                // }
+
 
                 .troяn, .reprobates, .developer {
                     width: 100% !important;
@@ -210,10 +213,18 @@
                 opacity: 1 !important;
                 transition: opacity ease-in 0.3s !important; 
             }
-            .hov-div-troyan::after, .hov-div-reprobates::after, .hov-div-developer::after {
+            .hover-div-troyan::after, .hover-div-reprobates::after, .hover-div-developer::after {
                 transition: all ease-in 0.15s; 
-                left: 200% !important;
-                opacity: 1;
+                opacity: 1 !important;
+            }
+            .hover-div-troyan::after {
+                left: 66.5% !important;
+            }
+            .hover-div-reprobates::after {
+                left: 78.5% !important;
+            }
+            .hover-div-developer::after {
+                left: 82.5% !important;
             }
         }
 
@@ -237,8 +248,8 @@
             transition: all ease-in 0.15s; 
             content: ' ';
             position: absolute;
-            top: 10%;
-            left: 30%;
+            top: 40px;
+            left: 60px;
             opacity: 0;
             width: 8px !important;
             height: 8px !important;

@@ -13,7 +13,7 @@ let burger_boolean = false;
 
 
 burgerMenu.addEventListener('click',function(){
-  logo.classList.toggle("scaling")
+  // logo.classList.toggle("scaling")
   this.classList.toggle("close");
   overlay.classList.toggle("open-nav");
   if (burger_boolean === false) {

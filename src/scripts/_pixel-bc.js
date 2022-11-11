@@ -13,6 +13,7 @@ var pixelMobArr = $(".pixel-mob");
 console.log($(".pixel").length)
 
 var pixel_count = pixelArr.length;
+var pixel_mob_count = pixelMobArr.length;
 
 
 $(".pixel").each(function(index) {
@@ -194,6 +195,13 @@ $(".pixel").each(function (pixel_scroll_index) {
 
 })
 
+$(".pixel-mob").each(function (pixel_mob_scroll_index) {
+    $(this).addClass("pixel-mob-scroll-" + pixel_mob_scroll_index)
+
+    $(this).parent().prepend('<div class="trigger-for-pixel-mob-scroll-' + pixel_mob_scroll_index + ' trigger"></div>');
+
+})
+
 var controller_all_pixels_animation = new ScrollMagic.Controller();
 
 for (pixel_scroll_index = 0; pixel_scroll_index < pixel_count; pixel_scroll_index++) {
@@ -213,5 +221,27 @@ for (pixel_scroll_index = 0; pixel_scroll_index < pixel_count; pixel_scroll_inde
             // .addIndicators()
             .setTween(tl_scroll_pixel)
             .addTo(controller_all_pixels_animation);
+    });
+}
+
+var controller_all_pixels_mob_animation = new ScrollMagic.Controller();
+
+for (pixel_mob_scroll_index = 0; pixel_mob_scroll_index < pixel_mob_count; pixel_mob_scroll_index++) {
+
+    $(".pixel-mob-scroll-" + pixel_mob_scroll_index).each(function () {
+        // $(this).addClass('ov-hidden')
+        var tl_mob_scroll_pixel = new TimelineMax();
+        tl_mob_scroll_pixel.fromTo(this, { y: 0 }, { y: -1500, duration: 0.5});
+
+        var scene = new ScrollMagic.Scene({
+            offset: 0,
+            triggerElement: ".trigger-for-pixel-mob-scroll-" + pixel_mob_scroll_index,
+            triggerHook: 0,
+            duration: 10000,
+            reverse: true
+        })
+            // .addIndicators()
+            .setTween(tl_mob_scroll_pixel)
+            .addTo(controller_all_pixels_mob_animation);
     });
 }
