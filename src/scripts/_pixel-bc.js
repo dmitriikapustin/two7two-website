@@ -7,108 +7,147 @@ function getRandomArbitrary(min, max) {
 
 
 var pixelArr = $(".pixel");
+var pixelArrBottom = $(".pixel-bottom");
 var pixelMobArr = $(".pixel-mob");
 // console.log(pixelArr)
 
 console.log($(".pixel").length)
 
 var pixel_count = pixelArr.length;
+var pixel_bottom_count = pixelArrBottom.length;
 var pixel_mob_count = pixelMobArr.length;
 
 
 $(".pixel").each(function(index) {
-    if (index >= 0 && index < 4) {
+    if (index >= 0 && index < 7) {
+        var randomLeft = getRandomArbitrary(0, 0.12) * 100;
+        var randomTop = getRandomArbitrary(0, 0.15) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 7 && index < 14) {
         var randomLeft = getRandomArbitrary(0, 0.1) * 100;
-        var randomTop = getRandomArbitrary(0, 0.1) * 100;
+        var randomTop = getRandomArbitrary(0.16, 0.31) * 100;
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
-    if (index >= 4 && index < 8) {
-        var randomLeft = getRandomArbitrary(0, 0.08) * 100;
-        var randomTop = getRandomArbitrary(0.1, 0.26) * 100;
+    if (index >= 14 && index < 21) {
+        var randomLeft = getRandomArbitrary(0.01, 0.17) * 100;
+        var randomTop = getRandomArbitrary(0.33, 0.53) * 100;
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
-    if (index >= 8 && index < 11) {
-        var randomLeft = getRandomArbitrary(0.03, 0.15) * 100;
-        var randomTop = getRandomArbitrary(0.26, 0.43) * 100;
-        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
-    }
-    if (index >= 11 && index < 14) {
-        var randomLeft = getRandomArbitrary(0.04, 0.17) * 100;
-        var randomTop = getRandomArbitrary(0.44, 0.62) * 100;
+    if (index >= 21 && index < 28) {
+        var randomLeft = getRandomArbitrary(0.01, 0.19) * 100;
+        var randomTop = getRandomArbitrary(0.54, 0.96) * 100;
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
 
 
-    if (index >= 14 && index < 18) {
-        var randomLeft = getRandomArbitrary(0.9, 1) * 100;
-        var randomTop = getRandomArbitrary(0, 0.1) * 100; 
-        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
-    }
-    if (index >= 18 && index < 22) {
+    if (index >= 28 && index < 35) {
         var randomLeft = getRandomArbitrary(0.88, 1) * 100;
-        var randomTop = getRandomArbitrary(0.1, 0.26) * 100; 
+        var randomTop = getRandomArbitrary(0, 0.15) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
-    if (index >= 22 && index < 25) {
-        var randomLeft = getRandomArbitrary(0.82, 0.97) * 100;
-        var randomTop = getRandomArbitrary(0.26, 0.43) * 100; 
+    if (index >= 35 && index < 42) {
+        var randomLeft = getRandomArbitrary(0.9, 1) * 100;
+        var randomTop = getRandomArbitrary(0.16, 0.31) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
-    if (index >= 25 && index < 28) {
-        var randomLeft = getRandomArbitrary(0.8, 0.96) * 100;
-        var randomTop = getRandomArbitrary(0.44, 0.62) * 100; 
+    if (index >= 42 && index < 49) {
+        var randomLeft = getRandomArbitrary(0.83, 0.99) * 100;
+        var randomTop = getRandomArbitrary(0.33, 0.53) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
-
-
-
-    if (index >= 28 && index < 31) {
-        var randomLeft = getRandomArbitrary(0.2, 0.45) * 100;
-        var randomTop = getRandomArbitrary(0, 0.06) * 100; 
+    if (index >= 49 && index < 56) {
+        var randomLeft = getRandomArbitrary(0.81, 0.99) * 100;
+        var randomTop = getRandomArbitrary(0.54, 0.96) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
 
 
-    if (index >= 31 && index < 34) {
-        var randomLeft = getRandomArbitrary(0.55, 0.8) * 100;
-        var randomTop = getRandomArbitrary(0, 0.06) * 100; 
+
+    if (index >= 56 && index < 61) {
+        var randomLeft = getRandomArbitrary(0.15, 0.48) * 100;
+        var randomTop = getRandomArbitrary(0, 0.08) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
 
 
-    if (index >= 34 && index < 37) {
+    if (index >= 61 && index < 66) {
+        var randomLeft = getRandomArbitrary(0.52, 0.85) * 100;
+        var randomTop = getRandomArbitrary(0, 0.08) * 100; 
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+
+
+    if (index >= 66 && index < 70) {
         var randomLeft = getRandomArbitrary(0, 0.07) * 100;
         var randomTop = getRandomArbitrary(0.4, 1.2) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
-    if (index >= 37 && index < 40) {
+    if (index >= 70 && index < 74) {
         var randomLeft = getRandomArbitrary(0.93, 1) * 100;
         var randomTop = getRandomArbitrary(0.4, 1.2) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
 
-    if (index >= 40 && index < 43) {
+    if (index >= 74 && index < 78) {
         var randomLeft = getRandomArbitrary(0, 0.07) * 100;
         var randomTop = getRandomArbitrary(1.25, 2.3) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
-    if (index >= 43 && index < 46) {
+    if (index >= 78 && index < 82) {
         var randomLeft = getRandomArbitrary(0.93, 1) * 100;
         var randomTop = getRandomArbitrary(1.25, 2.3) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
 
-    if (index >= 46 && index < 49) {
+    if (index >= 82 && index < 86) {
         var randomLeft = getRandomArbitrary(0, 0.07) * 100;
         var randomTop = getRandomArbitrary(2.3, 3.3) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
-    if (index >= 49 && index < 52) {
+    if (index >= 86 && index < 90) {
         var randomLeft = getRandomArbitrary(0.93, 1) * 100;
         var randomTop = getRandomArbitrary(2.3, 3.3) * 100; 
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 90 && index < 93) {
+        var randomLeft = getRandomArbitrary(0, 0.07) * 100;
+        var randomTop = getRandomArbitrary(3.5, 4.8) * 100; 
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 93 && index < 96) {
+        var randomLeft = getRandomArbitrary(0.93, 1) * 100;
+        var randomTop = getRandomArbitrary(3.5, 4.8) * 100; 
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+ 
+})
+
+$(".pixel-bottom").each(function(index) {
+
+    if (index >= 0 && index < 3) {
+        var randomLeft = getRandomArbitrary(0, 0.15) * 100;
+        var randomTop = getRandomArbitrary(0.25, 0.5) * 100; 
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 3 && index < 6) {
+        var randomLeft = getRandomArbitrary(0.85, 1) * 100;
+        var randomTop = getRandomArbitrary(0.25, 0.5) * 100; 
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+
+    if (index >= 6 && index < 8) {
+        var randomLeft = getRandomArbitrary(0, 0.3) * 100;
+        var randomTop = getRandomArbitrary(0.7, 1.1) * 100; 
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 8 && index < 10) {
+        var randomLeft = getRandomArbitrary(0.7, 1) * 100;
+        var randomTop = getRandomArbitrary(0.7, 1.1) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
 })
+
 
 $(".pixel-mob").each(function(index) {
     if (index >= 0 && index < 2) {
@@ -195,6 +234,13 @@ $(".pixel").each(function (pixel_scroll_index) {
 
 })
 
+$(".pixel-bottom").each(function (pixel_scroll_bottom_index) {
+    $(this).addClass("pixel-scroll-bottom-" + pixel_scroll_bottom_index)
+
+    $(this).parent().prepend('<div class="trigger-for-pixel-scroll-bottom-' + pixel_scroll_bottom_index + ' trigger"></div>');
+
+})
+
 $(".pixel-mob").each(function (pixel_mob_scroll_index) {
     $(this).addClass("pixel-mob-scroll-" + pixel_mob_scroll_index)
 
@@ -208,8 +254,9 @@ for (pixel_scroll_index = 0; pixel_scroll_index < pixel_count; pixel_scroll_inde
 
     $(".pixel-scroll-" + pixel_scroll_index).each(function () {
         // $(this).addClass('ov-hidden')
+        var randParallax = Math.random()
         var tl_scroll_pixel = new TimelineMax();
-        tl_scroll_pixel.fromTo(this, { y: 0 }, { y: -1500, duration: 0.5});
+        tl_scroll_pixel.fromTo(this, { y: 0 }, { y: -700 - 3000 * randParallax, duration: 0.5});
 
         var scene = new ScrollMagic.Scene({
             offset: 0,
@@ -222,6 +269,29 @@ for (pixel_scroll_index = 0; pixel_scroll_index < pixel_count; pixel_scroll_inde
             .setTween(tl_scroll_pixel)
             .addTo(controller_all_pixels_animation);
     });
+    
+}
+
+for (pixel_scroll_bottom_index = 0; pixel_scroll_bottom_index < pixel_bottom_count; pixel_scroll_bottom_index++) {
+
+    $(".pixel-scroll-bottom-" + pixel_scroll_bottom_index).each(function () {
+        // $(this).addClass('ov-hidden')
+        var randParallax = Math.random()
+        var tl_scroll_bottom_pixel = new TimelineMax();
+        tl_scroll_bottom_pixel.fromTo(this, { y: 0 }, { y: -200 - 200 * randParallax, duration: 0.5});
+
+        var scene = new ScrollMagic.Scene({
+            offset: -700,
+            triggerElement: ".block-11",
+            triggerHook: 0,
+            duration: 1600,
+            reverse: true
+        })
+            // .addIndicators()
+            .setTween(tl_scroll_bottom_pixel)
+            .addTo(controller_all_pixels_animation);
+    });
+    
 }
 
 var controller_all_pixels_mob_animation = new ScrollMagic.Controller();
@@ -230,14 +300,15 @@ for (pixel_mob_scroll_index = 0; pixel_mob_scroll_index < pixel_mob_count; pixel
 
     $(".pixel-mob-scroll-" + pixel_mob_scroll_index).each(function () {
         // $(this).addClass('ov-hidden')
+        var randParallax_mob = Math.random()
         var tl_mob_scroll_pixel = new TimelineMax();
-        tl_mob_scroll_pixel.fromTo(this, { y: 0 }, { y: -1500, duration: 0.5});
+        tl_mob_scroll_pixel.fromTo(this, { y: 0 }, {y: -400 - 800 * randParallax_mob, duration: 0.5});
 
         var scene = new ScrollMagic.Scene({
             offset: 0,
             triggerElement: ".trigger-for-pixel-mob-scroll-" + pixel_mob_scroll_index,
             triggerHook: 0,
-            duration: 10000,
+            duration: 2000,
             reverse: true
         })
             // .addIndicators()

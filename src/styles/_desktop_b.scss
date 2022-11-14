@@ -65,6 +65,18 @@
 }
 
 @media screen and (min-width: 2000px) {
+    .pixel {
+        rect {
+            width: 150% !important;
+            height: 150% !important;
+        }
+    }
+    .pixel-bottom {
+        rect {
+            width: 140% !important;
+            height: 140% !important;
+        }
+    }
     .header {
         .navigation a {
             h3 {

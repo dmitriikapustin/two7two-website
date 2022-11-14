@@ -93,10 +93,12 @@ function updateEyePosition(event) {
   if (comissar_container) {
     comissar_container.style.transform = `translate(${posX * 2.5}px, ${posY * 2.5}px)`;
   }
-  tu1.style.transform = `translate(0px, ${posY * 1.1}px)`;
-  tu2.style.transform = `translate(0px, ${posY * -0.9}px)`;
-  eyeLeftPupil.style.transform = `translate(${posX * 0.25}px, ${posY * -0.5}px)`;
-  eyeRightPupil.style.transform = `translate(${posX * -0.3}px, ${posY * 0.45}px)`;
+  if ($(document).width() > 800) {
+    tu1.style.transform = `translate(0px, ${posY * 1.1}px)`;
+    tu2.style.transform = `translate(0px, ${posY * -0.9}px)`;
+    eyeLeftPupil.style.transform = `translate(${posX * 0.25}px, ${posY * -0.5}px)`;
+    eyeRightPupil.style.transform = `translate(${posX * -0.3}px, ${posY * 0.45}px)`;
+  }
 }
 
 

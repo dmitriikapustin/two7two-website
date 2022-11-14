@@ -107,6 +107,18 @@ $(document).ready(function () {
         }
     });
     tl_a_seraphim.fromTo(seraphim, { x: 1000 }, { x: 0, duration: 1.3, ease: "power3.out" }, 1.2);
+    const metagun_block2 = document.getElementById("metagun_block_2")
+    const text_block2 = document.getElementById("text_block_2")
+    const egg_block3 = document.getElementById("egg_block_3")
 
+    console.log()
 
-})
+    if ($(window).width() > 1800) {
+        var tl_metagun = new TimelineMax()
+        tl_metagun.fromTo(metagun_block2, { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power3.out" }, 1.8);
+        var tl_metagun_text = new TimelineMax()
+        tl_metagun_text.fromTo(text_block2, { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power3.out" }, 2.1);
+        var tl_egg = new TimelineMax()
+        tl_egg.fromTo(egg_block3, { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power3.out" }, 2.4);
+    }
+ })

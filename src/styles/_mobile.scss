@@ -311,11 +311,16 @@
 
     .our-games {
         z-index: 2 !important;
-        .heading-67, .heading-33 {
+        .heading-33, .heading-67 {
             svg {
                 width: 100% !important;
             }
         }
+        .heading-67 {
+            svg {
+                height: 50% !important
+            };
+        } 
 
         .hover-div-troyan::after, .hover-div-reprobates::after, .hover-div-developer::after {
 

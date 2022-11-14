@@ -145,7 +145,7 @@ $(document).ready(function () {
         $(".appearance-scroll-p-left-index-" + appearance_scroll_p_left_index).each(function (index) {
             // $(this).addClass('ov-hidden')
             var tl_a_p_left = new TimelineMax();
-            tl_a_p_left.fromTo(this, { x: -1800 }, { x: 0, duration: 0.2, ease: "power3.out" }, 0 + index * 0.5);
+            tl_a_p_left.fromTo(this, { x: -2100 }, { x: 0, duration: 0.2, ease: "power3.out" }, 0 + index * 0.5);
 
             var scene = new ScrollMagic.Scene({
                 offset: -100 + index * 10,

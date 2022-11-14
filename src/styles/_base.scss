@@ -248,7 +248,7 @@
             transition: all ease-in 0.15s; 
             content: ' ';
             position: absolute;
-            top: 40px;
+            top: 35px;
             left: 60px;
             opacity: 0;
             width: 8px !important;
@@ -361,7 +361,7 @@
                 }
                 p::after {
                     transition: all ease-in 0.15s; 
-                    left: 108%;
+                    left: calc(100% + 5px);
                     opacity: 1;
                 }
             }

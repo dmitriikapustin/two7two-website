@@ -133,17 +133,41 @@ var counting = setInterval(function () {
 // var two7two_letters = $(".two7two-letters")
 // console.log(two7two_letters)
 
+function waitForElement(querySelector, timeout=0){
+    const startTime = new Date().getTime();
+    return new Promise((resolve, reject)=>{
+        const timer = setInterval(()=>{
+            const now = new Date().getTime();
+            if(document.querySelector(querySelector)){
+                clearInterval(timer);
+                resolve();
+            }else if(timeout && now - startTime >= timeout){
+                clearInterval(timer);
+                reject();
+            }
+        }, 100);
+    });
+}
 
 
-
+waitForElement("#preloader-gif", 3000).then(function(){
     console.log("take away")
-    // setTimeout(function () {
-    //     $(".preloader-gif").addClass("preloader-gif-hidden")
-    // }, 6000)
-    setTimeout(function () {
+    setTimeout(() => {
         $(".preloader").addClass("take_away");
-        //$(window).scrollTop(0);
-    }, 4020)
-    setTimeout(function () {
+    }, 3000)
+}).catch(()=>{
+    // alert("element did not load in 3 seconds");
+});
+
+waitForElement("#preloader-gif", 3000).then(function(){
+    console.log("take away")
+    setTimeout(() => {
         $(".preloader").addClass("hidden-locked")
-    }, 4720)
+    }, 4000)
+}).catch(()=>{
+    // alert("element did not load in 3 seconds");
+});
+
+
+
+
