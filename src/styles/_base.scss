@@ -419,71 +419,63 @@
             //   }
             @keyframes bounce-youtube {
                 0% {transform: scale(1);}
-                15% { transform:scale(0.9); }
+                15% { transform:scale(0.8); }
                 100% { transform:scale(1.1) translate(-5px, -3px); }
             }   
-            // a {
-            //     animation: bounce-youtube 0.3s linear !important; 
-            //     .youtube-cont {
-            //         animation: bounce-youtube 0.3s linear !important; 
-            //     }
-            // }
-            // a:hover {
-            //     .youtube-cont {
-            //         animation: bounce-youtube 0.3s linear 0.000001s forwards !important; 
-            //     }
-            // }
-            // @keyframes bounce-instagram {
-            //     0% {transform: scale(1);}
-            //     15% { transform:scale(0.9); }
-            //     100% { transform:scale(1.1) translate(0, -5px); }
-            // }  
-            // @keyframes bounce-vk {
-            //     0% {transform: scale(1);}
-            //     15% { transform:scale(0.9); }
-            //     100% { transform:scale(1.1) translate(5px, -3px); }
-            // }  
-            // @keyframes bounce-twitter {
-            //     0% {transform: scale(1);}
-            //     15% { transform:scale(0.9); }
-            //     100% { transform:scale(1.1) translate(5px, 3px); }
-            // }  
-            // @keyframes bounce-facebook {
-            //     0% {transform: scale(1);}
-            //     15% { transform:scale(0.9); }
-            //     100% { transform:scale(1.1) translate(-5px, 3px); }
-            // }  
-            // @keyframes bounce-behance {
-            //     0% {transform: scale(1);}
-            //     15% { transform:scale(0.9); }
-            //     100% { transform:scale(1.1) translate(0px, 5px); }
-            // }  
-            // a:hover {
-            //     // transition: bounce 0.9s linear 1; 
-            //     // svg {
-            //     //     transition: bounce 0.9s linear; 
-            //     // }
+            @keyframes bounce-instagram {
+                0% {transform: scale(1);}
+                15% { transform:scale(0.8); }
+                100% { transform:scale(1.1) translate(0, -5px); }
+            }  
+            @keyframes bounce-vk {
+                0% {transform: scale(1);}
+                15% { transform:scale(0.8); }
+                100% { transform:scale(1.1) translate(5px, -3px); }
+            }  
+            @keyframes bounce-twitter {
+                0% {transform: scale(1);}
+                15% { transform:scale(0.8); }
+                100% { transform:scale(1.1) translate(5px, 3px); }
+            }  
+            @keyframes bounce-facebook {
+                0% {transform: scale(1);}
+                15% { transform:scale(0.8); }
+                100% { transform:scale(1.1) translate(-5px, 3px); }
+            }  
+            @keyframes bounce-behance {
+                0% {transform: scale(1);}
+                15% { transform:scale(0.8); }
+                100% { transform:scale(1.1) translate(0px, 5px); }
+            }  
+            a {
+                transition: all linear 0.2s; 
+            }
+            a.play {
+                //transition: all linear 0.5s; 
+                // svg {
+                //     transition: bounce 0.9s linear; 
+                // }
 
-            //     .youtube-cont, .youtube {
-            //         transition: bounce-youtube 0.9s linear !important; 
-            //     } 
-            //     .vk-cont, .vk {
-            //         transition: bounce-vk 0.9s linear 1; 
-            //     } 
-            //     .svg-instagram {
-            //         transition: bounce-instagram 0.9s linear 1; 
-            //     }
-            //     .svg-facebook {
-            //         transition: bounce-facebook 0.9s linear 1; 
-            //     }
-            //     .svg-behance {
-            //         transition: bounce-behance 0.9s linear 1; 
-            //     } 
-            //     .svg-twitter {
-            //         transition: bounce-twitter  0.9s linear 1; 
-            //     }
+                &#instagram {
+                    animation: bounce-youtube 0.3s linear; 
+                } 
+                &#right-empty {
+                    animation: bounce-vk 0.3s linear; 
+                } 
+                &#facebook {
+                    animation: bounce-facebook 0.3s linear; 
+                }
+                &#left-empty {
+                    animation: bounce-youtube 0.3s linear; 
+                }
+                &#behance {
+                    animation: bounce-behance 0.3s linear; 
+                } 
+                &#twitter {
+                    animation: bounce-twitter  0.3s linear; 
+                }
                 
-            // }  
+            }  
 
             margin-top: 20px;
             .youtube, .vk, .instagram , .facebook, .left-empty, .right-empty, .behance, .twitter {
