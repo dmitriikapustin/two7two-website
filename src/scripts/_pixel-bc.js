@@ -143,7 +143,7 @@ $(".pixel-bottom").each(function(index) {
     }
     if (index >= 8 && index < 10) {
         var randomLeft = getRandomArbitrary(0.7, 1) * 100;
-        var randomTop = getRandomArbitrary(0.7, 1.1) * 100; 
+        var randomTop = getRandomArbitrary(0.6, 1.1) * 100; 
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
 })

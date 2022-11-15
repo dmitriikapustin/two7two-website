@@ -28,6 +28,7 @@
 
 
 .block-1 {
+    margin-top: 25% !important;
     .info {
         position: relative;
         .seraphim {
@@ -107,7 +108,7 @@
     .title {
         margin-bottom: 40px;
         text-align: center;
-        z-index: 3;
+        z-index: 3 !important;
         h2 {
             font-size: 2.3vw;
             line-height: 1.42;
@@ -142,7 +143,7 @@
             position: relative;
             transform: translate3d(-50px,0,0);
             .attack {
-                z-index: -1;
+                z-index: -1 !important;
                 top: -74.2%;
                 left: -40.2%;
                 img {
@@ -340,9 +341,9 @@
     }
     .video {
         width: 100%;
-        img {
-            width: 75% !important
-        }
+        // img {
+        //     width: 75% !important;
+        // }
     }
 }
 

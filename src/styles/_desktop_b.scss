@@ -35,7 +35,7 @@
     .block-7 {
         .video {
             img {
-                width: 75% !important;
+                width: 1200px !important;
             }
         }
     }
@@ -78,6 +78,9 @@
         }
     }
     .header {
+        .navigation-mobile {
+            top: 15vh !important;
+        }
         .navigation a {
             h3 {
                 font-size: 35.6px !important;

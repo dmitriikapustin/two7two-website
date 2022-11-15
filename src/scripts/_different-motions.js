@@ -93,11 +93,17 @@ function updateEyePosition(event) {
   if (comissar_container) {
     comissar_container.style.transform = `translate(${posX * 2.5}px, ${posY * 2.5}px)`;
   }
-  if ($(document).width() > 800) {
+  if ($(document).width() > 800 && $(document).width() <= 1600) {
     tu1.style.transform = `translate(0px, ${posY * 1.1}px)`;
     tu2.style.transform = `translate(0px, ${posY * -0.9}px)`;
     eyeLeftPupil.style.transform = `translate(${posX * 0.25}px, ${posY * -0.5}px)`;
     eyeRightPupil.style.transform = `translate(${posX * -0.3}px, ${posY * 0.45}px)`;
+  }
+  if ($(document).width() > 1600) {
+    tu1.style.transform = `translate(0px, ${posY * 0.7}px)`;
+    tu2.style.transform = `translate(0px, ${posY * -0.6}px)`;
+    eyeLeftPupil.style.transform = `translate(${posX * 0.15}px, ${posY * -0.35}px)`;
+    eyeRightPupil.style.transform = `translate(${posX * -0.18}px, ${posY * 0.28}px)`;
   }
 }
 
@@ -113,8 +119,8 @@ if ($(window).width() > 800) {
   tl_demon.to(".demon", 0.8, {y: 0, ease: "none"}, 2.4)
 } else {
   var tl_demon = new TimelineMax({repeat: -1, repeatDelay: 0});
-  tl_demon.fromTo(".demon", {y: 0}, {y: 15, duration: 0.8, ease: "none"})
-  tl_demon.to(".demon", 1.6, {y: -15, ease: "none"}, 0.8)
+  tl_demon.fromTo(".demon", {y: 0}, {y: 12, duration: 0.8, ease: "none"})
+  tl_demon.to(".demon", 1.6, {y: -12, ease: "none"}, 0.8)
   tl_demon.to(".demon", 0.8, {y: 0, ease: "none"}, 2.4)
 }
 

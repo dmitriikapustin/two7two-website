@@ -59,11 +59,11 @@
             z-index: 1001 !important;
             position: fixed;
             left: -100vw;
-            top: 18vh;
+            top: 19vh;
             transition: all ease-in 0.18s;
             justify-content: center !important;
             align-items: center !important;
-            margin-top: 60px !important;
+            margin-top: 0px !important;
             &.open-nav {
                 left: 0vw;
                 transition: all ease-in 0.18s;
@@ -109,52 +109,55 @@
                 margin-right: 15px !important;
     
             }
-            .burger-menu {
-                display: flex !important;
-                justify-content: flex-end !important;
-                width: 10% !important;
-                align-items: flex-start !important;
-                position: relative !important;
-                top: -25px !important;
-                svg {
-                    width: 80% !important;
-                    height: 11.9% !important;
-                    :nth-child(1), :nth-child(2), :nth-child(3)  {
-                        transition: all ease-in 0.3s;
-                        transform: translate(0, 0) rotate(0deg);
-                    }
-                }
-                &.close {
-                    z-index: 10 !important;
+            .burger-container {
+                .burger-menu {
+                    display: flex !important;
+                    justify-content: flex-end !important;
+                    width: 10% !important;
+                    align-items: flex-start !important;
+                    position: relative !important;
+                    top: -25px !important;
+                    opacity: 0 !important;
                     svg {
-                        // position:;
-                        // top: 5% !important;
-                        // left: 80% !important;
-                        width: 75% !important;
-                        transition: all ease-in 0.3s;
-                        :nth-child(1)  {
+                        width: 80% !important;
+                        height: 11.9% !important;
+                        :nth-child(1), :nth-child(2), :nth-child(3)  {
                             transition: all ease-in 0.3s;
-                            position: relative;
-                            transform: translate(12px, -1.5px) rotate(45deg);
-
-                        }
-                        :nth-child(3)  {
-                            transition: all ease-in 0.3s;
-                            position: relative;
-                            transform: translate(-13px, 10.5px) rotate(-45deg);
-                        }
-                        :nth-child(2)  {
-                            transition: all ease-in 0.3s;
-                            position: relative;
-                            top: 0px;
-                            left:0;
-                            transform: rotate(90deg);
-                            opacity:0;
-                            width:0;
+                            transform: translate(0, 0) rotate(0deg);
                         }
                     }
-                }
-            }   
+                    &.close {
+                        z-index: 10 !important;
+                        svg {
+                            // position:;
+                            // top: 5% !important;
+                            // left: 80% !important;
+                            width: 75% !important;
+                            transition: all ease-in 0.3s;
+                            :nth-child(1)  {
+                                transition: all ease-in 0.3s;
+                                position: relative;
+                                transform: translate(12px, -1.5px) rotate(45deg);
+    
+                            }
+                            :nth-child(3)  {
+                                transition: all ease-in 0.3s;
+                                position: relative;
+                                transform: translate(-13px, 10.5px) rotate(-45deg);
+                            }
+                            :nth-child(2)  {
+                                transition: all ease-in 0.3s;
+                                position: relative;
+                                top: 0px;
+                                left:0;
+                                transform: rotate(90deg);
+                                opacity:0;
+                                width:0;
+                            }
+                        }
+                    }
+                }   
+            }
         }
     }
     
@@ -310,6 +313,7 @@
     }
 
     .our-games {
+        margin-top: 30% !important;
         z-index: 2 !important;
         .heading-33, .heading-67 {
             svg {
@@ -402,10 +406,10 @@
         .quote {
             flex-direction: row !important;
             .left-side {
-                width: 45%;
+                width: calc(30% + 40px) !important;
             }
             .right-side {
-                width: 55%;
+                width: 55% !important;
                 padding-left: 0;
                 h2 {
                     font-size: 3.4vw !important;
@@ -454,12 +458,14 @@
                 margin-bottom: 15px !important;
                 text-align: center !important;
             }
-            .breaking-five, .five-options, .right-monster {
+            .breaking-five, .right-monster {
                 width: 100% !important;
                 justify-content: center !important;
             }
 
             .five-options {
+                width: 85% !important;
+                margin: 0 auto !important;
                 p {
                     font-size: 3.8vw !important;
                 }
@@ -523,11 +529,20 @@
         p {
             font-size: 3vw;
             width: 50% !important;
+            text-align: left;
         }
         .left-side {
             margin-bottom: 50px !important;
+            .top-texts {
+                margin-bottom: 10px !important;
+            }
             p {
                 margin-left: 0 !important;
+            }
+        }
+        .right-side {
+            .top-texts {
+                margin-bottom: 20px !important;
             }
         }
         .left-side, .right-side {
@@ -537,7 +552,7 @@
                 width: 50% !important;
             }
             .sunstrike {
-                top: 40.8% !important;
+                top: 42.8% !important;
             }
 
             .nuclear_explosion {
@@ -558,11 +573,11 @@
         margin-top: 15px !important;
         margin-bottom: 50px !important;
         p {
-            font-size: 4vw !important;
+            font-size: 3.7vw !important;
             margin-right: 5px !important;
         }
         h3 {
-            font-size: 4vw !important;
+            font-size: 3.7vw !important;
         }
         span {
             font-size: 10vw !important;
@@ -576,13 +591,13 @@
         }
 
         .left-image {
-            left: -35% !important;
-            top: 150% !important;
-            transform: rotate(-14deg) !important;
+            left: -40% !important;
+            top: 170% !important;
+            transform: rotate(-11deg) !important;
         }
         .right-image {
             left: 22% !important;
-            top: 310% !important;
+            top: 330% !important;
         }
     }
 
@@ -611,17 +626,7 @@
                 flex-direction: row !important;
                 picture {
                     width: 20% !important;
-                    .demon {
-                        transition: demon-animation-mob 1.2s linear infinite !important;
-                    }
-                }
-                @keyframes demon-animation-mob {
-                    0% {
-                        transform: translate3d(0, -10%, 0) !important;
-                    }
-                    100% {
-                        transform: translate3d(0, 10%, 0) !important;
-                    }
+   
                 }
             }
         }
@@ -630,7 +635,7 @@
             .left-side {
                 margin-right: 0;
                 img {
-                    width: 90%;
+                    width: 80% !important;
                 }
                 .grenade {
                     width: 90%;
@@ -708,8 +713,9 @@
                             margin-bottom: 30px;
                         }
                         p  {
+                            width: 95% !important;
                             text-align: center;
-                            font-size: 4vw;
+                            font-size: 3.2vw !important;
                         }
                     }
                 }
@@ -751,6 +757,14 @@
                         height: 100% !important;
                     }
                 }
+            }
+            .several-monsters {
+                position: relative;
+                top: -6px !important;
+            }
+            .two-monsters {
+                position: relative;
+                top: -10px !important;
             }
         }
         .frostspike-backstage {
