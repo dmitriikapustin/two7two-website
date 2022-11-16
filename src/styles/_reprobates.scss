@@ -6,8 +6,13 @@
     width: 100vw !important;
     height: 150vh !important;
     z-index: 1 !important;
+    transition: all ease-in 0.1s;
     .pixel {
         z-index: 0 !important;
+    }
+    &.hide-bc {
+        transition: all ease-in 0.1s;
+        opacity: 0 !important;
     }
 }
 
@@ -28,7 +33,7 @@
 
 
 .block-1 {
-    margin-top: 25% !important;
+    // margin-top: 25% !important;
     .info {
         position: relative;
         .seraphim {
@@ -171,6 +176,7 @@
             z-index: 1;
             align-items: flex-start;
             .meat {
+                width: 90% !important;
             }
         }
     }
@@ -386,11 +392,7 @@
             .right-side {
                 width: calc(57% - 30px)
             }
-            .right-side {
-                // #last-p {
-                //     transform: translate(, 0);
-                // }
-            }
+
             p {
                 margin: 0 0 20px 0;
                 padding: 0;
@@ -442,13 +444,13 @@
             display: flex;
             justify-content: flex-end;
             width: 100%;
-            margin-left: 50px;
+            margin-left: 350px;
             // left: 70%;
             .blot-block {
                 margin-left: 85px;
                 align-items: flex-end;
                 margin-bottom: 5px;
-                width: 100%;
+                width: 70%;
                 img {
                     z-index: 1;
                     width: 60%;
@@ -456,7 +458,7 @@
             }
             .comics-text {
                 margin-top: 0;
-                width: 80%;
+                width: 50%;
                 // top: 80%;
                 // left: 30%;
                 justify-content: flex-end;

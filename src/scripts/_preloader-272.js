@@ -150,20 +150,20 @@ function waitForElement(querySelector, timeout=0){
 }
 
 
-waitForElement("#preloader-gif", 3000).then(function(){
+waitForElement("#preloader-gif", 2800).then(function(){
     console.log("take away")
     setTimeout(() => {
         $(".preloader").addClass("take_away");
-    }, 3000)
+    }, 2800)
 }).catch(()=>{
     // alert("element did not load in 3 seconds");
 });
 
-waitForElement("#preloader-gif", 3000).then(function(){
+waitForElement("#preloader-gif", 3500).then(function(){
     console.log("take away")
     setTimeout(() => {
         $(".preloader").addClass("hidden-locked")
-    }, 4000)
+    }, 3500)
 }).catch(()=>{
     // alert("element did not load in 3 seconds");
 });

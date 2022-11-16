@@ -52,32 +52,53 @@
     .header {
         .navigation-mobile {
             width: 100% !important;
-            margin: 0 auto !important;
-            flex-direction: column !important;
-            height: 85vh !important;
+            // margin: 0 auto !important;
+            height: 100vh !important;
             background-color: black;
             z-index: 1001 !important;
             position: fixed;
             left: -100vw;
             top: 19vh;
             transition: all ease-in 0.18s;
-            justify-content: center !important;
-            align-items: center !important;
-            margin-top: 0px !important;
+
+            // margin-top: 0px !important;
+            // &:nth-child(1) {
+            //     margin-top: 60px !important;
+            // }
             &.open-nav {
                 left: 0vw;
                 transition: all ease-in 0.18s;
             }
-            a {
-                h3 {
-                    width: 100% !important;
-                    text-align: center !important;
-                    font-size: 8vw;
-                }
-                .contact, .faq {
-                    margin-bottom: 10px;
+            .navigation-mobile-options {
+                justify-content: flex-start !important;
+                align-items: center !important;
+                flex-direction: column !important;
+                a {
+                    h3 {
+                        width: 100% !important;
+                        text-align: center !important;
+                        font-size: 8vw;
+                    }
+                    .contact, .faq {
+                        margin-bottom: 10px;
+                    }
                 }
             }
+        }
+        .burger-container {
+            .burger-menu {
+                width: 18% !important;
+                opacity: 1 !important;
+                pointer-events: all !important;
+                svg {
+                    // margin-left: px !important;
+                    left: 80vw !important;
+                    top: -10% !important;
+                    width: 100% !important;
+                    height: 14% !important;
+                }
+
+            }   
         }
         .container {
             height: auto !important;
@@ -117,9 +138,10 @@
                     align-items: flex-start !important;
                     position: relative !important;
                     top: -25px !important;
-                    opacity: 0 !important;
+                    opacity: 1;
+                    z-index: 2500 !important;
                     svg {
-                        width: 80% !important;
+                        width: 60% !important;
                         height: 11.9% !important;
                         :nth-child(1), :nth-child(2), :nth-child(3)  {
                             transition: all ease-in 0.3s;
@@ -313,7 +335,7 @@
     }
 
     .our-games {
-        margin-top: 30% !important;
+        margin-top: 0% !important;
         z-index: 2 !important;
         .heading-33, .heading-67 {
             svg {
@@ -430,7 +452,7 @@
         }
         .title {
             z-index: 2 !important;
-            margin-bottom: 0px !important;
+            margin-bottom: 10px !important;
             h2 {
                 font-size: 4.2vw !important;
             }
@@ -438,6 +460,8 @@
         .under-title {
             h3 {
                 font-size: 4.8vw;
+                margin-bottom: 30px !important;
+                margin-top: 30px !important;
             }
         }
         p {
@@ -455,7 +479,7 @@
                 justify-content: center !important;
                 align-items: center !important;
                 margin-right: 0;
-                margin-bottom: 15px !important;
+                margin-bottom: 25px !important;
                 text-align: center !important;
             }
             .breaking-five, .right-monster {
@@ -586,14 +610,15 @@
             width: 110% !important;
         }
         .right-text {
-            left: 65.8% !important;
+            left: 66.8% !important;
+            top: 38% !important;
             width: 50% !important;
         }
 
         .left-image {
-            left: -40% !important;
+            left: -43% !important;
             top: 170% !important;
-            transform: rotate(-11deg) !important;
+            transform: rotate(-9deg) !important;
         }
         .right-image {
             left: 22% !important;

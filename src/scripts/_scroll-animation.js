@@ -80,6 +80,9 @@ $(document).ready(function () {
 
     // PARAGRAPHS WITH SCROLL. FROM RIGHT TO LEFT WITH LOGIC AFTER IMPLEMENTATION
 
+
+
+
     var controller_p_right_animation = new ScrollMagic.Controller();
 
     for (appearance_scroll_p_right_index = 0; appearance_scroll_p_right_index < appearance_scroll_p_right_count; appearance_scroll_p_right_index++) {
@@ -87,15 +90,14 @@ $(document).ready(function () {
         $(".appearance-scroll-p-right-index-" + appearance_scroll_p_right_index).each(function (index) {
             // $(this).addClass('ov-hidden')
             var tl_a_p_right = new TimelineMax({
-                onComplete: function() {
+                onComplete: function () {
                     window.addEventListener('mousemove', function (event) {
                         var posX_scroll = ((event.clientX / document.body.clientWidth) * 3 - 1) * 6;
-                        p.forEach((item, index) => {
-                            item.style.transform = `translate(${posX_scroll * 1.1 * (index + 0.5) + 1.2 * index}px, 0`;
-                          })
+                            p.forEach((item, index) => {
+                                item.style.transform = `translate(${posX_scroll * 1.1 * (index + 0.5) + 1.2 * index}px, 0)`;
+                            })
                     });
- 
-                } }
+                }}
             );
             tl_a_p_right.fromTo(this, { x: 1800 }, { x: 0, duration: 0.2, ease: "power3.out" }, 0 + index * 0.5);
 

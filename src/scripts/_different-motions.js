@@ -119,8 +119,8 @@ if ($(window).width() > 800) {
   tl_demon.to(".demon", 0.8, {y: 0, ease: "none"}, 2.4)
 } else {
   var tl_demon = new TimelineMax({repeat: -1, repeatDelay: 0});
-  tl_demon.fromTo(".demon", {y: 0}, {y: 12, duration: 0.8, ease: "none"})
-  tl_demon.to(".demon", 1.6, {y: -12, ease: "none"}, 0.8)
+  tl_demon.fromTo(".demon", {y: 0}, {y: 7, duration: 0.8, ease: "none"})
+  tl_demon.to(".demon", 1.6, {y: -7, ease: "none"}, 0.8)
   tl_demon.to(".demon", 0.8, {y: 0, ease: "none"}, 2.4)
 }
 
