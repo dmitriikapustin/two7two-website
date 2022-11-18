@@ -9,14 +9,131 @@ function getRandomArbitrary(min, max) {
 var pixelArr = $(".pixel");
 var pixelArrBottom = $(".pixel-bottom");
 var pixelMobArr = $(".pixel-mob");
+var pixelArr2000 = $(".pixel-2000")
 // console.log(pixelArr)
 
-console.log($(".pixel").length)
+
 
 var pixel_count = pixelArr.length;
+var pixel_2000_count = pixelArr2000.length;
 var pixel_bottom_count = pixelArrBottom.length;
 var pixel_mob_count = pixelMobArr.length;
 
+$(document).ready(function () { 
+    console.log(pixel_2000_count)
+})
+
+
+$(".pixel-2000").each(function(index) {
+    // 1 GROUP
+
+    if (index >= 0 && index < 11) {
+        var randomLeft = getRandomArbitrary(0, 0.12) * 100;
+        var randomTop = getRandomArbitrary(0, 0.17) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 11 && index < 21) {
+        var randomLeft = getRandomArbitrary(0.08, 0.2) * 100;
+        var randomTop = getRandomArbitrary(0, 0.17) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+
+
+    if (index >= 21 && index < 32) {
+        var randomLeft = getRandomArbitrary(0.88, 1) * 100;
+        var randomTop = getRandomArbitrary(0, 0.17) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 32 && index < 42) {
+        var randomLeft = getRandomArbitrary(0.8, 0.92) * 100;
+        var randomTop = getRandomArbitrary(0, 0.17) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+
+
+    // 2 GROUP
+    if (index >= 42 && index < 53) {
+        var randomLeft = getRandomArbitrary(0, 0.11) * 100;
+        var randomTop = getRandomArbitrary(0.18, 0.35) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 53 && index < 63) {
+        var randomLeft = getRandomArbitrary(0.11, 0.22) * 100;
+        var randomTop = getRandomArbitrary(0.18, 0.35) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+
+    if (index >= 63 && index < 74) {
+        var randomLeft = getRandomArbitrary(0.89, 1) * 100;
+        var randomTop = getRandomArbitrary(0.18, 0.35) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 74 && index < 84) {
+        var randomLeft = getRandomArbitrary(0.78, 0.89) * 100;
+        var randomTop = getRandomArbitrary(0.18, 0.35) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+
+
+    // 3 GROUP
+    if (index >= 84 && index < 98) {
+        var randomLeft = getRandomArbitrary(0, 0.22) * 100;
+        var randomTop = getRandomArbitrary(0.36, 0.56) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 98 && index < 112) {
+        var randomLeft = getRandomArbitrary(0.78, 1) * 100;
+        var randomTop = getRandomArbitrary(0.36, 0.56) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    // 4 GROUP
+    if (index >= 112 && index < 126) {
+        var randomLeft = getRandomArbitrary(0, 0.22) * 100;
+        var randomTop = getRandomArbitrary(0.57, 0.82) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 126 && index < 140) {
+        var randomLeft = getRandomArbitrary(0.78, 1) * 100;
+        var randomTop = getRandomArbitrary(0.57, 0.82) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    // 5 GROUP
+    if (index >= 140 && index < 154) {
+        var randomLeft = getRandomArbitrary(0.78, 1) * 100;
+        var randomTop = getRandomArbitrary(0.83, 1.3) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 154 && index < 168) {
+        var randomLeft = getRandomArbitrary(0, 0.22) * 100;
+        var randomTop = getRandomArbitrary(0.83, 1.3) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+
+    // 6 GROUP
+    if (index >= 168 && index < 182) {
+        var randomLeft = getRandomArbitrary(0.78, 1) * 100;
+        var randomTop = getRandomArbitrary(1.35, 2.1) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 182 && index < 196) {
+        var randomLeft = getRandomArbitrary(0, 0.22) * 100;
+        var randomTop = getRandomArbitrary(1.35, 2.1) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+
+
+    // 7 GROUP
+    if (index >= 196 && index < 210) {
+        var randomLeft = getRandomArbitrary(0, 0.22) * 100;
+        var randomTop = getRandomArbitrary(2.15, 3.2) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 210 && index < 224) {
+        var randomLeft = getRandomArbitrary(0.78, 1) * 100;
+        var randomTop = getRandomArbitrary(2.15, 3.2) * 100;
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+})
 
 $(".pixel").each(function(index) {
     if (index >= 0 && index < 7) {
@@ -148,7 +265,6 @@ $(".pixel-bottom").each(function(index) {
     }
 })
 
-
 $(".pixel-mob").each(function(index) {
     if (index >= 0 && index < 2) {
         var randomLeft = getRandomArbitrary(0, 0.06) * 100;
@@ -227,6 +343,8 @@ $(".pixel-mob").each(function(index) {
     }
 })
 
+
+
 $(".pixel").each(function (pixel_scroll_index) {
     $(this).addClass("pixel-scroll-" + pixel_scroll_index)
 
@@ -245,6 +363,13 @@ $(".pixel-mob").each(function (pixel_mob_scroll_index) {
     $(this).addClass("pixel-mob-scroll-" + pixel_mob_scroll_index)
 
     $(this).parent().prepend('<div class="trigger-for-pixel-mob-scroll-' + pixel_mob_scroll_index + ' trigger"></div>');
+
+})
+
+$(".pixel-2000").each(function (pixel_2000_scroll_index) {
+    $(this).addClass("pixel-2000-scroll-" + pixel_2000_scroll_index)
+
+    $(this).parent().prepend('<div class="trigger-for-pixel-2000-scroll-' + pixel_2000_scroll_index + ' trigger"></div>');
 
 })
 
@@ -267,6 +392,30 @@ for (pixel_scroll_index = 0; pixel_scroll_index < pixel_count; pixel_scroll_inde
         })
             // .addIndicators()
             .setTween(tl_scroll_pixel)
+            .addTo(controller_all_pixels_animation);
+    });
+    
+}
+
+var controller_all_pixels_animation = new ScrollMagic.Controller();
+
+for (pixel_2000_scroll_index = 0; pixel_2000_scroll_index < pixel_2000_count; pixel_2000_scroll_index++) {
+
+    $(".pixel-2000-scroll-" + pixel_2000_scroll_index).each(function () {
+        // $(this).addClass('ov-hidden')
+        var randParallax2000 = getRandomArbitrary(0.3, 1.4)
+        var tl_2000_scroll_pixel = new TimelineMax();
+        tl_2000_scroll_pixel.fromTo(this, { y: 0 }, { y: -700 - 2400 * randParallax2000, duration: 0.5});
+
+        var scene = new ScrollMagic.Scene({
+            offset: -600,
+            triggerElement: ".trigger-for-pixel-2000-scroll-" + pixel_2000_scroll_index,
+            triggerHook: 0,
+            duration: 10000,
+            reverse: true
+        })
+            // .addIndicators()
+            .setTween(tl_2000_scroll_pixel)
             .addTo(controller_all_pixels_animation);
     });
     

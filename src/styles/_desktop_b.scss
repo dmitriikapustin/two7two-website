@@ -16,6 +16,11 @@
             h3 {
                 margin-bottom: 40px !important;
             }
+            .hover-a-1::after, .hover-a-2::after, .hover-a-3::after, .hover-a-4::after, .hover-a-5::after {
+                top: 45px !important;
+                width: 9.5px !important;
+                height: 9.5px !important;
+            }
         }
     }
     .footer {
@@ -47,26 +52,26 @@
         //     }
         // }
         .bloodshed {
-            top: 68.6% !important;
+            top: 68.6%;
         }
         .nuclear_explosion {
-            top: 83% !important;
+            top: 83%;
         }
         .icefall {
-            top: 97.9% !important;
+            top: 97.9%;
         }
         .hubris {
-            top: 95% !important;
-            left: 79.5% !important;
+            top: 95%;
+            left: 79.5%;
         }
         .sunstrike {
-            top: 40.3% !important;
+            top: 40.3%;
         }
     }
     .block-7 {
         .video {
             img {
-                width: 1200px !important;
+                width: 1000px !important;
             }
         }
     }
@@ -80,7 +85,7 @@
         .blot-item {
             margin-left: 420px !important;
             .comics-text {
-                margin-left: 220px !important;
+                margin-left: 220px;
             }
         }
     }
@@ -102,6 +107,34 @@
 }
 
 @media screen and (min-width: 2000px) {
+    .pixel-bc-2000 {
+        display: block !important;
+        top: 0 !important;
+        left: 0 !important;
+        position: absolute !important;
+        pointer-events: none !important;
+        width: 100vw !important;
+        height: 150vh !important;
+        z-index: 1 !important;
+        transition: all ease-in 0.1s;
+        .pixel-2000 {
+            z-index: 0 !important;
+            rect {
+                width: 150% !important;
+                height: 150% !important;
+            }
+        }
+        &.hide-bc {
+            transition: all ease-in 0.1s;
+            opacity: 0 !important;
+        }
+    }
+    .pixel-bc {
+        display: none !important;
+    }
+    .container {
+        width: calc(100vw - 1000px) !important;
+    }
     .pixel {
         rect {
             width: 150% !important;
@@ -133,8 +166,22 @@
                 }
             }
         }
+        .navigation-mobile {
+            .hover-a-1::after, .hover-a-2::after, .hover-a-3::after, .hover-a-4::after, .hover-a-5::after {
+                top: 60px !important;
+                width: 11px !important;
+                height: 11px !important;
+            }
+        }
     }
     .footer {
+        .container {
+            justify-content: center !important;
+            .footer-container {
+                width: 80% !important;
+                justify-content: center !important;
+            }
+        }
         .footer-columns {
             h3 {
                 font-size: 43.2px !important;
@@ -152,76 +199,184 @@
     }
     .block-1 {
         h1 {
-            font-size: 94.25px !important;
+            font-size: 80px !important;
         }
         h3 {
-            font-size: 33.4px !important;
+            margin-top: 30px !important;
+            font-size: 28px !important;
         }
         p {
-            font-size: 23.6px !important;
+            font-size: 20px !important;
+        }
+        .seraphim {
+            img {
+                width: 65% !important;
+            }
         }
     }
     .block-2 {
+        padding-top: 0px !important;
+        .left-side {
+            width: 28%;
+        }
+        .right-side {
+            width: calc(72% - 60px);
+
+        }
         h2 {
-            font-size: 37.3px !important;
+            font-size: 32px !important;
         }
         p {
-            font-size: 23.6px !important;
+            font-size: 20px !important;
         }
     }
     .block-3 {
-        h2 {
-            font-size: 45.15px !important;
+        .content {
+            width: calc(85% + 190px) !important;
+            justify-content: center !important;
         }
-        h3 {
-            font-size: 39.25px !important;
+        .under-title {
+            margin-top: 30px !important;
+            margin-bottom: 70px !important;
+            h3 {
+                font-size: 35px !important;
+            }
+        }
+        .five-options {
+            margin-left: 0 !important;
+            width: 33% !important;
+        }
+        .breaking-five {
+            width: 26% !important;
+            margin-left: 120px !important;
+            margin-right: 0 !important;
+            .attack {
+                top: -80.8% !important;
+            }
+            .breaking-five-svg {
+                margin-right: 0 !important;
+            }
+        }
+        .right-monster {
+            width: 26% !important;
+            .meat {
+                width: 90% !important;
+                img {
+                    width: 200% !important;
+                    max-width: 200% !important;
+                }
+            }
+        }
+        .egg {
+            width: 100%;
+            img {
+                width: 7% !important;
+            }
+        }
+        h2 {
+            font-size: 42px !important;
+            margin-bottom: 0 !important;
         }
         p {
-            font-size: 27.5px !important;
+            font-size: 20px !important;
         }
     }
     .block-4 {
+        .way {
+            width: 80% !important;
+        }
+        .left-side, .right-side {
+            width: 40% !important;
+        }
+        .right-side {
+            padding-left: 60px !important;
+        }
         h2 {
-            font-size: 45.15px !important;
+            font-size: 38px !important;
         }
     }
     .block-5 {
-        span {
-            font-size: 157px !important;
+        .container {
+            justify-content: center !important;
         }
-        p {
-            font-size: 27.5px !important;
+        .cards-and-combinations {
+            width: 94% !important;
+            justify-content: center !important;
+        }
+        .left-side, .right-side {
+            width: 47% !important;
+            p {
+                font-size: 20px !important;
+            }
+        }
+        .left-side {
+            .top-texts {
+                p {
+                    margin-bottom: 25px !important;
+                }
+            }
+        }
+        .right-side {
+            .top-texts {
+                p {
+                    margin-bottom: 38px !important;
+                }
+            }
+        }
+        span {
+            font-size: 120px !important;
+            margin-bottom: 15px !important;
         }
         .bloodshed {
-            top: 72% !important;
+            top: 67% !important;
         }
         .nuclear_explosion {
-            top: 83% !important;
+            top: 71.8% !important;
         }
         .icefall {
-            top: 101.9% !important;
+            top: 92.9% !important;
         }
         .hubris {
-            top: 97% !important;
+            top: 83% !important;
             left: 79.5% !important;
         }
         .sunstrike {
-            top: 41.3% !important;
+            top: 40.3% !important;
         }
         .frostspike {
 
-            top: 56.5% !important;
+            top: 58% !important;
 
         }
     }
     .block-6 {
-        margin-top: 220px !important;
-        height: 80vh !important;
+        margin-top: 50px !important;
+        height: 42vh !important;
         span {
             font-size: 131.5px !important;
         }
         p, h3 {
             font-size: 43.2px !important;
+        }
+        picture {
+
+            img {
+                width: 86% !important;
+                height: auto;
+            }
+        }
+        .left-image {
+            top: 114% !important;
+            left: 8% !important;
+            transform: rotate(-22deg) !important;
+        }
+        .right-image {
+            top: 202% !important;
+            left: 36% !important;
+        }
+        .right-text {
+            left: 73.2% !important;
+
         }
     }
     .block-7 {
@@ -235,50 +390,111 @@
     .block-8 {
         margin-top: 150px !important;
         h2 {
-            font-size: 81.45px !important;
+            font-size: 68px !important;
         }
         p {
-            font-size: 31.4px !important;
+            font-size: 23px !important;
+        }
+        .comissar-container {
+            img {
+                width: 80% !important;
+            }
+        }
+        .grenade {
+            top: 40% !important;
+            left: 15% !important;
+            img {
+                
+            }
+        }
+        .content {
+            margin-top: 30px !important;
+            width: 90% !important;
         }
     }
     .block-9 {
-        height: 145vh !important;
+        margin-top: 0px !important;
+        height: 65vh !important;
+        .comics-block {
+            width: 85% !important;
+        }
         .metagun-item {
             width: 65%;
-            margin-top: 48vh !important;
+            margin-top: 12vh !important;
+            margin-left: 60px !important;
             img {
-                width: 420px !important;
+                width: 75% !important;
             }
             h3 {
-                width: 95% !important;
+                width: 72% !important;
             }
         }
+        .comics-1 {
+            width: 64% !important;
+            left: -2% !important;
+        }
+        .comics-2 {
+            width: 55%;
+            top: 56% !important;
+
+        }
         .comics-text {
-            margin-left: 210px !important;
+            margin-left: 170px !important;
+        }
+        .blot-item {
+            margin-left: 400px !important;
+            margin-top: 50px !important;
+        }
+        .blot-block {
+            img {
+                width: 58% !important;
+            }
+        }
+        .aam-item {
+            left: 93.5% !important;
+            top: 10% !important;
         }
         h3 {
-            font-size: 43.2px !important;
+            font-size: 36px !important;
         }
         p {
-            font-size: 31.4px !important;
+            font-size: 23px !important;
         }
     }
     .block-10 {
+        .container {
+            justify-content: center !important;
+        }
+        .container-100 {
+            width: 82% !important;
+        }
         margin-top: 220px !important;
         h2 {
-            font-size: 137.4px !important;
+            font-size: 112.4px !important;
+        }
+        .three-pictures {
+            margin-top: 40px !important;
+        }
+        .moving-slaugterman {
+            top: 100% !important;
+            img {
+                width: 75% !important;
+            }
+
         }
     }
     .block-11 {
-
+        span {
+            font-size: 95px !important;
+        }
         h2 {
-            font-size: 49.05px !important;
+            font-size: 36.05px !important;
         }
         p {
-            font-size: 31.4px !important;
+            font-size: 24px !important;
         }
         .play-pause-btn {
-            left: 22% !important;
+            left: 28% !important;
             img {
                 width: 100% !important;
             }
@@ -286,13 +502,13 @@
     }
     .block-12 {
         h2 {
-            font-size: 68.7px !important;
+            font-size: 56px !important;
         }
         p {
-            font-size: 15.7px !important;
+            font-size: 14px !important;
         }
         span {
-            font-size: 24.75px !important;
+            font-size: 22px !important;
         }
     }
 
@@ -310,19 +526,19 @@
     }
     .block-5 {
         .bloodshed {
-            top: 76% !important;
+            top: 67% !important;
         }
         .nuclear_explosion {
-            top: 89% !important;
+            top: 71.2% !important;
         }
         .icefall {
-            top: 101.9% !important;
+            top: 93.9% !important;
         }
         .hubris {
-            top: 104% !important;
+            top: 85% !important;
         }
         .sunstrike {
-            top: 43.5% !important;
+            top: 40.5% !important;
         }
         .frostspike {
 
@@ -330,13 +546,8 @@
 
         }
     }
-    .block-6 {
 
-        height: 65vh !important;
-
-    }
-
-    .block-9 {
-        height: 120vh !important;
-    }
+    // .block-9 {
+    //     height: 120vh !important;
+    // }
 }

@@ -169,7 +169,7 @@ $(document).ready(function () {
     var controller_moving_animation = new ScrollMagic.Controller();
 
     var tl_a_sl = new TimelineMax();
-    tl_a_sl.fromTo(".moving-slaugterman", { x: -500 }, { x: 2500, duration: 15, ease: "none" }, 0);
+    tl_a_sl.fromTo(".moving-slaugterman", { x: -1500 }, { x: 2500, duration: 30, ease: "none" }, 0);
 
 
     var scene = new ScrollMagic.Scene({

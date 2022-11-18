@@ -135,13 +135,14 @@ tl_move_c.to(".comissar", 1.2, {x: 0, ease: "none"}, 3.6)
 tl_move_c.to(".comissar", 0, {scaleX: 1, ease: "none"}, 3.6)
 
 
+
+
 var tl_move_m = new TimelineMax({repeat: -1, repeatDelay: 0});
 tl_move_m.fromTo(".meat", {x: 0}, {x: 80, duration: 1.2, ease: "none"})
 tl_move_m.to(".meat", 2.4, {x: -80, ease: "none"}, 1.2)
 tl_move_m.to(".meat", 0, {scaleX: -1, ease: "none"}, 1.2)
 tl_move_m.to(".meat", 1.2, {x: 0, ease: "none"}, 3.6)
 tl_move_m.to(".meat", 0, {scaleX: 1, ease: "none"}, 3.6)
-
 
 
 // DIGITS ANIMATION 

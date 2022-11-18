@@ -36,6 +36,7 @@ body, html {
             transition: all ease-in 0.18s;
         }
     }
+
     .burger-container {
         position: fixed;
         top: 0;
@@ -46,7 +47,7 @@ body, html {
         width: calc(100vw - 260px) !important;
         .burger-menu {
             height: 15vh !important;
-            display: flex !important;
+            display: flex;
             width: 10% !important;
             justify-content: flex-end !important;
             align-items: center !important;
@@ -67,7 +68,9 @@ body, html {
                     transform: translate(0, 0) rotate(0deg);
                 }
             }
-
+            &.display-none {
+                display: none !important;
+            }
             &.close {
                 z-index: 3000 !important;
                 opacity: 1 !important;
@@ -100,7 +103,7 @@ body, html {
                     }
                 }
             }
-        } 
+        }
     }
     .navigation-mobile {
         width: 100% !important;
@@ -113,19 +116,79 @@ body, html {
         top: 0vh;
         transition: all ease-in 0.18s;
         margin-top: 15px !important;
+        transition: opacity ease-in 0.3s !important;
         &.open-nav {
             left: 0vw;
             transition: all ease-in 0.18s;
         }
 
         .navigation-mobile-options {
-            flex-direction: column !important;
             justify-content: center !important;
             align-items: center !important;
             width: 100% !important;
             height: 100% !important;
+            .hover-nav-container {
+                flex-direction: column !important;
+                width: fit-content !important;
+                height: fit-content !important;
+                text-align: center !important;
+                margin-top: 30px !important;
+                a {
+                    transition: all ease-in 0.15s; 
+                    position: relative !important;
+                    h3 {
+                        transition: opacity ease-in 0.3s !important; 
+                        margin-bottom: 15px !important;
+                        z-index: 5001 !important;
+                    }
+                    .hover-a-1::after, .hover-a-2::after, .hover-a-3::after, .hover-a-4::after, .hover-a-5::after  {
+                        transition: all ease-in 0.15s; 
+                        content: ' ';
+                        position: absolute;
+                        top: 35px;
+                        left: 0px;
+                        opacity: 0;
+                        width: 8px !important;
+                        height: 8px !important;
+                        background: $color-3;
+                        border-radius: 2px !important;
+                        z-index: 5000 !important;
+                        overflow: visible !important;
+                    }
+                }
+            }
+        }
+        .hover-nav-container:hover > a h3 {
+            opacity: 0.69 !important;
+            transition: opacity ease-in 0.3s !important; 
+        }
+        .hover-nav-container:hover > a:hover {
+            .hover-a-1::after, .hover-a-2::after, .hover-a-3::after, .hover-a-4::after, .hover-a-5::after  {
+                transition: all ease-in 0.15s; 
+                opacity: 1 !important;
+            }
+            .hover-a-1::after {
+                left: calc(80% + 15px) !important;
+            }
+            .hover-a-2::after {
+                left: calc(82% + 15px) !important;
+            }
+            .hover-a-3::after {
+                left: calc(76% + 15px) !important;
+            }
+            .hover-a-4::after {
+                left: calc(95% + 15px) !important;
+            }
+            .hover-a-5::after {
+                left: calc(68% + 15px) !important;
+            }           
+            // h3::after{
+            //     transition: all ease-in 0.15s; 
+            //     opacity: 1 !important;
+            // }
             h3 {
-                margin-bottom: 15px !important;
+                opacity: 1 !important;
+                transition: opacity ease-in 0.3s !important; 
             }
         }
 
@@ -138,8 +201,18 @@ body, html {
         padding-top: 50px;
         align-items: center;
         z-index: 3000 !important;
+        // transition: all ease-in 0.18s;
+        &.logo-cont-active {
+            // transition: all ease-in 0.18s;
+            justify-content: center !important;
+        }
         .logo {
             width: 33% !important;
+            transition: all ease-in 0.18s;
+            &.logo-active {
+                width: 100% !important;
+                transition: all ease-in 0.18s;
+            }
             svg {
                 width: 72%;
                 margin: 0 auto;
@@ -523,6 +596,7 @@ body, html {
                 margin-bottom: 5px;
             }
             img {
+                display: none !important;
                 width: 3.5%;
             }
         }
@@ -536,79 +610,9 @@ body, html {
             a {
                 transition: all linear 0.2s;
             }
-            // a:not(.left-empty, .right-empty)::after {
-            //     content: " " !important;
-            //     display: block !important;
-            //     position: absolute !important;
-            //     top: 2.8px !important;
-            //     left: -2.8px !important;
-            //     width: 50px !important;
-            //     height: 50px !important;
-            //     background: rgb(86, 86, 86) !important;
-            //     border-radius: 12px !important;
-            //     z-index: -1 !important; 
-            // }
-            // a:not(.left-empty, .right-empty):hover {
-            //     svg {
-            //         position: relative;
-            //         top: 2.8px;
-            //         left: -2.8px;
-            //         z-index: 1 !important;
-            //     }
-            // }
-            // a {
-            //     transition: bounce linear 0.85s; 
-            //     svg {
-            //         transition: bounce linear 0.85s; 
-            //     }
-            // }
-            // .bounce {
-            //     animation: bounce 2s ease infinite;
-            //   }
-            // @keyframes bounce-youtube {
-            //     0% {transform: scale(1);}
-            //     15% { transform:scale(0.9); }
-            //     100% { transform:scale(1.1) translate(-5px, -3px); }
-            // }   
-            // a {
-            //     animation: bounce-youtube 0.3s linear !important; 
-            //     .youtube-cont {
-            //         animation: bounce-youtube 0.3s linear !important; 
-            //     }
-            // }
-            // a:hover {
-            //     .youtube-cont {
-            //         animation: bounce-youtube 0.3s linear 0.000001s forwards !important; 
-            //     }
-            // }
-            //
-            // a:hover {
-            //     // transition: bounce 0.9s linear 1; 
-            //     // svg {
-            //     //     transition: bounce 0.9s linear; 
-            //     // }
-
-            //     .youtube-cont, .youtube {
-            //         transition: bounce-youtube 0.9s linear !important; 
-            //     } 
-            //     .vk-cont, .vk {
-            //         transition: bounce-vk 0.9s linear 1; 
-            //     } 
-            //     .svg-instagram {
-            //         transition: bounce-instagram 0.9s linear 1; 
-            //     }
-            //     .svg-facebook {
-            //         transition: bounce-facebook 0.9s linear 1; 
-            //     }
-            //     .svg-behance {
-            //         transition: bounce-behance 0.9s linear 1; 
-            //     } 
-            //     .svg-twitter {
-            //         transition: bounce-twitter  0.9s linear 1; 
-            //     }
-                
-            // }  
-
+            .top, .bottom {
+                width: fit-content;
+            }
             margin-top: 20px;
             .youtube, .vk, .instagram , .facebook, .left-empty, .right-empty, .behance, .twitter {
                 position: relative !important; 
