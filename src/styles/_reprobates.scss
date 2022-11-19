@@ -91,8 +91,7 @@
         }
     }
     .right-side {
-        width: calc(65% - 60px);
-        padding-left: 60px;
+        width: 55%;
         text-align: center;
         h2 {
             font-size: 1.9vw;
@@ -156,7 +155,7 @@
             transform: translate3d(-50px,0,0);
             .attack {
                 z-index: -1 !important;
-                top: -81%;
+                top: -82.8%;
                 left: -40.2%;
                 img {
                     width: 75%;
@@ -201,12 +200,11 @@
         }
     }
     .right-side {
-        width: calc(65% - 60px);
+        width: 65%;
         margin-top: 35px;
-        padding-left: 80px;
         text-align: start;
         h2 {
-            font-size: 2.3vw;
+            font-size: 2vw;
             line-height: 1.62;
         }
         p {
@@ -292,7 +290,7 @@
     .trigger {
         position: relative !important;
     }
-    height: 90vh;
+    // height: 90vh;
     .enemies-on-screen {
         position: relative;
         .left-text {
@@ -308,7 +306,7 @@
         }
         .right-text {
             left: 78.2%;
-            top: 31%;
+            top: 21%;
             width: 33%;
             h3 { 
                 font-size: 2.2vw;
@@ -326,20 +324,22 @@
         .left-image {
             z-index: 2;
             left: 5%;
-            top: 92%;
+            top: 20%;
             transform: rotate(-22deg);
         }
 
         .right-image {
+            position: relative;
             z-index: 1;
-            left: 30%;
-            top: 175%;
+            top: 30%;
+            left: 20%;
             transform: rotate(6.5deg);
         }
     }
 }
 
 .block-7 {
+    margin-top: 150px !important;
     h2 {
         font-size: 2.2vw;
         margin-bottom: 0;
@@ -519,7 +519,7 @@
 }
 
 .block-10 {
-    margin-top: 50px;
+    // margin-top: 50px;
     .container-100 {
         position: relative;
         .title {
@@ -530,6 +530,7 @@
             h2 {
                 font-size: 7vw;
                 margin-bottom: 0;
+                margin-top: 0;
                 text-transform: none;
             }
         }

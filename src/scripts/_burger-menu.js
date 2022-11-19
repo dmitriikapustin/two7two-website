@@ -22,9 +22,9 @@ let bc_black = document.getElementById("bc-header");
 
 
 
-if(location.href.indexOf('reprobates')!==-1 && $(window).width() < 800) { // for example its login.php page
-  logo_cont.style.display = "none"
-}
+// if(location.href.indexOf('reprobates')!==-1 && $(window).width() < 800) { // for example its login.php page
+//   logo_cont.style.display = "none"
+// }
 
 
 
@@ -56,8 +56,8 @@ $(document).ready(function () {
       // body.classList.toggle("no-scroll");
       this.classList.toggle("close");
       overlay.classList.toggle("open-nav");
-      logo.classList.toggle("logo-active")
-      logo_cont.classList.toggle("logo-cont-active")
+      // logo.classList.toggle("logo-active")
+      logo.classList.toggle("todefault")
       // var tl_options = new TimelineMax()
       // .to($(".navigation-mobile :nth-child(1)"), {y: }, {y: 0, duration: 0.3})
       // .to($(".navigation-mobile :nth-child(2)"), {y: }, {y: 0, duration: 0.3})

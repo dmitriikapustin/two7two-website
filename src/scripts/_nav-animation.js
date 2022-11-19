@@ -38,7 +38,7 @@ $(document).ready(function () {
                 triggerHook: 0.1,
                 reverse: true
             })
-                .addIndicators("main")
+                // .addIndicators("main")
                 .setTween(hide_burger_timeline)
                 .addTo(controller_navigation_animation)
             

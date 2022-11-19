@@ -116,13 +116,20 @@
                 width: 30% !important;
                 transition: all ease-in 0.3s;
                 z-index: 5 !important;
-                transition: all ease-in 0.3s;
                 width: 98% !important;
                 display: flex;
                 justify-content: flex-end !important;
                 transform: scale(1.3);
                 margin-top: 20px !important;
+                position: relative !important;
+                top: -100vh ;
+                &.todefault {
+                    position: relative !important;
+                    transition: all ease-in 0.3s;
+                    top: 0vh !important;
+                }
                 // &.scaling {
+
 
                 // }
             }

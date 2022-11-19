@@ -1,11 +1,18 @@
-@@include("./components/header.html", {
+@@include("./components/header_main.html", {
     "meta-title": "272",
     "meta-description": " ",
     "meta-keywords": " "
 })  
         <div class="preloader">
-            <div class="preloader-container-logo">
-                <img src="../images/preloader.gif" alt="" id="preloader-gif">
+            <div class="preloader-container-logo" id="animation-container">
+                <script>
+                    var animation_pr = bodymovin.loadAnimation({
+                        container: document.getElementById("animation-containe"),
+                        path: 'to7two.json',
+                        render: 'svg',
+                        name: 'preloader'
+                    })
+                </script>
                 <!-- <div class="preloader-gif">
 
                 </div> -->

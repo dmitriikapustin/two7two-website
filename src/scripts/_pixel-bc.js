@@ -253,6 +253,17 @@ $(".pixel-bottom").each(function(index) {
         $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
     }
 
+    if (index >= 10 && index < 13) {
+        var randomLeft = getRandomArbitrary(0, 0.25) * 100;
+        var randomTop = getRandomArbitrary(0.25, 0.7) * 100; 
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+    if (index >= 13 && index < 16) {
+        var randomLeft = getRandomArbitrary(0.75, 1) * 100;
+        var randomTop = getRandomArbitrary(0.25, 0.7) * 100; 
+        $(this).css({"position":"absolute", "left":randomLeft + "vw", "top": randomTop + "vh"})
+    }
+
     if (index >= 6 && index < 8) {
         var randomLeft = getRandomArbitrary(0, 0.3) * 100;
         var randomTop = getRandomArbitrary(0.7, 1.1) * 100; 
