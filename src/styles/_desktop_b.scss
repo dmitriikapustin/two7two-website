@@ -1,9 +1,12 @@
 @media screen and (min-width: 1600px) {
+    .preloader-container-logo {
+        left: 8% !important;
+    }
     .header {
         .burger-container {
             .burger-menu {
                 svg {
-                    left: 87.7vw !important;
+                    left: 77vw !important;
                     width: 95% !important;
                     height: 22% !important;
                     top: 25% !important;
@@ -112,6 +115,9 @@
 }
 
 @media screen and (min-width: 2000px) {
+    .preloader-container-logo {
+        left: 5% !important;
+    }
     .pixel-bc-2000 {
         display: block !important;
         top: 0 !important;
@@ -150,6 +156,11 @@
         rect {
             width: 140% !important;
             height: 140% !important;
+        }
+    }
+    .header-main {
+        h3 {
+            font-size: 35.6px !important;
         }
     }
     .header {
@@ -525,7 +536,7 @@
         .burger-container {
             .burger-menu {
                 svg {
-                    left: 81.7vw !important;
+                    left: 72vw !important;
                 }
             }
         }
