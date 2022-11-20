@@ -16,6 +16,12 @@ const comissar = document.getElementById('comissar');
 const comissar_container = document.getElementById('comissar-container');
 const tu1 = document.getElementById('t-u-1');
 const tu2 = document.getElementById('t-u-2');
+const eyeRightPupil = document.getElementById('eye-right-pupil');
+const eyeLeftPupil = document.getElementById('eye-left-pupil');
+const tu1_main = document.getElementById('t-u-1-main');
+const tu2_main = document.getElementById('t-u-2-main');
+const eyeRightPupil_main = document.getElementById('eye-right-pupil-main');
+const eyeLeftPupil_main = document.getElementById('eye-left-pupil-main');
 const troyan_tu = document.getElementById('troяn-t-u');
 const reprobates_tu = document.getElementById('reprobates-t-u');
 const troyan_oc = document.getElementById('troяn-o-c');
@@ -24,41 +30,29 @@ const developer_1_oc = document.getElementById('developer-1-o-c');
 const developer_2_oc = document.getElementById('developer-2-o-c');
 const our_games_oc = document.getElementById('our-games-o-c');
 const og_oc = document.getElementById('og-o-c');
-const eyeRightPupil = document.getElementById('eye-right-pupil');
-const eyeLeftPupil = document.getElementById('eye-left-pupil');
 const eyeLeftInner = document.getElementById('eye-left-inner');
+const eyeLeftInner_main = document.getElementById('eye-left-inner-main');
 const last_p = document.getElementById('last-p');
 console.log(last_p)
-const innerEyeWidth = eyeLeftInner.getBoundingClientRect().width;
-const innerEyeHeight = eyeLeftInner.getBoundingClientRect().height;
-const pupilWidth = eyeLeftPupil.getBoundingClientRect().width;
-const pupilHeight = eyeLeftPupil.getBoundingClientRect().height;
-const xMovement = (innerEyeWidth - pupilWidth)/2;
-const yMovement = (innerEyeHeight - pupilHeight)/2;
+
+
 
 window.addEventListener('mousemove', updateEyePosition);
 
 
 
 function updateEyePosition(event) {
+  if (eyeLeftInner) {
+  const innerEyeWidth = eyeLeftInner.getBoundingClientRect().width;
+  const innerEyeHeight = eyeLeftInner.getBoundingClientRect().height;
+  const pupilWidth = eyeLeftPupil.getBoundingClientRect().width;
+  const pupilHeight = eyeLeftPupil.getBoundingClientRect().height;
+  const xMovement = (innerEyeWidth - pupilWidth)/2;
+  const yMovement = (innerEyeHeight - pupilHeight)/2;
+  
+
   const posX = ((event.clientX / document.body.clientWidth) * 3 - 1) * xMovement;
   const posY = ((event.clientY / window.screen.height) * 2 - 1) * yMovement;
-  // console.log(last_p.style.transform)
-  // if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
-
-  // }
-  // if(location.href.indexOf('index')!==-1) { // for example its login.php page
-  //   troyan_tu.style.transform = `translate(0px, ${posY * 0.2}px)`;
-  //   reprobates_tu.style.transform = `translate(0px, ${posY * -0.2}px)`;
-  //   troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
-  //   reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
-  //   our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
-  // }
-  // if (p_right_boolean === true) {
-  //   p.forEach((item, index) => {
-  //     item.style.transform = `translate(${posX * 1.1 * (index + 0.5) + 1.2 * index}px, 0`;
-  //   })
-  // }
 
   if (developer_1_oc) {
     developer_1_oc.style.transform = `translate(${posX * 0.02}px, ${posY * -0.09}px)`;
@@ -85,14 +79,6 @@ function updateEyePosition(event) {
     og_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
   }
 
-  // reprobates_tu.style.transform = `translate(0px, ${posY * -0.2}px)`;
-  // troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
-  // reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
-  // our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
-  // comissar.style.transform = `translate(${posX * 3.1}px, ${posY * 3.1}px)`;
-  if (comissar_container) {
-    comissar_container.style.transform = `translate(${posX * 2.5}px, ${posY * 2.5}px)`;
-  }
   if ($(document).width() > 800 && $(document).width() <= 1600) {
     tu1.style.transform = `translate(0px, ${posY * 1.1}px)`;
     tu2.style.transform = `translate(0px, ${posY * -0.9}px)`;
@@ -105,6 +91,67 @@ function updateEyePosition(event) {
     eyeLeftPupil.style.transform = `translate(${posX * 0.15}px, ${posY * -0.35}px)`;
     eyeRightPupil.style.transform = `translate(${posX * -0.18}px, ${posY * 0.28}px)`;
   }
+
+  if (eyeLeftInner_main) {
+    const innerEyeWidth_main = eyeLeftInner_main.getBoundingClientRect().width;
+    const innerEyeHeight_main = eyeLeftInner_main.getBoundingClientRect().height;
+    const pupilWidth_main = eyeLeftPupil_main.getBoundingClientRect().width;
+    const pupilHeight_main = eyeLeftPupil_main.getBoundingClientRect().height;
+    const xMovement_main = (innerEyeWidth_main - pupilWidth_main)/2;
+    const yMovement_main = (innerEyeHeight_main - pupilHeight_main)/2;
+  
+    const posX_main = ((event.clientX / document.body.clientWidth) * 3 - 1) * xMovement_main;
+    const posY_main = ((event.clientY / window.screen.height) * 2 - 1) * yMovement_main;
+  
+    if ($(document).width() > 800 && $(document).width() <= 1600) {
+      tu1_main.style.transform = `translate(0px, ${posY_main * 1.1}px)`;
+      tu2_main.style.transform = `translate(0px, ${posY_main * -0.9}px)`;
+      eyeLeftPupil_main.style.transform = `translate(${posX_main * 0.25}px, ${posY_main * -0.5}px)`;
+      eyeRightPupil_main.style.transform = `translate(${posX_main * -0.3}px, ${posY_main * 0.45}px)`;
+    }
+    if ($(document).width() > 1600) {
+      tu1_main.style.transform = `translate(0px, ${posY_main * 0.7}px)`;
+      tu2_main.style.transform = `translate(0px, ${posY_main * -0.6}px)`;
+      eyeLeftPupil_main.style.transform = `translate(${posX_main * 0.15}px, ${posY_main * -0.35}px)`;
+      eyeRightPupil_main.style.transform = `translate(${posX_main * -0.18}px, ${posY_main * 0.28}px)`;
+    }
+  }
+}
+
+  // console.log(last_p.style.transform)
+  // if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
+
+  // }
+  // if(location.href.indexOf('index')!==-1) { // for example its login.php page
+  //   troyan_tu.style.transform = `translate(0px, ${posY * 0.2}px)`;
+  //   reprobates_tu.style.transform = `translate(0px, ${posY * -0.2}px)`;
+  //   troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
+  //   reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  //   our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  // }
+  // if (p_right_boolean === true) {
+  //   p.forEach((item, index) => {
+  //     item.style.transform = `translate(${posX * 1.1 * (index + 0.5) + 1.2 * index}px, 0`;
+  //   })
+  // }
+
+
+
+  // reprobates_tu.style.transform = `translate(0px, ${posY * -0.2}px)`;
+  // troyan_oc.style.transform = `translate(${posX * 0.03}px, ${posY * -0.08}px)`;
+  // reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  // our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
+  // comissar.style.transform = `translate(${posX * 3.1}px, ${posY * 3.1}px)`;
+  if (comissar_container) {
+    comissar_container.style.transform = `translate(${posX * 2.5}px, ${posY * 2.5}px)`;
+  }
+
+  // if ($(document).width() <= 800) {
+  //   tu1.style.transform = `translate(0px, 0px)`;
+  //   tu2.style.transform = `translate(0px, 0px)`;
+  //   eyeLeftPupil.style.transform = `translate(0px, 0px)`;
+  //   eyeRightPupil.style.transform = `translate(0px, 0px)`;
+  // }
 }
 
 

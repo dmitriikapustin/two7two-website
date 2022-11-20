@@ -108,6 +108,11 @@ function html() {
     return src('src/**.php')
       .pipe(dest('dist'))
   }
+
+  function json() {
+    return src('src/**.json')
+      .pipe(dest('dist'))
+  }
   
   function serve() {
     sync.init({
@@ -122,6 +127,6 @@ function html() {
     watch('src/videos', series(videos)).on('change', sync.reload)
   }
   
-  exports.build = series(clear, scss, htmlprod, img, imgwebp, favicons, videos, music, php, scripts, libs, fonts)
-  exports.serve = series(clear, scss, html, img, imgwebp, favicons, videos, music, php, fonts, scripts, libs, serve)
+  exports.build = series(clear, scss, htmlprod, img, json, imgwebp, favicons, videos, music, php, scripts, libs, fonts)
+  exports.serve = series(clear, scss, html, img, json, imgwebp, favicons, videos, music, php, fonts, scripts, libs, serve)
   exports.clear = clear

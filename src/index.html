@@ -5,14 +5,11 @@
 })  
         <div class="preloader">
             <div class="preloader-container-logo" id="animation-container">
-                <script>
-                    var animation_pr = bodymovin.loadAnimation({
-                        container: document.getElementById("animation-containe"),
-                        path: 'to7two.json',
-                        render: 'svg',
-                        name: 'preloader'
-                    })
-                </script>
+                <div class="video_with_link">
+                    <video autoplay="true"
+                    muted="muted" class="video-preloader" src="./videos/preloader-video.mp4" class="PlayPauseVideo" id="preloader-video"></video>
+                </div>
+                
                 <!-- <div class="preloader-gif">
 
                 </div> -->
