@@ -709,6 +709,11 @@
             position: relative;
         }
         .left-side {
+            .music-mob {
+                position: relative;
+                left: 10% !important;
+                text-align: start;
+            }
             p {
                 
                 font-size: 1.6vw;
