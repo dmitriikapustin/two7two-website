@@ -122,6 +122,9 @@ $(document).ready(function () {
     var tl_a_h1 = new TimelineMax();
     tl_a_h1.fromTo(appearance_h1, { opacity: 0, scale: 1.3, y: 10 }, { y: 0, opacity: 1, scale: 1, duration: 0.15, ease: "power3.out" }, 0.25);
 
+    var tl_a_burger_appearance = new TimelineMax();
+    tl_a_burger_appearance.fromTo("#burger-menu", { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "power3.out" }, 2);
+
     var tl_a_seraphim = new TimelineMax({
         onComplete: function() {
             window.addEventListener('mousemove', function (event) {
