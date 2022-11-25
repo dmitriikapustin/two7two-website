@@ -33,7 +33,14 @@ const og_oc = document.getElementById('og-o-c');
 const eyeLeftInner = document.getElementById('eye-left-inner');
 const eyeLeftInner_main = document.getElementById('eye-left-inner-main');
 const last_p = document.getElementById('last-p');
+// const footer = document.getElementById('footer');
 console.log(last_p)
+
+$(document).ready(function () { 
+  if(location.href.indexOf('reprobates')!==-1 && $(document).width() < 800) {
+    footer.style.marginTop = "0px !important"
+  }
+})
 
 
 

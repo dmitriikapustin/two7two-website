@@ -17,9 +17,12 @@ function SetAnimation(element, x_pos, y_pos) {
     });
     element.addEventListener("mouseleave", () => {
         setTimeout( function() {
-            timeline.add( TweenLite.to(element, 0.05,{scale: 1, x: 0, y: 0, ease: "none"}) ) 
+            timeline.add( TweenLite.to(element, anim_1, {scale: 0, ease: "easeOut"}) ) 
+            setTimeout( function() {
+                timeline.add( TweenLite.to(element, 0.05,{scale: 1, x: 0, y: 0, ease: "none"}) )
+            }, 100)
         }, 300)
-    });    
+    });
 }
 
 SetAnimation(instagram, 0, -5)

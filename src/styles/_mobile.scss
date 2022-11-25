@@ -51,7 +51,7 @@
     }
 
 
-    .pixel-bc-2000 {
+    .pixel-bc-2000, .pixel-no-random {
         display: none;
     }
 
@@ -64,6 +64,13 @@
 
     // HEADER
     .header-main {
+        .container {
+            .logo {
+                svg {
+                    display: none;
+                }
+            }
+        }
         &.no-scroll {
             position: fixed;
         }
@@ -76,6 +83,7 @@
                 justify-content: center !important;
                 display: flex !important;
                 margin: 0 auto !important;
+                // height: 50% !important;
                 svg {
 
                 }
@@ -83,6 +91,7 @@
         }
         .burger-container-main {
             // position: fixed;
+            height: 1px !important;
             top: 0;
             left: 0;
             z-index: 2500 !important;
@@ -94,7 +103,8 @@
                 width: 10% !important;
                 align-items: flex-start !important;
                 position: relative !important;
-                top: -25px !important;
+                top: -32px !important;
+                left: 9px !important;
                 opacity: 1;
                 z-index: 2500 !important;
                 svg {
@@ -394,12 +404,120 @@
     // FOOTER
 
     .footer {
+        // padding-bottom: 0 !important;
         position: relative; 
-        top: -120px !important;
+        top: -70px !important;
         h3 {
             font-size: 4.4vw !important;
         }
         .container {
+            // padding-bottom: 0 !important;
+            .footer-container {
+                p::after {
+                    width: 6.5px !important;
+                    height: 6.5px !important;
+                    top: 6px !important;
+                }
+                margin: 0 !important;
+                .social-pictures-mob {
+                    margin-top: 35px !important;
+                    width: 100% !important;
+                    flex-direction: row !important;
+                    .container-for-social {
+                        justify-content: center !important;
+                        a {
+                            width: 10% !important;
+                            svg {
+                                width: 100% !important;
+                            }
+                        }
+                        .instagram , .facebook,  .left-empty, .right-empty {
+                            position: relative !important; 
+                            transition: all ease-in 0.15s; 
+                        }
+                        .youtube, .vk {
+                            position: absolute !important;
+                            z-index: 100 !important;
+                            fill: white;
+                        }
+                        .youtube-cont, .facebook, .instagram, .behance, .twitter {
+                            margin-right: 4.5px !important;
+                        }
+                        .instagram {
+                            margin-left: 4.5px !important;
+                        }
+                        .youtube {
+                            width: 45.5% !important;
+                            top: -6% !important;
+                            left: 32%;
+                            transform: scale(0.85);
+                            opacity: 1;
+                            transition: all ease-in 0.15s; 
+                        }
+                        .vk {
+                            width: 74% !important;
+                            top: -16% !important;
+                            left: 13%;
+                            transform: scale(0.85);
+                            opacity: 1;
+                            transition: all ease-in 0.15s; 
+                        }
+            
+                        .left-empty {
+                            transition: all ease-in 0.15s; 
+                            &:hover {
+                                .youtube {
+                                    transition: all ease-in 0.15s; 
+                                    transform: scale(1);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .right-empty {
+                            transition: all ease-in 0.15s; 
+                            &:hover {
+                                .vk {
+                                    transition: all ease-in 0.15s; 
+                                    transform: scale(1);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer-bottom-text {
+                    flex-direction: row !important;
+                    align-items: flex-start !important;
+                    margin-bottom: 0 !important;
+                    padding-bottom: 0 !important;
+                    margin-top: 0px !important;
+                    padding-top: 0 !important;
+                    p {
+                        font-size: 2.8vw;
+                        text-align: center !important;
+                        margin-top: 7.5px !important;
+                        margin-bottom: 0 !important;
+                    }
+                    img {
+                        display: none !important;
+                        width: 20% !important;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .footer_repr {
+        // padding-bottom: 0 !important;
+        position: relative; 
+        top: 0px !important;
+        h3 {
+            font-size: 4.4vw !important;
+        }
+        .container {
+            // padding-bottom: 0 !important;
             .footer-container {
                 p::after {
                     width: 6.5px !important;
@@ -501,7 +619,7 @@
 
     .images {
         position: relative; 
-        top: -120px !important;
+        top: -65px !important;
         .images-25-75 {
             picture {
                 height: 20vh;
@@ -548,7 +666,7 @@
 
     .our-games {
         position: relative; 
-        top: -120px !important;
+        top: -25px !important;
         margin-top: 0% !important;
         z-index: 2 !important;
         .container {
@@ -809,6 +927,12 @@
                 top: 54.5%;
 
             }
+            .hubris {
+                width: 30%;
+                top: 193.6% !important;
+                left: 20% !important;
+                // height: fit-content;
+            }
         }
     }
 
@@ -896,7 +1020,7 @@
                 }
                 .grenade {
                     width: 80%;
-                    top: 65%;
+                    top: 66.5%;
                     left: 0%;
                 }
             }
@@ -914,7 +1038,7 @@
     }
     .block-9 {
         height: auto !important;
-        margin-top: 70px !important;
+        margin-top: 0px !important;
         .comics-block {
             .comics-1, .comics-2 {
                 width: 100% !important;
@@ -935,9 +1059,11 @@
                 margin-left: 20px !important;
             }
             .comics-2 {
-                margin-top: 30px;
+                // margin-top: 30px;
                 margin-left: 20px !important;
                 width: 100% !important;
+                position: relative !important;
+                top: -20px !important;
             }
             .aam-item {
                 left: 67%;
@@ -947,6 +1073,8 @@
             .blot-item {
                 width: 100% !important;
                 margin-left: 0px;
+                position: relative !important;
+                top: -15px !important;
                 .blot {
                     // flex-direction: row !important;
                     .blot-block {
@@ -954,6 +1082,8 @@
                         justify-content: center !important;
                         align-items: center !important;
                         margin-left: 0 !important;
+                        position: relative !important;
+                        left: -20% !important;
                         img {
                             width: 70%;
                         }
@@ -963,16 +1093,20 @@
                         margin: auto 0 !important;
                         width: 100% !important;
                         justify-content: center !important;
+                        flex-direction: row !important;
                         h3 {
-                            text-align: center;
+                            text-align: end;
                             font-size: 7vw;
-                            width: 96% !important;
+                            width: 42% !important;
                             margin-bottom: 30px;
                         }
                         p  {
-                            width: 100% !important;
-                            text-align: center;
-                            font-size: 3.2vw !important;
+                            position: relative;
+                            top: -4% !important;
+                            left: 5% !important;
+                            width: 56% !important;
+                            text-align: start;
+                            font-size: 2.6vw !important;
                         }
                     }
                 }

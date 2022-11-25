@@ -10,6 +10,7 @@ var pixelArr = $(".pixel");
 var pixelArrBottom = $(".pixel-bottom");
 var pixelMobArr = $(".pixel-mob");
 var pixelArr2000 = $(".pixel-2000")
+var pixelNoRandom = $(".pixel-no-random")
 // console.log(pixelArr)
 
 
@@ -18,6 +19,7 @@ var pixel_count = pixelArr.length;
 var pixel_2000_count = pixelArr2000.length;
 var pixel_bottom_count = pixelArrBottom.length;
 var pixel_mob_count = pixelMobArr.length;
+var pixel_no_random_count = pixelNoRandom.length;
 
 $(document).ready(function () { 
     console.log(pixel_2000_count)
@@ -354,7 +356,12 @@ $(".pixel-mob").each(function(index) {
     }
 })
 
+$(".pixel-no-random").each(function (pixel_scroll_no_random_index) {
+    $(this).addClass("pixel-scroll-no-random" + pixel_scroll_no_random_index)
 
+    $(this).parent().prepend('<div class="trigger-for-pixel-scroll-no-random' + pixel_scroll_no_random_index + ' trigger"></div>');
+
+})
 
 $(".pixel").each(function (pixel_scroll_index) {
     $(this).addClass("pixel-scroll-" + pixel_scroll_index)
@@ -431,6 +438,34 @@ for (pixel_2000_scroll_index = 0; pixel_2000_scroll_index < pixel_2000_count; pi
     });
     
 }
+
+
+var controller_all_pixels_animation = new ScrollMagic.Controller();
+
+for (pixel_scroll_no_random_index = 0; pixel_scroll_no_random_index < pixel_no_random_count; pixel_scroll_no_random_index++) {
+
+    $(".pixel-scroll-no-random" + pixel_scroll_no_random_index).each(function () {
+        // $(this).addClass('ov-hidden')
+        var randParallax2000 = getRandomArbitrary(0.3, 1.4)
+        var tl_no_random_scroll_pixel = new TimelineMax();
+        tl_no_random_scroll_pixel.fromTo(this, { y: 0 }, { y: -700 - 2400 * randParallax2000, duration: 0.5});
+
+        var scene = new ScrollMagic.Scene({
+            offset: -600,
+            triggerElement: ".trigger-for-pixel-scroll-no-random-" + pixel_scroll_no_random_index,
+            triggerHook: 0,
+            duration: 10000,
+            reverse: true
+        })
+            // .addIndicators()
+            .setTween(tl_no_random_scroll_pixel)
+            .addTo(controller_all_pixels_animation);
+    });
+    
+}
+
+
+
 
 for (pixel_scroll_bottom_index = 0; pixel_scroll_bottom_index < pixel_bottom_count; pixel_scroll_bottom_index++) {
 

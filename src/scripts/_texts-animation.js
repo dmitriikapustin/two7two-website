@@ -7,6 +7,7 @@ $(document).ready(function () {
     var pixels = $(".pixel");
     var pixels_mob = $(".pixel-mob");
     var pixels_2000 = $(".pixel-2000");
+    var pixels_no_random = $(".pixel-no-random");
     const seraphim = document.getElementById('seraphim');
 
 
@@ -14,6 +15,7 @@ $(document).ready(function () {
     var pixels_count = pixels.length;
     var pixels_mob_count = pixels_mob.length;
     var pixels_2000_count = pixels_2000.length;
+    var pixels_no_random_count = pixels_no_random.length;
 
     var appearance_h3_left_count = appearance_h3_left.length;
     var appearance_h3_right_count = appearance_h3_right.length;
@@ -32,6 +34,10 @@ $(document).ready(function () {
 
     $(".pixel-2000").each(function (pixel_2000_index) {
         $(this).addClass("pixel-2000-index-" + pixel_2000_index)
+    })
+
+    $(".pixel-no-random").each(function (pixel_no_random_index) {
+        $(this).addClass("pixel-no-random-index-" + pixel_no_random_index)
     })
 
     $(".appearance-p-left").each(function (appearance_p_left_index) {
@@ -53,6 +59,14 @@ $(document).ready(function () {
     // PIXELS APPEARANCE
     for (pixel_index = 0; pixel_index < pixels_count; pixel_index++) {
         $(".pixel-index-" + pixel_index).each(function (index) {
+            var randomAppearanceK = Math.random()
+            var tl_pixel = new TimelineMax();
+            tl_pixel.fromTo(this, {opacity: 0}, {opacity: 1, duration: 0.4}, 0.9 + randomAppearanceK * 1)
+        })
+    }
+
+    for (pixel_no_random_index = 0; pixel_no_random_index < pixels_no_random_count; pixel_no_random_index++) {
+        $(".pixel-no-random-index-" + pixel_no_random_index).each(function (index) {
             var randomAppearanceK = Math.random()
             var tl_pixel = new TimelineMax();
             tl_pixel.fromTo(this, {opacity: 0}, {opacity: 1, duration: 0.4}, 0.9 + randomAppearanceK * 1)

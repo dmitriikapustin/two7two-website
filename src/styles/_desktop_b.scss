@@ -141,7 +141,15 @@
         }
     }
     .pixel-bc {
-        display: none !important;
+        .pixel, .pixel-mob {
+            display: none !important;
+        }
+        .pixel-no-random {
+            rect {
+                width: 115% !important;
+                height: 115% !important;
+            }
+        }
     }
     .container {
         width: calc(100vw - 1000px) !important;
@@ -167,6 +175,15 @@
         // .navigation-mobile {
         //     top: 15vh !important;
         // }
+        .logo {
+            width: 45% !important;
+            &.logo-active {
+                top: 4% !important;
+                svg {
+                    width: 100% !important;
+                }
+            }
+        }
         .navigation a {
             h3 {
                 font-size: 35.6px !important;
