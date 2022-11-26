@@ -86,6 +86,10 @@ function updateEyePosition(event) {
     og_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
   }
 
+  if (comissar_container) {
+    comissar_container.style.transform = `translate(${posX * 2.5}px, ${posY * 2.5}px)`;
+  }
+
   if ($(document).width() > 800 && $(document).width() <= 1600) {
     tu1.style.transform = `translate(0px, ${posY * 1.1}px)`;
     tu2.style.transform = `translate(0px, ${posY * -0.9}px)`;
@@ -149,9 +153,7 @@ function updateEyePosition(event) {
   // reprobates_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
   // our_games_oc.style.transform = `translate(${posX * 0.05}px, ${posY * -0.09}px)`;
   // comissar.style.transform = `translate(${posX * 3.1}px, ${posY * 3.1}px)`;
-  if (comissar_container) {
-    comissar_container.style.transform = `translate(${posX * 2.5}px, ${posY * 2.5}px)`;
-  }
+
 
   // if ($(document).width() <= 800) {
   //   tu1.style.transform = `translate(0px, 0px)`;
