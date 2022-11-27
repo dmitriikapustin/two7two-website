@@ -1,3 +1,10 @@
+.welcome-block, .immortality-block, .game-against-rules {
+    h1, h2, h3, p {
+
+        font-family: $font-name-3;
+    }
+}
+
 .welcome-block {
     .cover {
         position: absolute;
@@ -12,10 +19,6 @@
     .content {
         // width: 100%;
         max-height: 100%;
-        h1, h3, p {
-            font-weight: 600;
-            font-family: $font-name-3;
-        }
         .heading {
             position: relative;
             h1 {
@@ -72,6 +75,62 @@
                 margin-bottom: 0;
                 margin-top: 0;
                 font-size: 2.2vw;
+            }
+        }
+    }
+}
+.immortality-block {
+    .immortality-text {
+        width: 40%;
+        h2 {
+            font-size: 2.8vw;
+            margin-bottom: 0;
+        }
+        p {
+            position: relative;
+            left: 15%;
+            font-size: 1.2vw;
+        }
+        .signer {
+            position: relative;
+            left: 30%;
+            width: 20%
+        }
+    }
+}
+
+.game-against-rules {
+    .container {
+        .against-rules-text {
+            justify-content: flex-end;
+            width: 80%;
+            // display: flex;
+            // justify-content: flex-start !important;
+            // text-align: center;
+            // width: 25%;
+            h3 {
+                margin-bottom: 0;
+                text-align: right;
+            }
+            p {
+                position: relative;
+                right: 5%;
+                text-align: right;
+                font-size: 1.2vw;
+                font-weight: 200;
+            }
+        }
+        .game-bottom-text {
+            margin-top: 10%;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            h2 {
+                width: 90%;
+                font-size: 2.8vw;
+            }
+            .cub {
+                width: 10%;
             }
         }
     }
