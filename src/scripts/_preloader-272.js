@@ -4,13 +4,13 @@
     $(document).ready(function(){
         var video = document.getElementById("preloader-video")
         console.log(video)
-        if (video.paused) {
-          video.play();
-          console.log("play")
-        } else {
-          console.log("pause")
-          video.pause();
-        }
+        // if (video.paused) {
+        //   video.play();
+        //   console.log("play")
+        // } else {
+        //   console.log("pause")
+        //   video.pause();
+        // }
       });
   }
 

@@ -26,7 +26,7 @@
         width: 60% !important;
     }
 
-    section:not(.header, .main-hero) {
+    section:not(.header, .header-main, .main-hero, .our-games, .images) {
         padding: 10px 0 !important;
     }
 
@@ -64,6 +64,7 @@
 
     // HEADER
     .header-main {
+        padding-bottom: 0 !important;
         .container {
             .logo {
                 svg {
@@ -103,8 +104,8 @@
                 width: 10% !important;
                 align-items: flex-start !important;
                 position: relative !important;
-                top: -32px !important;
-                left: 9px !important;
+                top: -24px !important;
+                left: 10px !important;
                 opacity: 1;
                 z-index: 2500 !important;
                 svg {
@@ -406,7 +407,7 @@
     .footer {
         // padding-bottom: 0 !important;
         position: relative; 
-        top: -70px !important;
+        top: 0px !important;
         h3 {
             font-size: 4.4vw !important;
         }
@@ -619,7 +620,7 @@
 
     .images {
         position: relative; 
-        top: -65px !important;
+        // top: -65px !important;
         .images-25-75 {
             picture {
                 height: 20vh;
@@ -666,11 +667,13 @@
 
     .our-games {
         position: relative; 
-        top: -25px !important;
+        // top: -25px !important;
         margin-top: 0% !important;
         z-index: 2 !important;
+        padding-top: 0 !important;
         .container {
             padding-top: 0 !important;
+            padding-bottom: 0 !important;
         }
         .heading-33, .heading-67 {
             svg {
@@ -1066,9 +1069,9 @@
                 top: -20px !important;
             }
             .aam-item {
-                left: 67%;
-                top: 26%;
-                width: 55%;
+                left: 60%;
+                top: 27%;
+                width: 48%;
             }
             .blot-item {
                 width: 100% !important;

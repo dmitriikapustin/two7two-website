@@ -6,8 +6,9 @@
         <div class="preloader">
             <div class="preloader-container-logo" id="animation-container">
                 <div class="video_with_link">
-                    <video autoplay="true"
-                    muted="muted" class="video-preloader" src="./videos/preloader-video.mp4" class="PlayPauseVideo" id="preloader-video"></video>
+                    <video preload="auto" autoplay loop muted playsinline class="video-preloader" class="PlayPauseVideo" id="preloader-video">
+                        <source src="./videos/preloader-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                    </video>
                 </div>
                 
                 <!-- <div class="preloader-gif">
@@ -166,4 +167,11 @@
                 </div>
             </div>
         </section>
-@@include("./components/footer_main.html", {})  
+<style>
+    /* @media screen and (max-width: 800px) { 
+        #footer {top: -70px !important;}
+    } */
+
+/* #footer .container { padding-bottom: 0px !important;} */
+</style>
+@@include("./components/footer_repr.html", {})  
