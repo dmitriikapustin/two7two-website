@@ -40,10 +40,13 @@
                 width: 100% !important;
                 position: relative !important;
                 top: -60px !important;
-                img {
-                    width: 450px !important;
-                }
+                // img {
+                //     width: 450px !important;
+                // }
             }
+        }
+        p {
+            font-size: 20px !important;
         }
     }
     .block-5 {
@@ -72,7 +75,7 @@
             left: 79.5%;
         }
         .sunstrike {
-            top: 42.3% !important;
+            top: 41.3% !important;
         }
     }
     .block-7 {
@@ -113,7 +116,18 @@
         }
     }
 }
-
+@media screen and (min-width: 1800px) { 
+    .block-4 {
+        h2 {
+            font-size: 30px !important;
+        }
+    }
+    .block-5 {
+        p {
+            font-size: 25.2px !important;
+        }
+    }
+}
 @media screen and (min-width: 2000px) {
     .preloader-container-logo {
         left: 5% !important;
@@ -284,7 +298,7 @@
             margin-left: 120px !important;
             margin-right: 0 !important;
             .attack {
-                top: -81.8% !important;
+                top: -84% !important;
             }
             .breaking-five-svg {
                 margin-right: 0 !important;
@@ -339,6 +353,10 @@
             p {
                 font-size: 20px !important;
             }
+        }
+        .combinations {
+            position: relative;
+            top: 0px !important;
         }
         .left-side {
             .top-texts {

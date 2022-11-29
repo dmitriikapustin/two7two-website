@@ -91,42 +91,18 @@ function updateEyePosition(event) {
   }
 
   if ($(document).width() > 800 && $(document).width() <= 1600) {
-    tu1.style.transform = `translate(0px, ${posY * 1.1}px)`;
-    tu2.style.transform = `translate(0px, ${posY * -0.9}px)`;
+    tu1.style.transform = `translate(0px, ${posY * 1.5}px)`;
+    tu2.style.transform = `translate(0px, ${posY * -1.4}px)`;
     eyeLeftPupil.style.transform = `translate(${posX * 0.25}px, ${posY * -0.5}px)`;
     eyeRightPupil.style.transform = `translate(${posX * -0.3}px, ${posY * 0.45}px)`;
   }
   if ($(document).width() > 1600) {
-    tu1.style.transform = `translate(0px, ${posY * 0.7}px)`;
-    tu2.style.transform = `translate(0px, ${posY * -0.6}px)`;
+    tu1.style.transform = `translate(0px, ${posY * 1}px)`;
+    tu2.style.transform = `translate(0px, ${posY * -0.9}px)`;
     eyeLeftPupil.style.transform = `translate(${posX * 0.15}px, ${posY * -0.35}px)`;
     eyeRightPupil.style.transform = `translate(${posX * -0.18}px, ${posY * 0.28}px)`;
   }
 
-  if (eyeLeftInner_main) {
-    const innerEyeWidth_main = eyeLeftInner_main.getBoundingClientRect().width;
-    const innerEyeHeight_main = eyeLeftInner_main.getBoundingClientRect().height;
-    const pupilWidth_main = eyeLeftPupil_main.getBoundingClientRect().width;
-    const pupilHeight_main = eyeLeftPupil_main.getBoundingClientRect().height;
-    const xMovement_main = (innerEyeWidth_main - pupilWidth_main)/2;
-    const yMovement_main = (innerEyeHeight_main - pupilHeight_main)/2;
-  
-    const posX_main = ((event.clientX / document.body.clientWidth) * 3 - 1) * xMovement_main;
-    const posY_main = ((event.clientY / window.screen.height) * 2 - 1) * yMovement_main;
-  
-    if ($(document).width() > 800 && $(document).width() <= 1600) {
-      tu1_main.style.transform = `translate(0px, ${posY_main * 1.1}px)`;
-      tu2_main.style.transform = `translate(0px, ${posY_main * -0.9}px)`;
-      eyeLeftPupil_main.style.transform = `translate(${posX_main * 0.25}px, ${posY_main * -0.5}px)`;
-      eyeRightPupil_main.style.transform = `translate(${posX_main * -0.3}px, ${posY_main * 0.45}px)`;
-    }
-    if ($(document).width() > 1600) {
-      tu1_main.style.transform = `translate(0px, ${posY_main * 0.7}px)`;
-      tu2_main.style.transform = `translate(0px, ${posY_main * -0.6}px)`;
-      eyeLeftPupil_main.style.transform = `translate(${posX_main * 0.15}px, ${posY_main * -0.35}px)`;
-      eyeRightPupil_main.style.transform = `translate(${posX_main * -0.18}px, ${posY_main * 0.28}px)`;
-    }
-  }
 }
 
   // console.log(last_p.style.transform)

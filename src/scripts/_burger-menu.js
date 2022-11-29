@@ -44,7 +44,35 @@ $(document).ready(function () {
     burgerMenu.classList.remove("display-none")
     // burgerMenuMobMain.classList.add("display-none")
     burgerMenu.addEventListener('click',function(){
-    
+
+        window.addEventListener('mousemove', updateEyePositionNew);
+
+        function updateEyePositionNew(event) { 
+          const innerEyeWidth_main = eyeLeftInner_main.getBoundingClientRect().width;
+          const innerEyeHeight_main = eyeLeftInner_main.getBoundingClientRect().height;
+          const pupilWidth_main = eyeLeftPupil_main.getBoundingClientRect().width;
+          const pupilHeight_main = eyeLeftPupil_main.getBoundingClientRect().height;
+          const xMovement_main = (innerEyeWidth_main - pupilWidth_main)/2;
+          const yMovement_main = (innerEyeHeight_main - pupilHeight_main)/2;
+        
+          const posX_main = ((event.clientX / document.body.clientWidth) * 3 - 1) * xMovement_main;
+          const posY_main = ((event.clientY / window.screen.height) * 2 - 1) * yMovement_main;
+        
+          if ($(document).width() > 800 && $(document).width() <= 1600) {
+            tu1_main.style.transform = `translate(0px, ${posY_main * 1.4}px)`;
+            tu2_main.style.transform = `translate(0px, ${posY_main * -1.1}px)`;
+            eyeLeftPupil_main.style.transform = `translate(${posX_main * 0.25}px, ${posY_main * -0.5}px)`;
+            eyeRightPupil_main.style.transform = `translate(${posX_main * -0.3}px, ${posY_main * 0.45}px)`;
+          }
+          if ($(document).width() > 1600) {
+            tu1_main.style.transform = `translate(0px, ${posY_main * 1}px)`;
+            tu2_main.style.transform = `translate(0px, ${posY_main * -0.9}px)`;
+            eyeLeftPupil_main.style.transform = `translate(${posX_main * 0.15}px, ${posY_main * -0.35}px)`;
+            eyeRightPupil_main.style.transform = `translate(${posX_main * -0.18}px, ${posY_main * 0.28}px)`;
+          }
+        }
+
+
       // navigation.style.display === "none !important"
       // logo.classList.toggle("scaling")
       bc_black.classList.toggle("open")
@@ -69,7 +97,7 @@ $(document).ready(function () {
       // .to($(".navigation-mobile :nth-child(5)"), {y: }, {y: 0, duration: 0.3})
     
       if (burger_boolean === false) {
-        navigation.style.display = "none"
+        // navigation.style.display = "none"
           // $('body').addClass("fixed-position");
           // $(".burger-menu").css({"opacity":"1"})
     
@@ -92,13 +120,13 @@ $(document).ready(function () {
         //   }
         // }
         // }, 200)
-          if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
-            pixel_bc.classList.add("hide-bc")
-          }
+          // if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
+          //   pixel_bc.classList.add("hide-bc")
+          // }
       }
       if (burger_boolean === true) {
         setTimeout(function () {
-          navigation.style.display = "flex"
+          // navigation.style.display = "flex"
         }, 200)
         $('body').removeClass("fixed-position");
         // $('body').removeClass('no-scroll')
@@ -120,9 +148,9 @@ $(document).ready(function () {
         //   header.classList.toggle("fixed-pos")
         //   }
     
-          if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
-            pixel_bc.classList.remove("hide-bc")
-          }
+          // if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
+          //   pixel_bc.classList.remove("hide-bc")
+          // }
     
         // }, 10)
       }
@@ -149,23 +177,23 @@ $(document).ready(function () {
       logo.classList.toggle("todefault") 
     
       if (burger_boolean === false) {
-        navigation.style.display = "none"
+        // navigation.style.display = "none"
   
         $('body').addClass('fixed-position')
   
-          if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
-            pixel_bc.classList.add("hide-bc")
-          }
+          // if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
+          //   pixel_bc.classList.add("hide-bc")
+          // }
       }
       if (burger_boolean === true) {
-        navigation.style.display = "flex"
+        // navigation.style.display = "flex"
         $('body').removeClass("fixed-position");
         // $('body').removeClass('no-scroll')
         // window.onscroll = null
-        console.log("scroll normal")
-        if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
-          pixel_bc.classList.remove("hide-bc")
-        }
+        // console.log("scroll normal")
+        // if(location.href.indexOf('reprobates')!==-1) { // for example its login.php page
+        //   pixel_bc.classList.remove("hide-bc")
+        // }
       }
     
       if (burger_boolean === false) {

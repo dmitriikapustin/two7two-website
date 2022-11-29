@@ -260,7 +260,7 @@
             transform: translate3d(-50px,0,0);
             .attack {
                 z-index: -1 !important;
-                top: -82.8%;
+                top: -84%;
                 left: -40.2%;
                 img {
                     width: 75%;
@@ -324,6 +324,10 @@
             height: auto;
         }
     }
+    .combinations {
+        position: relative;
+        top: 10px;
+    }
     span, p {
         text-align: center;
     }
@@ -348,7 +352,7 @@
 
         .bloodshed {
             width: 12%;
-            top: 66.35%;
+            top: 66.85%;
             left: 38%;
 
         }
@@ -363,7 +367,7 @@
         .sunstrike {
             width: 18%;
             left: 60.55%;
-            top: 39.4%;
+            top: 40.4%;
 
         }
 
